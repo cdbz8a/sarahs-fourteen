@@ -1,0 +1,4532 @@
+Build a mobile web app called Sarah's Fourteen.
+
+Paste this whole prompt into Base44 and build it. Do not invent different meals, different cheat days, or a different shift calendar. The JSON at the bottom is the app. Use it exactly.
+
+Who it is for
+Sarah is a 40-year-old woman on a long shift rotation: 14 day shifts, then 14 days off, then 14 night shifts, then 14 days off, then it repeats. She wants simple food she can cook tired. High fibre on regular days. Food that gives her mood a floor: oats, beans, lentils, yogurt, fruit with the skin on, walnuts, chia, flax, and salmon a few times. No onions, no green onions, no onion powder. Nothing gross: no sardines, no anchovies, no liver, no jars of fermented cabbage. Store salsa and tomato soup only if the label has no onion.
+
+What the app is
+Sixty days. Three meals a day. One full phone screen per day. Big type she can read at the stove. A shopping list every 14 days, color coded by aisle, so she can walk the store without deciding.
+
+The name on the screen is Sarah's Fourteen. The small line under it is Sixty days on the 14s.
+
+Look
+Background cream #F4EFE4. Text #241C14. Cards #FFFAF3.
+Meal 1 gold #FFE08A. Meal 2 green #C7EFD4. Meal 3 blue #D5E3FF.
+Tags: Brain #1D4E89, Calm #5C4D7A, Steady #9A5416, Gut #1B4332. White text on the tags.
+Shift badges: day shift brown #9A5416, night shift blue #1D4E89, day off green #1B4332, cheat day pink #C73E54. White text.
+Shop aisle colors, use these exact hex values from the data: Fruit #BC6C25, Produce #2D6A4F, Protein #1D4E89, Dairy #5C4D7A, Bread #9A5416, Cans #1B4332, Grains #8A6A2F, Frozen #3D5A80, Treats #C73E54.
+Font like Lato, or a plain system font if that is easier. Meal names about 26px. Ingredients about 18px. One cooking line under each meal.
+No stock photos. No illustrations of bowls. The color blocks are the graphic.
+Phone width. One column. Large buttons a thumb can hit. Respect the bottom safe area so the nav is not under the home bar.
+Do not use an em dash or an en dash in any interface copy.
+
+Screens
+Bottom nav with three buttons: Today, Days, Shop.
+
+1. Today
+Shows the current plan day. If she has not set a start, day 1.
+Huge day number. Fibre total in a dark pill.
+Shift badge and, when the day is a cheat day, a cheat badge.
+A note, then the timing line from the data.
+Three stacked cards, gold then green then blue.
+Each card shows the meal role, when to eat it, the mood tag, the fibre grams, the recipe name, the ingredient lines, and the cook line.
+Previous and Next under the cards. Previous is off on day 1. Next is off on day 60.
+A number box and a button that says Make this today. If she types 12 and taps it, today becomes day 12, and tomorrow the app shows day 13 by itself. Store the start date on the phone.
+Footer line: No onions. Food supports mood. It does not treat it.
+
+2. Days
+Title: Pick a day.
+Filters: All, Day shifts, Nights, Off, Cheat.
+Each row is one day. Show the day number, the fibre total, the timing line, and the three meal names on gold, green, and blue bars.
+Tap a row and open that day on the cook screen.
+
+3. Shop
+Title: Shop without thinking.
+Short line: One list per block. Color is the aisle. Check items off. The phone remembers.
+Five trip cards. The left border color matches the shift: brown for day shifts, green for days off, blue for nights.
+Each card shows the trip title, the blurb, and how many items are checked, like 4 of 22 checked.
+Tap a trip to open it.
+
+4. One shopping trip
+A button back to all trips.
+The trip title and blurb.
+Aisles in this order: Fruit, Produce, Protein, Dairy, Bread, Cans, Grains, Frozen, Treats. Skip an aisle if that trip has nothing in it.
+Each aisle name is colored with that aisle's hex.
+Each item is a row with a checkbox, the food name in bold, and the amount. The left edge of the row uses the aisle color.
+Checking an item crosses it out and stays checked if she closes the app.
+If the trip has a still list, show a heading Still in the cupboard and the names. Under that: Do not buy these again unless the jar is empty.
+
+Shift rules, already baked into the JSON
+Do not recalculate the calendar. Read shift, blockDay, line, and the meal slot names from each day.
+Day shift meals are Breakfast, Lunch, Dinner.
+Night shift meals are Before shift, Mid shift, After shift. The first card is the big plate, eaten when she wakes, before work. The middle card is packed. The last card is small, then she sleeps.
+Days off use Breakfast, Lunch, Dinner, and the line says which day of the 14-day break it is.
+Every day line includes this idea: stop caffeine about 6 hours before sleep. On nights that means before the daytime sleep.
+The 60 days cover one full cycle of 56 days plus the first 4 day shifts of the next round.
+Days 1 to 14 are day shifts. Days 15 to 28 are off. Days 29 to 42 are nights. Days 43 to 56 are off. Days 57 to 60 are day shifts again.
+
+Cheat days, already marked in the JSON
+Days 3, 13, 16, 27, 32, 39, 43, 54, and 59. One each week, not the same kind of day. Show the cheat badge. Do not add a lecture.
+
+House rules to keep in the copy, not as a new essay screen
+About 25 grams of fibre on a regular day. Cheat days are lower on purpose.
+Fruit stays whole.
+If beans are new to her, half portions the first week and water with the meal. Put that as one line on the shop screen, not on every day.
+Food can give mood a floor. It does not treat anxiety or depression.
+
+Build rules
+Hardcode the JSON below. Do not call an API for the meals.
+No accounts. No ads. No calorie target. No weight goal.
+Save two things on the phone only: which day she set as today, and which shop boxes are checked.
+Build the day screen first. It has to be readable while she cooks. Then the day list. Then the shop.
+Sound like a person who cooks. Short sentences. No hype. No brochure language.
+
+DATA
+Use this object as the only source of days and shopping trips.
+
+{
+  "name": "Sarah's Fourteen",
+  "tag": "Sixty days on the 14s",
+  "days": [
+    {
+      "n": 1,
+      "shift": "day",
+      "blockDay": 1,
+      "cheat": false,
+      "total": 31,
+      "line": "Day shift 1 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Chicken tonight, if you are on days.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Brain",
+          "g": 12,
+          "name": "Apple oat bowl with chia",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1 apple, skin on",
+            "1 tbsp chia"
+          ],
+          "method": "Chop the apple, skin on, and simmer it with the oats 5 minutes. Add the chia at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 10,
+          "name": "Lentil bowl with spinach and tomato",
+          "items": [
+            "1/2 cup lentils, rinsed",
+            "a handful of spinach",
+            "tomato",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Warm the lentils or eat them cold. Toss with spinach and tomato."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Steady",
+          "g": 9,
+          "name": "Chicken with broccoli and potato",
+          "items": [
+            "1 chicken thigh",
+            "1 cup broccoli",
+            "1 potato, skin on",
+            "olive oil"
+          ],
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the broccoli and potato on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "shift": "day",
+      "blockDay": 2,
+      "cheat": false,
+      "total": 29,
+      "line": "Day shift 2 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Chicken tonight, if you are on days.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Steady",
+          "g": 10,
+          "name": "Apple oat bowl with flax",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1 apple, skin on",
+            "1 tbsp ground flax"
+          ],
+          "method": "Chop the apple, skin on, and simmer it with the oats 5 minutes. Add the flax at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 11,
+          "name": "Lentil bowl with cucumber and pepper",
+          "items": [
+            "1/2 cup lentils, rinsed",
+            "cucumber",
+            "1 bell pepper",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Warm the lentils or eat them cold. Toss with cucumber and pepper."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Steady",
+          "g": 8,
+          "name": "Chicken with carrots and sweet potato",
+          "items": [
+            "1 chicken thigh",
+            "1 cup carrots",
+            "1 sweet potato, skin on",
+            "olive oil"
+          ],
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the carrots and sweet potato on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "shift": "day",
+      "blockDay": 3,
+      "cheat": true,
+      "total": 17,
+      "line": "Cheat day. Day shift 3 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Brain",
+          "g": 9,
+          "name": "Apple oat bowl with walnut",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1 apple, skin on",
+            "8 walnut halves"
+          ],
+          "method": "Chop the apple, skin on, and simmer it with the oats 5 minutes. Add the walnut at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 4,
+          "name": "Cheese pizza, no onion, and a salad",
+          "items": [
+            "2 slices cheese pizza, no onion",
+            "a handful of spinach",
+            "cucumber",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Heat the pizza. Eat the salad with it so the plate is not only crust."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Steady",
+          "g": 4,
+          "name": "Chicken with pepper and rice",
+          "items": [
+            "1 chicken thigh",
+            "1 bell pepper",
+            "1/2 cup cooked brown rice",
+            "olive oil"
+          ],
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the pepper and rice on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "shift": "day",
+      "blockDay": 4,
+      "cheat": false,
+      "total": 29,
+      "line": "Day shift 4 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Chicken tonight, if you are on days.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Brain",
+          "g": 14,
+          "name": "Pear oat bowl with chia",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1 pear, skin on",
+            "1 tbsp chia"
+          ],
+          "method": "Chop the pear, skin on. Simmer it with the oats 5 minutes. Add the chia at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 11,
+          "name": "Lentil bowl with zucchini and tomato",
+          "items": [
+            "1/2 cup lentils, rinsed",
+            "1 zucchini",
+            "tomato",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Warm the lentils or eat them cold. Toss with zucchini and tomato."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Steady",
+          "g": 4,
+          "name": "Chicken with spinach and quinoa",
+          "items": [
+            "1 chicken thigh",
+            "a handful of spinach",
+            "1/2 cup cooked quinoa",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the spinach and quinoa on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "shift": "day",
+      "blockDay": 5,
+      "cheat": false,
+      "total": 31,
+      "line": "Day shift 5 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Chicken tonight, if you are on days.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Steady",
+          "g": 12,
+          "name": "Pear oat bowl with flax",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1 pear, skin on",
+            "1 tbsp ground flax"
+          ],
+          "method": "Chop the pear, skin on. Simmer it with the oats 5 minutes. Add the flax at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 13,
+          "name": "Lentil bowl with broccoli and lemon",
+          "items": [
+            "1/2 cup lentils, rinsed",
+            "1 cup broccoli",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Warm the lentils or eat them cold. Toss with broccoli and lemon."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Steady",
+          "g": 6,
+          "name": "Chicken with zucchini and potato",
+          "items": [
+            "1 chicken thigh",
+            "1 zucchini",
+            "1 potato, skin on",
+            "olive oil"
+          ],
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the zucchini and potato on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "shift": "day",
+      "blockDay": 6,
+      "cheat": false,
+      "total": 28,
+      "line": "Day shift 6 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Chicken tonight, if you are on days.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Brain",
+          "g": 11,
+          "name": "Pear oat bowl with walnut",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1 pear, skin on",
+            "8 walnut halves"
+          ],
+          "method": "Chop the pear, skin on. Simmer it with the oats 5 minutes. Add the walnut at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 11,
+          "name": "Chickpea bowl with spinach and tomato",
+          "items": [
+            "3/4 cup chickpeas, rinsed",
+            "a handful of spinach",
+            "tomato",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Rinse the chickpeas. No cooking if the can is already cooked. Toss with spinach and tomato."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Steady",
+          "g": 6,
+          "name": "Chicken with tomato and pasta",
+          "items": [
+            "1 chicken thigh",
+            "tomato",
+            "3/4 cup cooked whole wheat pasta",
+            "olive oil"
+          ],
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the tomato and pasta on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "shift": "day",
+      "blockDay": 7,
+      "cheat": false,
+      "total": 31,
+      "line": "Day shift 7 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Chicken tonight, if you are on days.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Brain",
+          "g": 12,
+          "name": "Raspberry oat bowl with chia",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 cup raspberries",
+            "1 tbsp chia"
+          ],
+          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the chia at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 12,
+          "name": "Chickpea bowl with cucumber and pepper",
+          "items": [
+            "3/4 cup chickpeas, rinsed",
+            "cucumber",
+            "1 bell pepper",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Rinse the chickpeas. No cooking if the can is already cooked. Toss with cucumber and pepper."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Steady",
+          "g": 7,
+          "name": "Chicken with broccoli and rice",
+          "items": [
+            "1 chicken thigh",
+            "1 cup broccoli",
+            "1/2 cup cooked brown rice",
+            "olive oil"
+          ],
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the broccoli and rice on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "shift": "day",
+      "blockDay": 8,
+      "cheat": false,
+      "total": 29,
+      "line": "Day shift 8 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Chicken tonight, if you are on days.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Steady",
+          "g": 10,
+          "name": "Raspberry oat bowl with flax",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 cup raspberries",
+            "1 tbsp ground flax"
+          ],
+          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the flax at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 14,
+          "name": "Chickpea bowl with carrot and greens",
+          "items": [
+            "3/4 cup chickpeas, rinsed",
+            "1 cup carrots",
+            "a handful of salad greens",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Rinse the chickpeas. No cooking if the can is already cooked. Toss with carrot and greens."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Steady",
+          "g": 5,
+          "name": "Chicken with greens and sweet potato",
+          "items": [
+            "1 chicken thigh",
+            "a handful of salad greens",
+            "1 sweet potato, skin on",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the greens and sweet potato on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "shift": "day",
+      "blockDay": 9,
+      "cheat": false,
+      "total": 30,
+      "line": "Day shift 9 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Salmon tonight, if you are on days.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Brain",
+          "g": 9,
+          "name": "Raspberry oat bowl with walnut",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 cup raspberries",
+            "8 walnut halves"
+          ],
+          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the walnut at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 12,
+          "name": "Chickpea bowl with zucchini and tomato",
+          "items": [
+            "3/4 cup chickpeas, rinsed",
+            "1 zucchini",
+            "tomato",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Rinse the chickpeas. No cooking if the can is already cooked. Toss with zucchini and tomato."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Brain",
+          "g": 9,
+          "name": "Salmon with broccoli and potato",
+          "items": [
+            "1 salmon fillet",
+            "1 cup broccoli",
+            "1 potato, skin on",
+            "olive oil"
+          ],
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the broccoli and potato on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "shift": "day",
+      "blockDay": 10,
+      "cheat": false,
+      "total": 32,
+      "line": "Day shift 10 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Salmon tonight, if you are on days.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Brain",
+          "g": 10,
+          "name": "Blueberry oat bowl with chia",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 cup blueberries",
+            "1 tbsp chia"
+          ],
+          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the chia at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 14,
+          "name": "Chickpea bowl with broccoli and lemon",
+          "items": [
+            "3/4 cup chickpeas, rinsed",
+            "1 cup broccoli",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Rinse the chickpeas. No cooking if the can is already cooked. Toss with broccoli and lemon."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Brain",
+          "g": 8,
+          "name": "Salmon with carrots and sweet potato",
+          "items": [
+            "1 salmon fillet",
+            "1 cup carrots",
+            "1 sweet potato, skin on",
+            "olive oil"
+          ],
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the carrots and sweet potato on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "shift": "day",
+      "blockDay": 11,
+      "cheat": false,
+      "total": 26,
+      "line": "Day shift 11 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Salmon tonight, if you are on days.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Steady",
+          "g": 12,
+          "name": "Blueberry oat bowl with flax",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 cup blueberries",
+            "1 tbsp ground flax",
+            "1 apple, skin on"
+          ],
+          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the flax at the end. Apple on the side."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 10,
+          "name": "Black bean bowl with spinach and tomato",
+          "items": [
+            "1/2 cup black beans, rinsed",
+            "cumin",
+            "a handful of spinach",
+            "tomato",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Rinse the beans. Cumin, salt, done. Toss with spinach and tomato."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Brain",
+          "g": 4,
+          "name": "Salmon with pepper and rice",
+          "items": [
+            "1 salmon fillet",
+            "1 bell pepper",
+            "1/2 cup cooked brown rice",
+            "olive oil"
+          ],
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the pepper and rice on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "shift": "day",
+      "blockDay": 12,
+      "cheat": false,
+      "total": 26,
+      "line": "Day shift 12 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Salmon tonight, if you are on days.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Brain",
+          "g": 11,
+          "name": "Blueberry oat bowl with walnut",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 cup blueberries",
+            "8 walnut halves",
+            "1 apple, skin on"
+          ],
+          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the walnut at the end. Apple on the side."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 11,
+          "name": "Black bean bowl with cucumber and pepper",
+          "items": [
+            "1/2 cup black beans, rinsed",
+            "cumin",
+            "cucumber",
+            "1 bell pepper",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Rinse the beans. Cumin, salt, done. Toss with cucumber and pepper."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Brain",
+          "g": 4,
+          "name": "Salmon with spinach and quinoa",
+          "items": [
+            "1 salmon fillet",
+            "a handful of spinach",
+            "1/2 cup cooked quinoa",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the spinach and quinoa on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 13,
+      "shift": "day",
+      "blockDay": 13,
+      "cheat": true,
+      "total": 24,
+      "line": "Cheat day. Day shift 13 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Brain",
+          "g": 10,
+          "name": "Strawberry oat bowl with chia",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 cup strawberries",
+            "1 tbsp chia"
+          ],
+          "method": "Simmer the oats. Slice the berries over the top. Add the chia at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Steady",
+          "g": 8,
+          "name": "Burger on a bun, no onion",
+          "items": [
+            "a beef or turkey patty",
+            "1 whole grain bun",
+            "a little cheddar",
+            "tomato",
+            "1 apple, skin on"
+          ],
+          "method": "Cook the patty in a pan. Cheese and tomato. No onion. Apple on the side."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Brain",
+          "g": 6,
+          "name": "Salmon with zucchini and potato",
+          "items": [
+            "1 salmon fillet",
+            "1 zucchini",
+            "1 potato, skin on",
+            "olive oil"
+          ],
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the zucchini and potato on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 14,
+      "shift": "day",
+      "blockDay": 14,
+      "cheat": false,
+      "total": 25,
+      "line": "Day shift 14 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Salmon tonight, if you are on days.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Steady",
+          "g": 8,
+          "name": "Strawberry oat bowl with flax",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 cup strawberries",
+            "1 tbsp ground flax"
+          ],
+          "method": "Simmer the oats. Slice the berries over the top. Add the flax at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 11,
+          "name": "Black bean bowl with zucchini and tomato",
+          "items": [
+            "1/2 cup black beans, rinsed",
+            "cumin",
+            "1 zucchini",
+            "tomato",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Rinse the beans. Cumin, salt, done. Toss with zucchini and tomato."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Brain",
+          "g": 6,
+          "name": "Salmon with tomato and pasta",
+          "items": [
+            "1 salmon fillet",
+            "tomato",
+            "3/4 cup cooked whole wheat pasta",
+            "olive oil"
+          ],
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the tomato and pasta on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 15,
+      "shift": "off",
+      "blockDay": 1,
+      "cheat": false,
+      "total": 27,
+      "line": "Off day 1 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Salmon is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Brain",
+          "g": 7,
+          "name": "Strawberry oat bowl with walnut",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 cup strawberries",
+            "8 walnut halves"
+          ],
+          "method": "Simmer the oats. Slice the berries over the top. Add the walnut at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Gut",
+          "g": 13,
+          "name": "Black bean bowl with broccoli and lemon",
+          "items": [
+            "1/2 cup black beans, rinsed",
+            "cumin",
+            "1 cup broccoli",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Rinse the beans. Cumin, salt, done. Toss with broccoli and lemon."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Brain",
+          "g": 7,
+          "name": "Salmon with broccoli and rice",
+          "items": [
+            "1 salmon fillet",
+            "1 cup broccoli",
+            "1/2 cup cooked brown rice",
+            "olive oil"
+          ],
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the broccoli and rice on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 16,
+      "shift": "off",
+      "blockDay": 2,
+      "cheat": true,
+      "total": 23,
+      "line": "Cheat day. Off day 2 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Brain",
+          "g": 10,
+          "name": "Banana oat bowl with chia",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 banana",
+            "1 tbsp chia"
+          ],
+          "method": "Mash the banana into the oats while they simmer. Add the chia at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Steady",
+          "g": 8,
+          "name": "Chicken tenders, potato, carrots",
+          "items": [
+            "baked chicken tenders",
+            "1 potato, skin on",
+            "1 cup carrots"
+          ],
+          "method": "Bake the tenders and the potato. Do not deep fry. Carrots on the plate."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Brain",
+          "g": 5,
+          "name": "Salmon with greens and sweet potato",
+          "items": [
+            "1 salmon fillet",
+            "a handful of salad greens",
+            "1 sweet potato, skin on",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the greens and sweet potato on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 17,
+      "shift": "off",
+      "blockDay": 3,
+      "cheat": false,
+      "total": 29,
+      "line": "Off day 3 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Turkey is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Steady",
+          "g": 8,
+          "name": "Banana oat bowl with flax",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 banana",
+            "1 tbsp ground flax"
+          ],
+          "method": "Mash the banana into the oats while they simmer. Add the flax at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Calm",
+          "g": 12,
+          "name": "White bean bowl with cucumber and pepper",
+          "items": [
+            "3/4 cup white beans, rinsed",
+            "cucumber",
+            "1 bell pepper",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Rinse the beans. They are the mild ones. Toss with cucumber and pepper."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Steady",
+          "g": 9,
+          "name": "Turkey with broccoli and potato",
+          "items": [
+            "a palm of ground turkey",
+            "1 cup broccoli",
+            "1 potato, skin on",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan, breaking it up. Cook the broccoli and potato on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 18,
+      "shift": "off",
+      "blockDay": 4,
+      "cheat": false,
+      "total": 29,
+      "line": "Off day 4 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Turkey is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Brain",
+          "g": 7,
+          "name": "Banana oat bowl with walnut",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 banana",
+            "8 walnut halves"
+          ],
+          "method": "Mash the banana into the oats while they simmer. Add the walnut at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Calm",
+          "g": 14,
+          "name": "White bean bowl with carrot and greens",
+          "items": [
+            "3/4 cup white beans, rinsed",
+            "1 cup carrots",
+            "a handful of salad greens",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Rinse the beans. They are the mild ones. Toss with carrot and greens."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Steady",
+          "g": 8,
+          "name": "Turkey with carrots and sweet potato",
+          "items": [
+            "a palm of ground turkey",
+            "1 cup carrots",
+            "1 sweet potato, skin on",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan, breaking it up. Cook the carrots and sweet potato on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 19,
+      "shift": "off",
+      "blockDay": 5,
+      "cheat": false,
+      "total": 26,
+      "line": "Off day 5 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Turkey is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Brain",
+          "g": 10,
+          "name": "Peach oat bowl with chia",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1 peach",
+            "1 tbsp chia"
+          ],
+          "method": "Chop the peach. Stir it in when the oats are soft. Add the chia at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Calm",
+          "g": 12,
+          "name": "White bean bowl with zucchini and tomato",
+          "items": [
+            "3/4 cup white beans, rinsed",
+            "1 zucchini",
+            "tomato",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Rinse the beans. They are the mild ones. Toss with zucchini and tomato."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Steady",
+          "g": 4,
+          "name": "Turkey with pepper and rice",
+          "items": [
+            "a palm of ground turkey",
+            "1 bell pepper",
+            "1/2 cup cooked brown rice",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan, breaking it up. Cook the pepper and rice on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 20,
+      "shift": "off",
+      "blockDay": 6,
+      "cheat": false,
+      "total": 26,
+      "line": "Off day 6 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Turkey is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Steady",
+          "g": 8,
+          "name": "Peach oat bowl with flax",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1 peach",
+            "1 tbsp ground flax"
+          ],
+          "method": "Chop the peach. Stir it in when the oats are soft. Add the flax at the end."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Calm",
+          "g": 14,
+          "name": "White bean bowl with broccoli and lemon",
+          "items": [
+            "3/4 cup white beans, rinsed",
+            "1 cup broccoli",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Rinse the beans. They are the mild ones. Toss with broccoli and lemon."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Steady",
+          "g": 4,
+          "name": "Turkey with spinach and quinoa",
+          "items": [
+            "a palm of ground turkey",
+            "a handful of spinach",
+            "1/2 cup cooked quinoa",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan, breaking it up. Cook the spinach and quinoa on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 21,
+      "shift": "off",
+      "blockDay": 7,
+      "cheat": false,
+      "total": 24,
+      "line": "Off day 7 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Turkey is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Brain",
+          "g": 11,
+          "name": "Peach oat bowl with walnut",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1 peach",
+            "8 walnut halves",
+            "1 apple, skin on"
+          ],
+          "method": "Chop the peach. Stir it in when the oats are soft. Add the walnut at the end. Apple on the side."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Steady",
+          "g": 7,
+          "name": "Chicken with rice and broccoli",
+          "items": [
+            "1 chicken thigh",
+            "1/2 cup cooked brown rice",
+            "1 cup broccoli",
+            "olive oil"
+          ],
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the rice with the broccoli."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Steady",
+          "g": 6,
+          "name": "Turkey with zucchini and potato",
+          "items": [
+            "a palm of ground turkey",
+            "1 zucchini",
+            "1 potato, skin on",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan, breaking it up. Cook the zucchini and potato on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 22,
+      "shift": "off",
+      "blockDay": 8,
+      "cheat": false,
+      "total": 24,
+      "line": "Off day 8 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Turkey is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Brain",
+          "g": 13,
+          "name": "Cherry oat bowl with chia",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 cup cherries",
+            "1 tbsp chia",
+            "1 apple, skin on"
+          ],
+          "method": "Simmer the oats. Fold the cherries in at the end. Add the chia at the end. Apple on the side."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Steady",
+          "g": 5,
+          "name": "Chicken with rice and pepper",
+          "items": [
+            "1 chicken thigh",
+            "1/2 cup cooked brown rice",
+            "1 bell pepper",
+            "tomato",
+            "olive oil"
+          ],
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the rice with the pepper."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Steady",
+          "g": 6,
+          "name": "Turkey with tomato and pasta",
+          "items": [
+            "a palm of ground turkey",
+            "tomato",
+            "3/4 cup cooked whole wheat pasta",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan, breaking it up. Cook the tomato and pasta on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 23,
+      "shift": "off",
+      "blockDay": 9,
+      "cheat": false,
+      "total": 26,
+      "line": "Off day 9 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Turkey is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Steady",
+          "g": 11,
+          "name": "Cherry oat bowl with flax",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 cup cherries",
+            "1 tbsp ground flax",
+            "1 apple, skin on"
+          ],
+          "method": "Simmer the oats. Fold the cherries in at the end. Add the flax at the end. Apple on the side."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Steady",
+          "g": 8,
+          "name": "Chicken with quinoa and broccoli",
+          "items": [
+            "1 chicken thigh",
+            "1/2 cup cooked quinoa",
+            "1 cup broccoli",
+            "olive oil"
+          ],
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the quinoa with the broccoli."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Steady",
+          "g": 7,
+          "name": "Turkey with broccoli and rice",
+          "items": [
+            "a palm of ground turkey",
+            "1 cup broccoli",
+            "1/2 cup cooked brown rice",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan, breaking it up. Cook the broccoli and rice on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 24,
+      "shift": "off",
+      "blockDay": 10,
+      "cheat": false,
+      "total": 21,
+      "line": "Off day 10 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Turkey is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Brain",
+          "g": 10,
+          "name": "Cherry oat bowl with walnut",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 cup cherries",
+            "8 walnut halves",
+            "1 apple, skin on"
+          ],
+          "method": "Simmer the oats. Fold the cherries in at the end. Add the walnut at the end. Apple on the side."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Steady",
+          "g": 6,
+          "name": "Chicken with quinoa and pepper",
+          "items": [
+            "1 chicken thigh",
+            "1/2 cup cooked quinoa",
+            "1 bell pepper",
+            "tomato",
+            "olive oil"
+          ],
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the quinoa with the pepper."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Steady",
+          "g": 5,
+          "name": "Turkey with greens and sweet potato",
+          "items": [
+            "a palm of ground turkey",
+            "a handful of salad greens",
+            "1 sweet potato, skin on",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan, breaking it up. Cook the greens and sweet potato on the same tray or in a pan beside it."
+        }
+      ]
+    },
+    {
+      "n": 25,
+      "shift": "off",
+      "blockDay": 11,
+      "cheat": false,
+      "total": 26,
+      "line": "Off day 11 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Black bean chili is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Steady",
+          "g": 6,
+          "name": "Apple yogurt cup with flax",
+          "items": [
+            "plain yogurt",
+            "1 apple, skin on",
+            "1 tbsp ground flax"
+          ],
+          "method": "Stir the flax into the yogurt. Apple on top. No cooking."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Steady",
+          "g": 9,
+          "name": "Chicken with potato and broccoli",
+          "items": [
+            "1 chicken thigh",
+            "1 potato, skin on",
+            "1 cup broccoli",
+            "olive oil"
+          ],
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the potato with the broccoli."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Gut",
+          "g": 11,
+          "name": "Black bean chili",
+          "items": [
+            "1/2 cup black beans, rinsed",
+            "1/2 cup crushed tomato",
+            "cumin",
+            "chili powder",
+            "1/2 cup cooked brown rice"
+          ],
+          "method": "Simmer beans, tomato, cumin, and chili powder 15 minutes. No onion. Spoon over rice."
+        }
+      ]
+    },
+    {
+      "n": 26,
+      "shift": "off",
+      "blockDay": 12,
+      "cheat": false,
+      "total": 26,
+      "line": "Off day 12 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. White bean tomato pasta is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Calm",
+          "g": 5,
+          "name": "Apple yogurt cup with pumpkin seed",
+          "items": [
+            "plain yogurt",
+            "1 apple, skin on",
+            "2 tbsp pumpkin seeds"
+          ],
+          "method": "Stir the pumpkin seed into the yogurt. Apple on top. No cooking."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Steady",
+          "g": 7,
+          "name": "Chicken with potato and pepper",
+          "items": [
+            "1 chicken thigh",
+            "1 potato, skin on",
+            "1 bell pepper",
+            "tomato",
+            "olive oil"
+          ],
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the potato with the pepper."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Steady",
+          "g": 14,
+          "name": "White bean tomato pasta",
+          "items": [
+            "1/2 cup white beans, rinsed",
+            "1 cup cooked whole wheat pasta",
+            "tomato",
+            "a handful of spinach",
+            "olive oil"
+          ],
+          "method": "Boil the pasta. Toss with beans, tomato, and spinach."
+        }
+      ]
+    },
+    {
+      "n": 27,
+      "shift": "off",
+      "blockDay": 13,
+      "cheat": true,
+      "total": 31,
+      "line": "Cheat day. Off day 13 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Steady",
+          "g": 8,
+          "name": "Pear yogurt cup with flax",
+          "items": [
+            "plain yogurt",
+            "1 pear, skin on",
+            "1 tbsp ground flax"
+          ],
+          "method": "Stir the flax into the yogurt. Pear on top. No cooking."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Calm",
+          "g": 7,
+          "name": "Mac and broccoli",
+          "items": [
+            "macaroni and cheese",
+            "1 cup broccoli"
+          ],
+          "method": "Make the mac. Stir in the broccoli. The broccoli is not optional."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Gut",
+          "g": 16,
+          "name": "Lentil carrot stew",
+          "items": [
+            "1/2 cup lentils, rinsed",
+            "1 cup carrots",
+            "1/2 cup crushed tomato",
+            "cumin",
+            "1 slice whole grain bread"
+          ],
+          "method": "Simmer lentils, carrots, and tomato 15 minutes. Bread on the side."
+        }
+      ]
+    },
+    {
+      "n": 28,
+      "shift": "off",
+      "blockDay": 14,
+      "cheat": false,
+      "total": 27,
+      "line": "Off day 14 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Chickpea pepper skillet is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Calm",
+          "g": 7,
+          "name": "Pear yogurt cup with pumpkin seed",
+          "items": [
+            "plain yogurt",
+            "1 pear, skin on",
+            "2 tbsp pumpkin seeds"
+          ],
+          "method": "Stir the pumpkin seed into the yogurt. Pear on top. No cooking."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Steady",
+          "g": 6,
+          "name": "Chicken with toast and pepper",
+          "items": [
+            "1 chicken thigh",
+            "1 slice whole grain bread",
+            "1 bell pepper",
+            "tomato",
+            "olive oil"
+          ],
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the toast with the pepper."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Gut",
+          "g": 14,
+          "name": "Chickpea pepper skillet",
+          "items": [
+            "3/4 cup chickpeas, rinsed",
+            "1 bell pepper",
+            "tomato",
+            "cumin",
+            "1/2 cup cooked brown rice"
+          ],
+          "method": "Warm chickpeas with pepper and tomato. Serve on rice."
+        }
+      ]
+    },
+    {
+      "n": 29,
+      "shift": "night",
+      "blockDay": 1,
+      "cheat": false,
+      "total": 24,
+      "line": "Night shift 1 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
+      "note": "Night block. Eat baked potato and broccoli before work.",
+      "meals": [
+        {
+          "slot": "Before shift",
+          "when": "When you wake, before work",
+          "tag": "Steady",
+          "g": 9,
+          "name": "Baked potato and broccoli",
+          "items": [
+            "1 potato, skin on",
+            "1 cup broccoli",
+            "a little cheddar",
+            "olive oil"
+          ],
+          "method": "Microwave or bake the potato. Steam the broccoli. Cheese. Eat the skin."
+        },
+        {
+          "slot": "Mid shift",
+          "when": "Pack this",
+          "tag": "Steady",
+          "g": 7,
+          "name": "Chicken with tortilla and broccoli",
+          "items": [
+            "1 chicken thigh",
+            "1 corn tortilla",
+            "1 cup broccoli",
+            "olive oil"
+          ],
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the tortilla with the broccoli."
+        },
+        {
+          "slot": "After shift",
+          "when": "Smaller, then sleep",
+          "tag": "Calm",
+          "g": 8,
+          "name": "Pear and yogurt",
+          "items": [
+            "plain yogurt",
+            "1 pear, skin on",
+            "1 tbsp ground flax"
+          ],
+          "method": "Small bowl. Then sleep."
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "shift": "night",
+      "blockDay": 2,
+      "cheat": false,
+      "total": 24,
+      "line": "Night shift 2 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
+      "note": "Night block. Eat sweet potato and white beans before work.",
+      "meals": [
+        {
+          "slot": "Before shift",
+          "when": "When you wake, before work",
+          "tag": "Calm",
+          "g": 11,
+          "name": "Sweet potato and white beans",
+          "items": [
+            "1 sweet potato, skin on",
+            "1/2 cup white beans, rinsed",
+            "a handful of spinach",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Split the sweet potato. Pile on the beans and spinach."
+        },
+        {
+          "slot": "Mid shift",
+          "when": "Pack this",
+          "tag": "Steady",
+          "g": 5,
+          "name": "Chicken with tortilla and pepper",
+          "items": [
+            "1 chicken thigh",
+            "1 corn tortilla",
+            "1 bell pepper",
+            "tomato",
+            "olive oil"
+          ],
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the tortilla with the pepper."
+        },
+        {
+          "slot": "After shift",
+          "when": "Smaller, then sleep",
+          "tag": "Brain",
+          "g": 8,
+          "name": "Berries and yogurt",
+          "items": [
+            "plain yogurt",
+            "1/2 cup raspberries",
+            "1 tbsp chia"
+          ],
+          "method": "Stir the chia in. Ten minutes if you can wait. Then bed."
+        }
+      ]
+    },
+    {
+      "n": 31,
+      "shift": "night",
+      "blockDay": 3,
+      "cheat": false,
+      "total": 25,
+      "line": "Night shift 3 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
+      "note": "Night block. Eat lentil spinach soup before work.",
+      "meals": [
+        {
+          "slot": "Before shift",
+          "when": "When you wake, before work",
+          "tag": "Gut",
+          "g": 14,
+          "name": "Lentil spinach soup",
+          "items": [
+            "1/2 cup lentils, rinsed",
+            "a handful of spinach",
+            "1/2 cup crushed tomato",
+            "1 cup carrots",
+            "lemon"
+          ],
+          "method": "Simmer lentils, tomato, and carrots 15 minutes. Spinach at the end."
+        },
+        {
+          "slot": "Mid shift",
+          "when": "Pack this",
+          "tag": "Steady",
+          "g": 7,
+          "name": "Turkey with rice and broccoli",
+          "items": [
+            "a palm of ground turkey",
+            "cumin",
+            "1/2 cup cooked brown rice",
+            "1 cup broccoli",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the rice with the broccoli."
+        },
+        {
+          "slot": "After shift",
+          "when": "Smaller, then sleep",
+          "tag": "Steady",
+          "g": 4,
+          "name": "Banana and milk",
+          "items": [
+            "1/2 banana",
+            "milk or soy milk",
+            "1 tbsp ground flax"
+          ],
+          "method": "A glass and the banana. Not a second dinner."
+        }
+      ]
+    },
+    {
+      "n": 32,
+      "shift": "night",
+      "blockDay": 4,
+      "cheat": true,
+      "total": 29,
+      "line": "Cheat day. Night shift 4 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
+      "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "meals": [
+        {
+          "slot": "Before shift",
+          "when": "When you wake, before work",
+          "tag": "Gut",
+          "g": 14,
+          "name": "Bean and zucchini skillet",
+          "items": [
+            "1/2 cup black beans, rinsed",
+            "1 zucchini",
+            "tomato",
+            "cumin",
+            "1/2 cup cooked quinoa"
+          ],
+          "method": "Soften the zucchini. Add beans and tomato. Quinoa underneath."
+        },
+        {
+          "slot": "Mid shift",
+          "when": "Pack this",
+          "tag": "Gut",
+          "g": 11,
+          "name": "Bean nacho cup",
+          "items": [
+            "1/2 cup black beans, rinsed",
+            "a small handful of tortilla chips",
+            "salsa with no onion",
+            "a little cheddar"
+          ],
+          "method": "Warm the beans. Chips in a separate bag so they stay crisp. Salsa only if the jar has no onion."
+        },
+        {
+          "slot": "After shift",
+          "when": "Smaller, then sleep",
+          "tag": "Steady",
+          "g": 4,
+          "name": "Toast and tomato",
+          "items": [
+            "1 slice whole grain bread",
+            "tomato",
+            "olive oil"
+          ],
+          "method": "One slice. Tomato. Stop there."
+        }
+      ]
+    },
+    {
+      "n": 33,
+      "shift": "night",
+      "blockDay": 5,
+      "cheat": false,
+      "total": 25,
+      "line": "Night shift 5 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
+      "note": "Night block. Eat black bean chili before work.",
+      "meals": [
+        {
+          "slot": "Before shift",
+          "when": "When you wake, before work",
+          "tag": "Gut",
+          "g": 13,
+          "name": "Black bean chili with a side salad",
+          "items": [
+            "1/2 cup black beans, rinsed",
+            "1/2 cup crushed tomato",
+            "cumin",
+            "chili powder",
+            "1/2 cup cooked brown rice",
+            "a handful of salad greens",
+            "cucumber",
+            "lemon"
+          ],
+          "method": "Simmer beans, tomato, cumin, and chili powder 15 minutes. No onion. Spoon over rice. Put a salad beside it."
+        },
+        {
+          "slot": "Mid shift",
+          "when": "Pack this",
+          "tag": "Steady",
+          "g": 8,
+          "name": "Turkey with quinoa and broccoli",
+          "items": [
+            "a palm of ground turkey",
+            "cumin",
+            "1/2 cup cooked quinoa",
+            "1 cup broccoli",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the quinoa with the broccoli."
+        },
+        {
+          "slot": "After shift",
+          "when": "Smaller, then sleep",
+          "tag": "Steady",
+          "g": 4,
+          "name": "Apple and cheese",
+          "items": [
+            "1 apple, skin on",
+            "a little cheddar"
+          ],
+          "method": "Apple first. A little cheese. Then sleep."
+        }
+      ]
+    },
+    {
+      "n": 34,
+      "shift": "night",
+      "blockDay": 6,
+      "cheat": false,
+      "total": 27,
+      "line": "Night shift 6 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
+      "note": "Night block. Eat black bean chili before work.",
+      "meals": [
+        {
+          "slot": "Before shift",
+          "when": "When you wake, before work",
+          "tag": "Gut",
+          "g": 18,
+          "name": "Black bean chili with avocado",
+          "items": [
+            "1/2 cup black beans, rinsed",
+            "1/2 cup crushed tomato",
+            "cumin",
+            "chili powder",
+            "1/2 cup cooked brown rice",
+            "1/4 avocado",
+            "1 apple, skin on"
+          ],
+          "method": "Simmer beans, tomato, cumin, and chili powder 15 minutes. No onion. Spoon over rice. Avocado on top at the last minute. Apple on the side."
+        },
+        {
+          "slot": "Mid shift",
+          "when": "Pack this",
+          "tag": "Steady",
+          "g": 6,
+          "name": "Turkey with quinoa and pepper",
+          "items": [
+            "a palm of ground turkey",
+            "cumin",
+            "1/2 cup cooked quinoa",
+            "1 bell pepper",
+            "tomato",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the quinoa with the pepper."
+        },
+        {
+          "slot": "After shift",
+          "when": "Smaller, then sleep",
+          "tag": "Calm",
+          "g": 3,
+          "name": "Orange and yogurt",
+          "items": [
+            "1 orange",
+            "plain yogurt"
+          ],
+          "method": "Eat the orange whole. A few spoons of yogurt."
+        }
+      ]
+    },
+    {
+      "n": 35,
+      "shift": "night",
+      "blockDay": 7,
+      "cheat": false,
+      "total": 27,
+      "line": "Night shift 7 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
+      "note": "Night block. Eat black bean chili before work.",
+      "meals": [
+        {
+          "slot": "Before shift",
+          "when": "When you wake, before work",
+          "tag": "Gut",
+          "g": 14,
+          "name": "Black bean chili with toast",
+          "items": [
+            "1/2 cup black beans, rinsed",
+            "1/2 cup crushed tomato",
+            "cumin",
+            "chili powder",
+            "1/2 cup cooked brown rice",
+            "1 slice whole grain bread"
+          ],
+          "method": "Simmer beans, tomato, cumin, and chili powder 15 minutes. No onion. Spoon over rice. Toast on the side."
+        },
+        {
+          "slot": "Mid shift",
+          "when": "Pack this",
+          "tag": "Steady",
+          "g": 9,
+          "name": "Turkey with potato and broccoli",
+          "items": [
+            "a palm of ground turkey",
+            "cumin",
+            "1 potato, skin on",
+            "1 cup broccoli",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the potato with the broccoli."
+        },
+        {
+          "slot": "After shift",
+          "when": "Smaller, then sleep",
+          "tag": "Steady",
+          "g": 4,
+          "name": "Warm milk oats",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "cinnamon"
+          ],
+          "method": "A small bowl of oats, half the usual pot. Cinnamon."
+        }
+      ]
+    },
+    {
+      "n": 36,
+      "shift": "night",
+      "blockDay": 8,
+      "cheat": false,
+      "total": 24,
+      "line": "Night shift 8 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
+      "note": "Night block. Eat white bean tomato pasta before work.",
+      "meals": [
+        {
+          "slot": "Before shift",
+          "when": "When you wake, before work",
+          "tag": "Steady",
+          "g": 16,
+          "name": "White bean tomato pasta with a side salad",
+          "items": [
+            "1/2 cup white beans, rinsed",
+            "1 cup cooked whole wheat pasta",
+            "tomato",
+            "a handful of spinach",
+            "olive oil",
+            "a handful of salad greens",
+            "cucumber",
+            "lemon"
+          ],
+          "method": "Boil the pasta. Toss with beans, tomato, and spinach. Put a salad beside it."
+        },
+        {
+          "slot": "Mid shift",
+          "when": "Pack this",
+          "tag": "Steady",
+          "g": 7,
+          "name": "Turkey with potato and pepper",
+          "items": [
+            "a palm of ground turkey",
+            "cumin",
+            "1 potato, skin on",
+            "1 bell pepper",
+            "tomato",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the potato with the pepper."
+        },
+        {
+          "slot": "After shift",
+          "when": "Smaller, then sleep",
+          "tag": "Steady",
+          "g": 1,
+          "name": "Cucumber and turkey bite",
+          "items": [
+            "a palm of ground turkey",
+            "cucumber"
+          ],
+          "method": "A few bites of turkey you already cooked, plus cucumber. Not a full pan."
+        }
+      ]
+    },
+    {
+      "n": 37,
+      "shift": "night",
+      "blockDay": 9,
+      "cheat": false,
+      "total": 26,
+      "line": "Night shift 9 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
+      "note": "Night block. Eat white bean tomato pasta before work.",
+      "meals": [
+        {
+          "slot": "Before shift",
+          "when": "When you wake, before work",
+          "tag": "Steady",
+          "g": 17,
+          "name": "White bean tomato pasta with avocado",
+          "items": [
+            "1/2 cup white beans, rinsed",
+            "1 cup cooked whole wheat pasta",
+            "tomato",
+            "a handful of spinach",
+            "olive oil",
+            "1/4 avocado"
+          ],
+          "method": "Boil the pasta. Toss with beans, tomato, and spinach. Avocado on top at the last minute."
+        },
+        {
+          "slot": "Mid shift",
+          "when": "Pack this",
+          "tag": "Steady",
+          "g": 8,
+          "name": "Turkey with toast and broccoli",
+          "items": [
+            "a palm of ground turkey",
+            "cumin",
+            "1 slice whole grain bread",
+            "1 cup broccoli",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the toast with the broccoli."
+        },
+        {
+          "slot": "After shift",
+          "when": "Smaller, then sleep",
+          "tag": "Steady",
+          "g": 1,
+          "name": "Spinach egg",
+          "items": [
+            "1 egg",
+            "a handful of spinach"
+          ],
+          "method": "One egg and a handful of spinach. That is the whole plate."
+        }
+      ]
+    },
+    {
+      "n": 38,
+      "shift": "night",
+      "blockDay": 10,
+      "cheat": false,
+      "total": 26,
+      "line": "Night shift 10 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
+      "note": "Night block. Eat white bean tomato pasta before work.",
+      "meals": [
+        {
+          "slot": "Before shift",
+          "when": "When you wake, before work",
+          "tag": "Steady",
+          "g": 17,
+          "name": "White bean tomato pasta with toast",
+          "items": [
+            "1/2 cup white beans, rinsed",
+            "1 cup cooked whole wheat pasta",
+            "tomato",
+            "a handful of spinach",
+            "olive oil",
+            "1 slice whole grain bread"
+          ],
+          "method": "Boil the pasta. Toss with beans, tomato, and spinach. Toast on the side."
+        },
+        {
+          "slot": "Mid shift",
+          "when": "Pack this",
+          "tag": "Steady",
+          "g": 6,
+          "name": "Turkey with toast and pepper",
+          "items": [
+            "a palm of ground turkey",
+            "cumin",
+            "1 slice whole grain bread",
+            "1 bell pepper",
+            "tomato",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the toast with the pepper."
+        },
+        {
+          "slot": "After shift",
+          "when": "Smaller, then sleep",
+          "tag": "Calm",
+          "g": 3,
+          "name": "Peach and pumpkin seeds",
+          "items": [
+            "1 peach",
+            "2 tbsp pumpkin seeds",
+            "plain yogurt"
+          ],
+          "method": "Chop the peach into the yogurt. Seeds on top."
+        }
+      ]
+    },
+    {
+      "n": 39,
+      "shift": "night",
+      "blockDay": 11,
+      "cheat": true,
+      "total": 31,
+      "line": "Cheat day. Night shift 11 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
+      "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "meals": [
+        {
+          "slot": "Before shift",
+          "when": "When you wake, before work",
+          "tag": "Gut",
+          "g": 18,
+          "name": "Lentil carrot stew with a side salad",
+          "items": [
+            "1/2 cup lentils, rinsed",
+            "1 cup carrots",
+            "1/2 cup crushed tomato",
+            "cumin",
+            "1 slice whole grain bread",
+            "a handful of salad greens",
+            "cucumber",
+            "lemon"
+          ],
+          "method": "Simmer lentils, carrots, and tomato 15 minutes. Bread on the side. Put a salad beside it."
+        },
+        {
+          "slot": "Mid shift",
+          "when": "Pack this",
+          "tag": "Steady",
+          "g": 9,
+          "name": "Grilled cheese and tomato soup",
+          "items": [
+            "2 slices whole grain bread",
+            "a little cheddar",
+            "tomato",
+            "tomato soup, no onion"
+          ],
+          "method": "Toast the cheese sandwich in a pan. Heat the soup. Check the soup label for onion."
+        },
+        {
+          "slot": "After shift",
+          "when": "Smaller, then sleep",
+          "tag": "Brain",
+          "g": 4,
+          "name": "Blueberries and flax",
+          "items": [
+            "1/2 cup blueberries",
+            "1 tbsp ground flax",
+            "plain yogurt"
+          ],
+          "method": "Yogurt, berries, flax. Small."
+        }
+      ]
+    },
+    {
+      "n": 40,
+      "shift": "night",
+      "blockDay": 12,
+      "cheat": false,
+      "total": 37,
+      "line": "Night shift 12 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
+      "note": "Night block. Eat lentil carrot stew before work.",
+      "meals": [
+        {
+          "slot": "Before shift",
+          "when": "When you wake, before work",
+          "tag": "Gut",
+          "g": 19,
+          "name": "Lentil carrot stew with avocado",
+          "items": [
+            "1/2 cup lentils, rinsed",
+            "1 cup carrots",
+            "1/2 cup crushed tomato",
+            "cumin",
+            "1 slice whole grain bread",
+            "1/4 avocado"
+          ],
+          "method": "Simmer lentils, carrots, and tomato 15 minutes. Bread on the side. Avocado on top at the last minute."
+        },
+        {
+          "slot": "Mid shift",
+          "when": "Pack this",
+          "tag": "Steady",
+          "g": 5,
+          "name": "Turkey with tortilla and pepper",
+          "items": [
+            "a palm of ground turkey",
+            "cumin",
+            "1 corn tortilla",
+            "1 bell pepper",
+            "tomato",
+            "olive oil"
+          ],
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the tortilla with the pepper."
+        },
+        {
+          "slot": "After shift",
+          "when": "Smaller, then sleep",
+          "tag": "Gut",
+          "g": 13,
+          "name": "Carrot coins and hummus mash",
+          "items": [
+            "1 cup carrots",
+            "3/4 cup chickpeas, rinsed",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Mash a few chickpeas with lemon. Carrot coins. Stop when you are not hungry."
+        }
+      ]
+    },
+    {
+      "n": 41,
+      "shift": "night",
+      "blockDay": 13,
+      "cheat": false,
+      "total": 28,
+      "line": "Night shift 13 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
+      "note": "Night block. Eat lentil carrot stew before work.",
+      "meals": [
+        {
+          "slot": "Before shift",
+          "when": "When you wake, before work",
+          "tag": "Gut",
+          "g": 19,
+          "name": "Lentil carrot stew with toast",
+          "items": [
+            "1/2 cup lentils, rinsed",
+            "1 cup carrots",
+            "1/2 cup crushed tomato",
+            "cumin",
+            "1 slice whole grain bread",
+            "1 slice whole grain bread"
+          ],
+          "method": "Simmer lentils, carrots, and tomato 15 minutes. Bread on the side. Toast on the side."
+        },
+        {
+          "slot": "Mid shift",
+          "when": "Pack this",
+          "tag": "Brain",
+          "g": 3,
+          "name": "Salmon plate with rice and spinach",
+          "items": [
+            "1 salmon fillet",
+            "1/2 cup cooked brown rice",
+            "a handful of spinach",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "400 F, 15 to 18 minutes. Lemon at the end. Eat it with rice and spinach."
+        },
+        {
+          "slot": "After shift",
+          "when": "Smaller, then sleep",
+          "tag": "Steady",
+          "g": 6,
+          "name": "Half avocado and lemon",
+          "items": [
+            "1/4 avocado",
+            "lemon",
+            "1 slice whole grain bread"
+          ],
+          "method": "A quarter avocado on one slice of toast."
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "shift": "night",
+      "blockDay": 14,
+      "cheat": false,
+      "total": 25,
+      "line": "Night shift 14 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
+      "note": "Night block. Eat chickpea pepper skillet before work.",
+      "meals": [
+        {
+          "slot": "Before shift",
+          "when": "When you wake, before work",
+          "tag": "Gut",
+          "g": 20,
+          "name": "Chickpea pepper skillet with a side salad",
+          "items": [
+            "3/4 cup chickpeas, rinsed",
+            "1 bell pepper",
+            "tomato",
+            "cumin",
+            "1/2 cup cooked brown rice",
+            "a handful of salad greens",
+            "cucumber",
+            "lemon",
+            "1 apple, skin on"
+          ],
+          "method": "Warm chickpeas with pepper and tomato. Serve on rice. Put a salad beside it. Apple on the side."
+        },
+        {
+          "slot": "Mid shift",
+          "when": "Pack this",
+          "tag": "Brain",
+          "g": 4,
+          "name": "Salmon plate with cucumber and bread",
+          "items": [
+            "1 salmon fillet",
+            "cucumber",
+            "1 slice whole grain bread",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "400 F, 15 to 18 minutes. Lemon at the end. Eat it with cucumber and bread."
+        },
+        {
+          "slot": "After shift",
+          "when": "Smaller, then sleep",
+          "tag": "Calm",
+          "g": 1,
+          "name": "Cherries and yogurt",
+          "items": [
+            "1/2 cup cherries",
+            "plain yogurt",
+            "a spoon of honey"
+          ],
+          "method": "Cherries in the yogurt. A spoon of honey if you want it. Then sleep."
+        }
+      ]
+    },
+    {
+      "n": 43,
+      "shift": "off",
+      "blockDay": 1,
+      "cheat": true,
+      "total": 25,
+      "line": "Cheat day. Off day 1 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Steady",
+          "g": 4,
+          "name": "Eggs and spinach on a corn tortilla",
+          "items": [
+            "2 eggs",
+            "a handful of spinach",
+            "tomato",
+            "1 corn tortilla"
+          ],
+          "method": "Wilt the spinach in the pan with the eggs. Warm the tortilla in a dry pan."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Calm",
+          "g": 4,
+          "name": "Ice cream and an apple",
+          "items": [
+            "a bowl of ice cream",
+            "1 apple, skin on"
+          ],
+          "method": "Apple first or apple after. Eat the apple. That is the fibre."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Gut",
+          "g": 17,
+          "name": "Chickpea pepper skillet with avocado",
+          "items": [
+            "3/4 cup chickpeas, rinsed",
+            "1 bell pepper",
+            "tomato",
+            "cumin",
+            "1/2 cup cooked brown rice",
+            "1/4 avocado"
+          ],
+          "method": "Warm chickpeas with pepper and tomato. Serve on rice. Avocado on top at the last minute."
+        }
+      ]
+    },
+    {
+      "n": 44,
+      "shift": "off",
+      "blockDay": 2,
+      "cheat": false,
+      "total": 26,
+      "line": "Off day 2 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Chickpea pepper skillet is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Steady",
+          "g": 5,
+          "name": "Eggs and spinach with toast",
+          "items": [
+            "2 eggs",
+            "a handful of spinach",
+            "tomato",
+            "1 slice whole grain bread"
+          ],
+          "method": "Wilt the spinach in the pan with the eggs. Toast the bread while the eggs cook."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Brain",
+          "g": 4,
+          "name": "Salmon plate with tomato and quinoa",
+          "items": [
+            "1 salmon fillet",
+            "tomato",
+            "1/2 cup cooked quinoa",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "400 F, 15 to 18 minutes. Lemon at the end. Eat it with tomato and quinoa."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Gut",
+          "g": 17,
+          "name": "Chickpea pepper skillet with toast",
+          "items": [
+            "3/4 cup chickpeas, rinsed",
+            "1 bell pepper",
+            "tomato",
+            "cumin",
+            "1/2 cup cooked brown rice",
+            "1 slice whole grain bread"
+          ],
+          "method": "Warm chickpeas with pepper and tomato. Serve on rice. Toast on the side."
+        }
+      ]
+    },
+    {
+      "n": 45,
+      "shift": "off",
+      "blockDay": 3,
+      "cheat": false,
+      "total": 26,
+      "line": "Off day 3 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Baked potato and broccoli is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Steady",
+          "g": 3,
+          "name": "Eggs and tomato on a corn tortilla",
+          "items": [
+            "2 eggs",
+            "tomato",
+            "1 corn tortilla"
+          ],
+          "method": "Eggs in a small pan. Tomato on the side, raw. Warm the tortilla in a dry pan."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Gut",
+          "g": 12,
+          "name": "Egg and bean wrap",
+          "items": [
+            "2 eggs",
+            "1/2 cup black beans, rinsed",
+            "1 whole wheat tortilla",
+            "a handful of spinach",
+            "cumin"
+          ],
+          "method": "Scramble the eggs. Warm the beans. Roll them in the tortilla with spinach."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Steady",
+          "g": 11,
+          "name": "Baked potato and broccoli with a side salad",
+          "items": [
+            "1 potato, skin on",
+            "1 cup broccoli",
+            "a little cheddar",
+            "olive oil",
+            "a handful of salad greens",
+            "cucumber",
+            "lemon"
+          ],
+          "method": "Microwave or bake the potato. Steam the broccoli. Cheese. Eat the skin. Put a salad beside it."
+        }
+      ]
+    },
+    {
+      "n": 46,
+      "shift": "off",
+      "blockDay": 4,
+      "cheat": false,
+      "total": 27,
+      "line": "Off day 4 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Baked potato and broccoli is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Steady",
+          "g": 4,
+          "name": "Eggs and tomato with toast",
+          "items": [
+            "2 eggs",
+            "tomato",
+            "1 slice whole grain bread"
+          ],
+          "method": "Eggs in a small pan. Tomato on the side, raw. Toast the bread while the eggs cook."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Gut",
+          "g": 11,
+          "name": "Egg and chickpea salad",
+          "items": [
+            "2 eggs",
+            "3/4 cup chickpeas, rinsed",
+            "cucumber",
+            "a handful of salad greens",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Chop the eggs. Toss with chickpeas, cucumber, and greens."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Steady",
+          "g": 12,
+          "name": "Baked potato and broccoli with avocado",
+          "items": [
+            "1 potato, skin on",
+            "1 cup broccoli",
+            "a little cheddar",
+            "olive oil",
+            "1/4 avocado"
+          ],
+          "method": "Microwave or bake the potato. Steam the broccoli. Cheese. Eat the skin. Avocado on top at the last minute."
+        }
+      ]
+    },
+    {
+      "n": 47,
+      "shift": "off",
+      "blockDay": 5,
+      "cheat": false,
+      "total": 34,
+      "line": "Off day 5 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Baked potato and broccoli is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Gut",
+          "g": 10,
+          "name": "Eggs and beans on a corn tortilla",
+          "items": [
+            "2 eggs",
+            "1/2 cup black beans, rinsed",
+            "cumin",
+            "1 corn tortilla"
+          ],
+          "method": "Scramble the eggs. Warm the beans with cumin. Warm the tortilla in a dry pan."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Steady",
+          "g": 12,
+          "name": "Egg and avocado toast",
+          "items": [
+            "2 eggs",
+            "1/2 avocado",
+            "2 slices whole grain bread",
+            "tomato"
+          ],
+          "method": "Toast. Avocado, eggs, tomato."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Steady",
+          "g": 12,
+          "name": "Baked potato and broccoli with toast",
+          "items": [
+            "1 potato, skin on",
+            "1 cup broccoli",
+            "a little cheddar",
+            "olive oil",
+            "1 slice whole grain bread"
+          ],
+          "method": "Microwave or bake the potato. Steam the broccoli. Cheese. Eat the skin. Toast on the side."
+        }
+      ]
+    },
+    {
+      "n": 48,
+      "shift": "off",
+      "blockDay": 6,
+      "cheat": false,
+      "total": 37,
+      "line": "Off day 6 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Sweet potato and white beans is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Gut",
+          "g": 11,
+          "name": "Eggs and beans with toast",
+          "items": [
+            "2 eggs",
+            "1/2 cup black beans, rinsed",
+            "cumin",
+            "1 slice whole grain bread"
+          ],
+          "method": "Scramble the eggs. Warm the beans with cumin. Toast the bread while the eggs cook."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Gut",
+          "g": 13,
+          "name": "Egg and lentil bowl",
+          "items": [
+            "2 eggs",
+            "1/2 cup lentils, rinsed",
+            "1 cup carrots",
+            "a handful of spinach",
+            "lemon"
+          ],
+          "method": "Warm the lentils and carrots. Top with the eggs."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Calm",
+          "g": 13,
+          "name": "Sweet potato and white beans with a side salad",
+          "items": [
+            "1 sweet potato, skin on",
+            "1/2 cup white beans, rinsed",
+            "a handful of spinach",
+            "lemon",
+            "olive oil",
+            "a handful of salad greens",
+            "cucumber",
+            "lemon"
+          ],
+          "method": "Split the sweet potato. Pile on the beans and spinach. Put a salad beside it."
+        }
+      ]
+    },
+    {
+      "n": 49,
+      "shift": "off",
+      "blockDay": 7,
+      "cheat": false,
+      "total": 28,
+      "line": "Off day 7 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Sweet potato and white beans is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Steady",
+          "g": 4,
+          "name": "Eggs and pepper on a corn tortilla",
+          "items": [
+            "2 eggs",
+            "1 bell pepper",
+            "1 corn tortilla"
+          ],
+          "method": "Slice the pepper thin and soften it, then add the eggs. Warm the tortilla in a dry pan."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Calm",
+          "g": 10,
+          "name": "Egg and white beans",
+          "items": [
+            "2 eggs",
+            "1/2 cup white beans, rinsed",
+            "tomato",
+            "1 slice whole grain bread",
+            "olive oil"
+          ],
+          "method": "Warm the beans with tomato. Eggs on the side. Toast if you want it."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Calm",
+          "g": 14,
+          "name": "Sweet potato and white beans with avocado",
+          "items": [
+            "1 sweet potato, skin on",
+            "1/2 cup white beans, rinsed",
+            "a handful of spinach",
+            "lemon",
+            "olive oil",
+            "1/4 avocado"
+          ],
+          "method": "Split the sweet potato. Pile on the beans and spinach. Avocado on top at the last minute."
+        }
+      ]
+    },
+    {
+      "n": 50,
+      "shift": "off",
+      "blockDay": 8,
+      "cheat": false,
+      "total": 24,
+      "line": "Off day 8 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Sweet potato and white beans is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Steady",
+          "g": 5,
+          "name": "Eggs and pepper with toast",
+          "items": [
+            "2 eggs",
+            "1 bell pepper",
+            "1 slice whole grain bread"
+          ],
+          "method": "Slice the pepper thin and soften it, then add the eggs. Toast the bread while the eggs cook."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Steady",
+          "g": 5,
+          "name": "Egg and sweet potato",
+          "items": [
+            "2 eggs",
+            "1 sweet potato, skin on",
+            "a handful of spinach",
+            "olive oil"
+          ],
+          "method": "Microwave the sweet potato 5 minutes. Eggs and spinach on top."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Calm",
+          "g": 14,
+          "name": "Sweet potato and white beans with toast",
+          "items": [
+            "1 sweet potato, skin on",
+            "1/2 cup white beans, rinsed",
+            "a handful of spinach",
+            "lemon",
+            "olive oil",
+            "1 slice whole grain bread"
+          ],
+          "method": "Split the sweet potato. Pile on the beans and spinach. Toast on the side."
+        }
+      ]
+    },
+    {
+      "n": 51,
+      "shift": "off",
+      "blockDay": 9,
+      "cheat": false,
+      "total": 27,
+      "line": "Off day 9 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Lentil spinach soup is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Steady",
+          "g": 7,
+          "name": "Eggs and greens on a corn tortilla",
+          "items": [
+            "2 eggs",
+            "a handful of salad greens",
+            "1 corn tortilla",
+            "1 apple, skin on"
+          ],
+          "method": "Eggs first. Greens with lemon after, not cooked to death. Warm the tortilla in a dry pan. Apple on the side."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Steady",
+          "g": 4,
+          "name": "Egg and pepper tortilla",
+          "items": [
+            "2 eggs",
+            "1 bell pepper",
+            "1 corn tortilla",
+            "a little cheddar"
+          ],
+          "method": "Soften the pepper. Scramble in the eggs. Cheese and tortilla."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Gut",
+          "g": 16,
+          "name": "Lentil spinach soup with a side salad",
+          "items": [
+            "1/2 cup lentils, rinsed",
+            "a handful of spinach",
+            "1/2 cup crushed tomato",
+            "1 cup carrots",
+            "lemon",
+            "a handful of salad greens",
+            "cucumber",
+            "lemon"
+          ],
+          "method": "Simmer lentils, tomato, and carrots 15 minutes. Spinach at the end. Put a salad beside it."
+        }
+      ]
+    },
+    {
+      "n": 52,
+      "shift": "off",
+      "blockDay": 10,
+      "cheat": false,
+      "total": 28,
+      "line": "Off day 10 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Lentil spinach soup is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Steady",
+          "g": 4,
+          "name": "Eggs and greens with toast",
+          "items": [
+            "2 eggs",
+            "a handful of salad greens",
+            "1 slice whole grain bread"
+          ],
+          "method": "Eggs first. Greens with lemon after, not cooked to death. Toast the bread while the eggs cook."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Steady",
+          "g": 7,
+          "name": "Egg and broccoli rice",
+          "items": [
+            "2 eggs",
+            "1 cup broccoli",
+            "1/2 cup cooked brown rice",
+            "olive oil"
+          ],
+          "method": "Steam broccoli. Warm the rice. Eggs on top."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Gut",
+          "g": 17,
+          "name": "Lentil spinach soup with avocado",
+          "items": [
+            "1/2 cup lentils, rinsed",
+            "a handful of spinach",
+            "1/2 cup crushed tomato",
+            "1 cup carrots",
+            "lemon",
+            "1/4 avocado"
+          ],
+          "method": "Simmer lentils, tomato, and carrots 15 minutes. Spinach at the end. Avocado on top at the last minute."
+        }
+      ]
+    },
+    {
+      "n": 53,
+      "shift": "off",
+      "blockDay": 11,
+      "cheat": false,
+      "total": 41,
+      "line": "Off day 11 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Lentil spinach soup is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Gut",
+          "g": 7,
+          "name": "Eggs and broccoli on a corn tortilla",
+          "items": [
+            "2 eggs",
+            "1 cup broccoli",
+            "1 corn tortilla"
+          ],
+          "method": "Steam the broccoli 4 minutes. Eggs beside it. Warm the tortilla in a dry pan."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Gut",
+          "g": 17,
+          "name": "Hummus-style chickpea mash plate",
+          "items": [
+            "3/4 cup chickpeas, rinsed",
+            "lemon",
+            "olive oil",
+            "1 slice whole grain bread",
+            "1 cup carrots",
+            "cucumber"
+          ],
+          "method": "Mash half the chickpeas with lemon and oil. Eat the rest whole. Bread and carrots."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Gut",
+          "g": 17,
+          "name": "Lentil spinach soup with toast",
+          "items": [
+            "1/2 cup lentils, rinsed",
+            "a handful of spinach",
+            "1/2 cup crushed tomato",
+            "1 cup carrots",
+            "lemon",
+            "1 slice whole grain bread"
+          ],
+          "method": "Simmer lentils, tomato, and carrots 15 minutes. Spinach at the end. Toast on the side."
+        }
+      ]
+    },
+    {
+      "n": 54,
+      "shift": "off",
+      "blockDay": 12,
+      "cheat": true,
+      "total": 35,
+      "line": "Cheat day. Off day 12 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Gut",
+          "g": 8,
+          "name": "Eggs and broccoli with toast",
+          "items": [
+            "2 eggs",
+            "1 cup broccoli",
+            "1 slice whole grain bread"
+          ],
+          "method": "Steam the broccoli 4 minutes. Eggs beside it. Toast the bread while the eggs cook."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Brain",
+          "g": 11,
+          "name": "Chocolate chip oats",
+          "items": [
+            "1/2 cup rolled oats",
+            "milk or soy milk",
+            "1/2 cup raspberries",
+            "a small handful of chocolate chips",
+            "1 tbsp ground flax"
+          ],
+          "method": "Simmer the oats. Chocolate and berries at the end. Still oats, just a fun bowl."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Gut",
+          "g": 16,
+          "name": "Bean and zucchini skillet with a side salad",
+          "items": [
+            "1/2 cup black beans, rinsed",
+            "1 zucchini",
+            "tomato",
+            "cumin",
+            "1/2 cup cooked quinoa",
+            "a handful of salad greens",
+            "cucumber",
+            "lemon"
+          ],
+          "method": "Soften the zucchini. Add beans and tomato. Quinoa underneath. Put a salad beside it."
+        }
+      ]
+    },
+    {
+      "n": 55,
+      "shift": "off",
+      "blockDay": 13,
+      "cheat": false,
+      "total": 36,
+      "line": "Off day 13 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Bean and zucchini skillet is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Steady",
+          "g": 12,
+          "name": "Avocado toast",
+          "items": [
+            "2 slices whole grain bread",
+            "1/2 avocado",
+            "tomato",
+            "lemon"
+          ],
+          "method": "Toast. Mash the avocado with lemon. Tomato on top."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Brain",
+          "g": 7,
+          "name": "Tuna-free salmon salad toast",
+          "items": [
+            "2 slices whole grain bread",
+            "1 salmon fillet",
+            "plain yogurt",
+            "cucumber",
+            "lemon"
+          ],
+          "method": "Flake a cooked fillet. Stir with a spoon of yogurt and lemon. Cucumber on the toast."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Gut",
+          "g": 17,
+          "name": "Bean and zucchini skillet with avocado",
+          "items": [
+            "1/2 cup black beans, rinsed",
+            "1 zucchini",
+            "tomato",
+            "cumin",
+            "1/2 cup cooked quinoa",
+            "1/4 avocado"
+          ],
+          "method": "Soften the zucchini. Add beans and tomato. Quinoa underneath. Avocado on top at the last minute."
+        }
+      ]
+    },
+    {
+      "n": 56,
+      "shift": "off",
+      "blockDay": 14,
+      "cheat": false,
+      "total": 38,
+      "line": "Off day 14 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
+      "note": "Off block. Bean and zucchini skillet is the main cook.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "While you are awake",
+          "tag": "Steady",
+          "g": 9,
+          "name": "Peanut and banana toast",
+          "items": [
+            "2 slices whole grain bread",
+            "1 tbsp peanut butter",
+            "1/2 banana"
+          ],
+          "method": "Toast. Peanut butter, then banana slices."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Main plate",
+          "tag": "Calm",
+          "g": 12,
+          "name": "Zucchini bean skillet",
+          "items": [
+            "1 zucchini",
+            "1/2 cup white beans, rinsed",
+            "tomato",
+            "cumin",
+            "1 slice whole grain bread"
+          ],
+          "method": "Soften the zucchini. Add beans and tomato. Toast on the side."
+        },
+        {
+          "slot": "Dinner",
+          "when": "Earlier if sleep is soon",
+          "tag": "Gut",
+          "g": 17,
+          "name": "Bean and zucchini skillet with toast",
+          "items": [
+            "1/2 cup black beans, rinsed",
+            "1 zucchini",
+            "tomato",
+            "cumin",
+            "1/2 cup cooked quinoa",
+            "1 slice whole grain bread"
+          ],
+          "method": "Soften the zucchini. Add beans and tomato. Quinoa underneath. Toast on the side."
+        }
+      ]
+    },
+    {
+      "n": 57,
+      "shift": "day",
+      "blockDay": 1,
+      "cheat": false,
+      "total": 26,
+      "line": "Day shift 1 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Salmon, beans, and greens tonight, if you are on days.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Steady",
+          "g": 7,
+          "name": "Cheese and tomato toast",
+          "items": [
+            "2 slices whole grain bread",
+            "a little cheddar",
+            "tomato"
+          ],
+          "method": "Toast. Cheese and tomato. Warm it if you want the cheese soft."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 12,
+          "name": "Spinach lentil wrap",
+          "items": [
+            "1 whole wheat tortilla",
+            "1/2 cup lentils, rinsed",
+            "a handful of spinach",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Warm lentils. Roll with spinach and lemon."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Brain",
+          "g": 7,
+          "name": "Salmon, beans, and greens",
+          "items": [
+            "1 salmon fillet",
+            "1/2 cup white beans, rinsed",
+            "a handful of salad greens",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Bake the salmon 15 to 18 minutes. Warm the beans. Greens with lemon."
+        }
+      ]
+    },
+    {
+      "n": 58,
+      "shift": "day",
+      "blockDay": 2,
+      "cheat": false,
+      "total": 32,
+      "line": "Day shift 2 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Chicken, apple, and sweet potato tonight, if you are on days.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Steady",
+          "g": 10,
+          "name": "Jam and apple toast",
+          "items": [
+            "2 slices whole grain bread",
+            "a spoon of jam",
+            "1 apple, skin on"
+          ],
+          "method": "Toast and jam. Eat the apple whole, skin on."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 14,
+          "name": "Pepper chickpea wrap",
+          "items": [
+            "1 whole wheat tortilla",
+            "3/4 cup chickpeas, rinsed",
+            "1 bell pepper",
+            "lemon",
+            "olive oil"
+          ],
+          "method": "Toss chickpeas with pepper and lemon. Roll in the tortilla."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Steady",
+          "g": 8,
+          "name": "Chicken, apple, and sweet potato",
+          "items": [
+            "1 chicken thigh",
+            "1 apple, skin on",
+            "1 sweet potato, skin on",
+            "olive oil"
+          ],
+          "method": "400 F. Chicken and sweet potato. Eat the apple whole on the side."
+        }
+      ]
+    },
+    {
+      "n": 59,
+      "shift": "day",
+      "blockDay": 3,
+      "cheat": true,
+      "total": 34,
+      "line": "Cheat day. Day shift 3 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Gut",
+          "g": 10,
+          "name": "Bean mash toast",
+          "items": [
+            "1 slice whole grain bread",
+            "1/2 cup white beans, rinsed",
+            "lemon",
+            "cucumber"
+          ],
+          "method": "Mash the beans with lemon. Spread on toast. Cucumber beside it."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Gut",
+          "g": 14,
+          "name": "Cheese quesadilla, no onion",
+          "items": [
+            "1 whole wheat tortilla",
+            "a little mozzarella",
+            "1/2 cup black beans, rinsed",
+            "1 bell pepper",
+            "salsa with no onion"
+          ],
+          "method": "Warm beans and pepper. Cheese in the tortilla. Brown both sides. Salsa only if it has no onion."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Steady",
+          "g": 10,
+          "name": "Turkey, pear, and quinoa",
+          "items": [
+            "a palm of ground turkey",
+            "1 pear, skin on",
+            "1/2 cup cooked quinoa",
+            "a handful of spinach",
+            "olive oil"
+          ],
+          "method": "Brown the turkey. Quinoa and spinach. Pear after, not in the pan."
+        }
+      ]
+    },
+    {
+      "n": 60,
+      "shift": "day",
+      "blockDay": 4,
+      "cheat": false,
+      "total": 27,
+      "line": "Day shift 4 of 14. Stop caffeine about 6 hours before sleep.",
+      "note": "Egg, potato, and broccoli night plate tonight, if you are on days.",
+      "meals": [
+        {
+          "slot": "Breakfast",
+          "when": "After you wake",
+          "tag": "Steady",
+          "g": 5,
+          "name": "Egg and pepper toast",
+          "items": [
+            "1 slice whole grain bread",
+            "1 egg",
+            "1 bell pepper"
+          ],
+          "method": "Scramble one egg with the pepper. Pile it on toast."
+        },
+        {
+          "slot": "Lunch",
+          "when": "Mid shift",
+          "tag": "Calm",
+          "g": 13,
+          "name": "Carrot and white bean mash",
+          "items": [
+            "1 cup carrots",
+            "1/2 cup white beans, rinsed",
+            "lemon",
+            "olive oil",
+            "1 slice whole grain bread"
+          ],
+          "method": "Mash the beans. Eat with carrot sticks and bread."
+        },
+        {
+          "slot": "Dinner",
+          "when": "After work",
+          "tag": "Steady",
+          "g": 9,
+          "name": "Egg, potato, and broccoli night plate",
+          "items": [
+            "2 eggs",
+            "1 potato, skin on",
+            "1 cup broccoli",
+            "olive oil"
+          ],
+          "method": "Potato and broccoli. Top with eggs. Fine on a day off too."
+        }
+      ]
+    }
+  ],
+  "trips": [
+    {
+      "id": 1,
+      "title": "Trip 1, days 1 to 14",
+      "blurb": "Day shifts. Buy the pantry tubs this time.",
+      "shift": "day",
+      "groups": [
+        {
+          "aisle": "Fruit",
+          "color": "#BC6C25",
+          "items": [
+            {
+              "id": "t1-apples",
+              "name": "Apples",
+              "qty": "6 apples"
+            },
+            {
+              "id": "t1-lemons",
+              "name": "Lemons",
+              "qty": "4 lemons"
+            },
+            {
+              "id": "t1-pears",
+              "name": "Pears",
+              "qty": "3 pears"
+            }
+          ]
+        },
+        {
+          "aisle": "Produce",
+          "color": "#2D6A4F",
+          "items": [
+            {
+              "id": "t1-bell-peppers",
+              "name": "Bell peppers",
+              "qty": "5 peppers"
+            },
+            {
+              "id": "t1-broccoli",
+              "name": "Broccoli",
+              "qty": "2 crowns"
+            },
+            {
+              "id": "t1-carrots",
+              "name": "Carrots",
+              "qty": "1 bag"
+            },
+            {
+              "id": "t1-cucumbers",
+              "name": "Cucumbers",
+              "qty": "2 cucumbers"
+            },
+            {
+              "id": "t1-potatoes",
+              "name": "Potatoes",
+              "qty": "4 potatoes"
+            },
+            {
+              "id": "t1-salad-greens",
+              "name": "Salad greens",
+              "qty": "1 box"
+            },
+            {
+              "id": "t1-spinach",
+              "name": "Spinach",
+              "qty": "2 boxes"
+            },
+            {
+              "id": "t1-sweet-potatoes",
+              "name": "Sweet potatoes",
+              "qty": "3 sweet potatos"
+            },
+            {
+              "id": "t1-tomatoes",
+              "name": "Tomatoes",
+              "qty": "5 tomatoes"
+            },
+            {
+              "id": "t1-zucchini",
+              "name": "Zucchini",
+              "qty": "5 zucchinis"
+            }
+          ]
+        },
+        {
+          "aisle": "Protein",
+          "color": "#1D4E89",
+          "items": [
+            {
+              "id": "t1-chicken-thighs",
+              "name": "Chicken thighs",
+              "qty": "8 thighs"
+            },
+            {
+              "id": "t1-salmon-fillets",
+              "name": "Salmon fillets",
+              "qty": "6 fillets"
+            }
+          ]
+        },
+        {
+          "aisle": "Dairy",
+          "color": "#5C4D7A",
+          "items": [
+            {
+              "id": "t1-cheddar",
+              "name": "Cheddar",
+              "qty": "1 block"
+            },
+            {
+              "id": "t1-milk-or-fortified-soy-milk",
+              "name": "Milk or fortified soy milk",
+              "qty": "2 cartons"
+            }
+          ]
+        },
+        {
+          "aisle": "Bread",
+          "color": "#9A5416",
+          "items": [
+            {
+              "id": "t1-whole-grain-buns",
+              "name": "Whole grain buns",
+              "qty": "1 pack"
+            }
+          ]
+        },
+        {
+          "aisle": "Cans",
+          "color": "#1B4332",
+          "items": [
+            {
+              "id": "t1-canned-black-beans",
+              "name": "Canned black beans",
+              "qty": "1 can"
+            },
+            {
+              "id": "t1-canned-chickpeas",
+              "name": "Canned chickpeas",
+              "qty": "3 cans"
+            },
+            {
+              "id": "t1-canned-lentils",
+              "name": "Canned lentils",
+              "qty": "2 cans"
+            }
+          ]
+        },
+        {
+          "aisle": "Grains",
+          "color": "#8A6A2F",
+          "items": [
+            {
+              "id": "t1-brown-rice",
+              "name": "Brown rice",
+              "qty": "buy once, it lasts"
+            },
+            {
+              "id": "t1-chia-seed",
+              "name": "Chia seed",
+              "qty": "buy once, it lasts"
+            },
+            {
+              "id": "t1-cumin",
+              "name": "Cumin",
+              "qty": "buy once, it lasts"
+            },
+            {
+              "id": "t1-ground-flax",
+              "name": "Ground flax",
+              "qty": "buy once, it lasts"
+            },
+            {
+              "id": "t1-olive-oil",
+              "name": "Olive oil",
+              "qty": "buy once, it lasts"
+            },
+            {
+              "id": "t1-quinoa",
+              "name": "Quinoa",
+              "qty": "buy once, it lasts"
+            },
+            {
+              "id": "t1-rolled-oats",
+              "name": "Rolled oats",
+              "qty": "buy once, it lasts"
+            },
+            {
+              "id": "t1-walnuts",
+              "name": "Walnuts",
+              "qty": "buy once, it lasts"
+            },
+            {
+              "id": "t1-whole-wheat-pasta",
+              "name": "Whole wheat pasta",
+              "qty": "1 box"
+            }
+          ]
+        },
+        {
+          "aisle": "Frozen",
+          "color": "#3D5A80",
+          "items": [
+            {
+              "id": "t1-blueberries,-fresh-or-frozen",
+              "name": "Blueberries, fresh or frozen",
+              "qty": "1 bag"
+            },
+            {
+              "id": "t1-raspberries,-fresh-or-frozen",
+              "name": "Raspberries, fresh or frozen",
+              "qty": "1 bag"
+            },
+            {
+              "id": "t1-strawberries,-fresh-or-frozen",
+              "name": "Strawberries, fresh or frozen",
+              "qty": "1 bag"
+            }
+          ]
+        },
+        {
+          "aisle": "Treats",
+          "color": "#C73E54",
+          "items": [
+            {
+              "id": "t1-burger-patties",
+              "name": "Burger patties",
+              "qty": "1 patty"
+            },
+            {
+              "id": "t1-cheese-pizza,-no-onion",
+              "name": "Cheese pizza, no onion",
+              "qty": "1 pizza"
+            }
+          ]
+        }
+      ],
+      "still": []
+    },
+    {
+      "id": 2,
+      "title": "Trip 2, days 15 to 28",
+      "blurb": "First 14 days off. Mostly fresh food. The oats tub should still be here.",
+      "shift": "off",
+      "groups": [
+        {
+          "aisle": "Fruit",
+          "color": "#BC6C25",
+          "items": [
+            {
+              "id": "t2-apples",
+              "name": "Apples",
+              "qty": "6 apples"
+            },
+            {
+              "id": "t2-bananas",
+              "name": "Bananas",
+              "qty": "2 bananas"
+            },
+            {
+              "id": "t2-lemons",
+              "name": "Lemons",
+              "qty": "2 lemons"
+            },
+            {
+              "id": "t2-peaches",
+              "name": "Peaches",
+              "qty": "3 peaches"
+            },
+            {
+              "id": "t2-pears",
+              "name": "Pears",
+              "qty": "2 pears"
+            }
+          ]
+        },
+        {
+          "aisle": "Produce",
+          "color": "#2D6A4F",
+          "items": [
+            {
+              "id": "t2-bell-peppers",
+              "name": "Bell peppers",
+              "qty": "7 peppers"
+            },
+            {
+              "id": "t2-broccoli",
+              "name": "Broccoli",
+              "qty": "3 crowns"
+            },
+            {
+              "id": "t2-carrots",
+              "name": "Carrots",
+              "qty": "1 bag"
+            },
+            {
+              "id": "t2-cucumbers",
+              "name": "Cucumbers",
+              "qty": "1 cucumber"
+            },
+            {
+              "id": "t2-potatoes",
+              "name": "Potatoes",
+              "qty": "5 potatoes"
+            },
+            {
+              "id": "t2-salad-greens",
+              "name": "Salad greens",
+              "qty": "1 box"
+            },
+            {
+              "id": "t2-spinach",
+              "name": "Spinach",
+              "qty": "1 box"
+            },
+            {
+              "id": "t2-sweet-potatoes",
+              "name": "Sweet potatoes",
+              "qty": "3 sweet potatos"
+            },
+            {
+              "id": "t2-tomatoes",
+              "name": "Tomatoes",
+              "qty": "4 tomatoes"
+            },
+            {
+              "id": "t2-zucchini",
+              "name": "Zucchini",
+              "qty": "2 zucchinis"
+            }
+          ]
+        },
+        {
+          "aisle": "Protein",
+          "color": "#1D4E89",
+          "items": [
+            {
+              "id": "t2-chicken-thighs",
+              "name": "Chicken thighs",
+              "qty": "7 thighs"
+            },
+            {
+              "id": "t2-ground-turkey",
+              "name": "Ground turkey",
+              "qty": "3 packs"
+            },
+            {
+              "id": "t2-salmon-fillets",
+              "name": "Salmon fillets",
+              "qty": "2 fillets"
+            }
+          ]
+        },
+        {
+          "aisle": "Dairy",
+          "color": "#5C4D7A",
+          "items": [
+            {
+              "id": "t2-milk-or-fortified-soy-milk",
+              "name": "Milk or fortified soy milk",
+              "qty": "2 cartons"
+            },
+            {
+              "id": "t2-plain-yogurt",
+              "name": "Plain yogurt",
+              "qty": "1 tub"
+            }
+          ]
+        },
+        {
+          "aisle": "Bread",
+          "color": "#9A5416",
+          "items": [
+            {
+              "id": "t2-whole-grain-bread",
+              "name": "Whole grain bread",
+              "qty": "1 loaf"
+            }
+          ]
+        },
+        {
+          "aisle": "Cans",
+          "color": "#1B4332",
+          "items": [
+            {
+              "id": "t2-canned-black-beans",
+              "name": "Canned black beans",
+              "qty": "1 can"
+            },
+            {
+              "id": "t2-canned-chickpeas",
+              "name": "Canned chickpeas",
+              "qty": "1 can"
+            },
+            {
+              "id": "t2-canned-lentils",
+              "name": "Canned lentils",
+              "qty": "1 can"
+            },
+            {
+              "id": "t2-canned-white-beans",
+              "name": "Canned white beans",
+              "qty": "3 cans"
+            },
+            {
+              "id": "t2-crushed-tomatoes",
+              "name": "Crushed tomatoes",
+              "qty": "1 can"
+            }
+          ]
+        },
+        {
+          "aisle": "Grains",
+          "color": "#8A6A2F",
+          "items": [
+            {
+              "id": "t2-chili-powder",
+              "name": "Chili powder",
+              "qty": "buy once, it lasts"
+            },
+            {
+              "id": "t2-pumpkin-seeds",
+              "name": "Pumpkin seeds",
+              "qty": "buy once, it lasts"
+            },
+            {
+              "id": "t2-whole-wheat-pasta",
+              "name": "Whole wheat pasta",
+              "qty": "1 box"
+            }
+          ]
+        },
+        {
+          "aisle": "Frozen",
+          "color": "#3D5A80",
+          "items": [
+            {
+              "id": "t2-cherries,-fresh-or-frozen",
+              "name": "Cherries, fresh or frozen",
+              "qty": "1 bag"
+            },
+            {
+              "id": "t2-strawberries,-fresh-or-frozen",
+              "name": "Strawberries, fresh or frozen",
+              "qty": "1 bag"
+            }
+          ]
+        },
+        {
+          "aisle": "Treats",
+          "color": "#C73E54",
+          "items": [
+            {
+              "id": "t2-chicken-tenders",
+              "name": "Chicken tenders",
+              "qty": "1 box"
+            },
+            {
+              "id": "t2-macaroni-and-cheese",
+              "name": "Macaroni and cheese",
+              "qty": "1 box"
+            }
+          ]
+        }
+      ],
+      "still": [
+        "Brown rice",
+        "Chia seed",
+        "Cumin",
+        "Ground flax",
+        "Olive oil",
+        "Quinoa",
+        "Rolled oats",
+        "Walnuts"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Trip 3, days 29 to 42",
+      "blurb": "Night shifts. Buy fruit you can eat cold, and the salmon.",
+      "shift": "night",
+      "groups": [
+        {
+          "aisle": "Fruit",
+          "color": "#BC6C25",
+          "items": [
+            {
+              "id": "t3-apples",
+              "name": "Apples",
+              "qty": "3 apples"
+            },
+            {
+              "id": "t3-bananas",
+              "name": "Bananas",
+              "qty": "1 banana"
+            },
+            {
+              "id": "t3-lemons",
+              "name": "Lemons",
+              "qty": "2 lemons"
+            },
+            {
+              "id": "t3-oranges",
+              "name": "Oranges",
+              "qty": "1 orange"
+            },
+            {
+              "id": "t3-peaches",
+              "name": "Peaches",
+              "qty": "1 peach"
+            },
+            {
+              "id": "t3-pears",
+              "name": "Pears",
+              "qty": "1 pear"
+            }
+          ]
+        },
+        {
+          "aisle": "Produce",
+          "color": "#2D6A4F",
+          "items": [
+            {
+              "id": "t3-avocados",
+              "name": "Avocados",
+              "qty": "2 avocados"
+            },
+            {
+              "id": "t3-bell-peppers",
+              "name": "Bell peppers",
+              "qty": "6 peppers"
+            },
+            {
+              "id": "t3-broccoli",
+              "name": "Broccoli",
+              "qty": "2 crowns"
+            },
+            {
+              "id": "t3-carrots",
+              "name": "Carrots",
+              "qty": "2 bags"
+            },
+            {
+              "id": "t3-cucumbers",
+              "name": "Cucumbers",
+              "qty": "2 cucumbers"
+            },
+            {
+              "id": "t3-potatoes",
+              "name": "Potatoes",
+              "qty": "3 potatoes"
+            },
+            {
+              "id": "t3-salad-greens",
+              "name": "Salad greens",
+              "qty": "1 box"
+            },
+            {
+              "id": "t3-spinach",
+              "name": "Spinach",
+              "qty": "2 boxes"
+            },
+            {
+              "id": "t3-sweet-potatoes",
+              "name": "Sweet potatoes",
+              "qty": "1 sweet potato"
+            },
+            {
+              "id": "t3-tomatoes",
+              "name": "Tomatoes",
+              "qty": "6 tomatoes"
+            },
+            {
+              "id": "t3-zucchini",
+              "name": "Zucchini",
+              "qty": "1 zucchini"
+            }
+          ]
+        },
+        {
+          "aisle": "Protein",
+          "color": "#1D4E89",
+          "items": [
+            {
+              "id": "t3-chicken-thighs",
+              "name": "Chicken thighs",
+              "qty": "2 thighs"
+            },
+            {
+              "id": "t3-ground-turkey",
+              "name": "Ground turkey",
+              "qty": "3 packs"
+            },
+            {
+              "id": "t3-salmon-fillets",
+              "name": "Salmon fillets",
+              "qty": "2 fillets"
+            }
+          ]
+        },
+        {
+          "aisle": "Dairy",
+          "color": "#5C4D7A",
+          "items": [
+            {
+              "id": "t3-cheddar",
+              "name": "Cheddar",
+              "qty": "1 block"
+            },
+            {
+              "id": "t3-eggs",
+              "name": "Eggs",
+              "qty": "1 dozen (1 eggs)"
+            },
+            {
+              "id": "t3-milk-or-fortified-soy-milk",
+              "name": "Milk or fortified soy milk",
+              "qty": "1 carton"
+            },
+            {
+              "id": "t3-plain-yogurt",
+              "name": "Plain yogurt",
+              "qty": "1 tub"
+            }
+          ]
+        },
+        {
+          "aisle": "Bread",
+          "color": "#9A5416",
+          "items": [
+            {
+              "id": "t3-corn-tortillas",
+              "name": "Corn tortillas",
+              "qty": "1 pack"
+            },
+            {
+              "id": "t3-whole-grain-bread",
+              "name": "Whole grain bread",
+              "qty": "1 loaf"
+            }
+          ]
+        },
+        {
+          "aisle": "Cans",
+          "color": "#1B4332",
+          "items": [
+            {
+              "id": "t3-canned-black-beans",
+              "name": "Canned black beans",
+              "qty": "2 cans"
+            },
+            {
+              "id": "t3-canned-chickpeas",
+              "name": "Canned chickpeas",
+              "qty": "1 can"
+            },
+            {
+              "id": "t3-canned-lentils",
+              "name": "Canned lentils",
+              "qty": "2 cans"
+            },
+            {
+              "id": "t3-canned-white-beans",
+              "name": "Canned white beans",
+              "qty": "2 cans"
+            },
+            {
+              "id": "t3-crushed-tomatoes",
+              "name": "Crushed tomatoes",
+              "qty": "3 cans"
+            },
+            {
+              "id": "t3-salsa,-check-the-label-for-onion",
+              "name": "Salsa, check the label for onion",
+              "qty": "1 jar"
+            },
+            {
+              "id": "t3-tomato-soup,-no-onion-on-the-label",
+              "name": "Tomato soup, no onion on the label",
+              "qty": "1 can"
+            }
+          ]
+        },
+        {
+          "aisle": "Grains",
+          "color": "#8A6A2F",
+          "items": [
+            {
+              "id": "t3-cinnamon",
+              "name": "Cinnamon",
+              "qty": "buy once, it lasts"
+            },
+            {
+              "id": "t3-honey",
+              "name": "Honey",
+              "qty": "buy once, it lasts"
+            },
+            {
+              "id": "t3-whole-wheat-pasta",
+              "name": "Whole wheat pasta",
+              "qty": "1 box"
+            }
+          ]
+        },
+        {
+          "aisle": "Frozen",
+          "color": "#3D5A80",
+          "items": [
+            {
+              "id": "t3-blueberries,-fresh-or-frozen",
+              "name": "Blueberries, fresh or frozen",
+              "qty": "1 bag"
+            },
+            {
+              "id": "t3-cherries,-fresh-or-frozen",
+              "name": "Cherries, fresh or frozen",
+              "qty": "1 bag"
+            },
+            {
+              "id": "t3-raspberries,-fresh-or-frozen",
+              "name": "Raspberries, fresh or frozen",
+              "qty": "1 bag"
+            }
+          ]
+        },
+        {
+          "aisle": "Treats",
+          "color": "#C73E54",
+          "items": [
+            {
+              "id": "t3-tortilla-chips",
+              "name": "Tortilla chips",
+              "qty": "1 bag"
+            }
+          ]
+        }
+      ],
+      "still": [
+        "Brown rice",
+        "Chia seed",
+        "Chili powder",
+        "Cumin",
+        "Ground flax",
+        "Olive oil",
+        "Pumpkin seeds",
+        "Quinoa",
+        "Rolled oats"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Trip 4, days 43 to 56",
+      "blurb": "Second break. Restock bread, eggs, and greens.",
+      "shift": "off",
+      "groups": [
+        {
+          "aisle": "Fruit",
+          "color": "#BC6C25",
+          "items": [
+            {
+              "id": "t4-apples",
+              "name": "Apples",
+              "qty": "2 apples"
+            },
+            {
+              "id": "t4-bananas",
+              "name": "Bananas",
+              "qty": "1 banana"
+            },
+            {
+              "id": "t4-lemons",
+              "name": "Lemons",
+              "qty": "4 lemons"
+            }
+          ]
+        },
+        {
+          "aisle": "Produce",
+          "color": "#2D6A4F",
+          "items": [
+            {
+              "id": "t4-avocados",
+              "name": "Avocados",
+              "qty": "5 avocados"
+            },
+            {
+              "id": "t4-bell-peppers",
+              "name": "Bell peppers",
+              "qty": "5 peppers"
+            },
+            {
+              "id": "t4-broccoli",
+              "name": "Broccoli",
+              "qty": "2 crowns"
+            },
+            {
+              "id": "t4-carrots",
+              "name": "Carrots",
+              "qty": "2 bags"
+            },
+            {
+              "id": "t4-cucumbers",
+              "name": "Cucumbers",
+              "qty": "3 cucumbers"
+            },
+            {
+              "id": "t4-potatoes",
+              "name": "Potatoes",
+              "qty": "3 potatoes"
+            },
+            {
+              "id": "t4-salad-greens",
+              "name": "Salad greens",
+              "qty": "2 boxes"
+            },
+            {
+              "id": "t4-spinach",
+              "name": "Spinach",
+              "qty": "3 boxes"
+            },
+            {
+              "id": "t4-sweet-potatoes",
+              "name": "Sweet potatoes",
+              "qty": "4 sweet potatos"
+            },
+            {
+              "id": "t4-tomatoes",
+              "name": "Tomatoes",
+              "qty": "7 tomatoes"
+            },
+            {
+              "id": "t4-zucchini",
+              "name": "Zucchini",
+              "qty": "4 zucchinis"
+            }
+          ]
+        },
+        {
+          "aisle": "Protein",
+          "color": "#1D4E89",
+          "items": [
+            {
+              "id": "t4-salmon-fillets",
+              "name": "Salmon fillets",
+              "qty": "2 fillets"
+            }
+          ]
+        },
+        {
+          "aisle": "Dairy",
+          "color": "#5C4D7A",
+          "items": [
+            {
+              "id": "t4-cheddar",
+              "name": "Cheddar",
+              "qty": "1 block"
+            },
+            {
+              "id": "t4-eggs",
+              "name": "Eggs",
+              "qty": "4 dozen (40 eggs)"
+            },
+            {
+              "id": "t4-milk-or-fortified-soy-milk",
+              "name": "Milk or fortified soy milk",
+              "qty": "1 carton"
+            },
+            {
+              "id": "t4-plain-yogurt",
+              "name": "Plain yogurt",
+              "qty": "1 tub"
+            }
+          ]
+        },
+        {
+          "aisle": "Bread",
+          "color": "#9A5416",
+          "items": [
+            {
+              "id": "t4-corn-tortillas",
+              "name": "Corn tortillas",
+              "qty": "1 pack"
+            },
+            {
+              "id": "t4-whole-grain-bread",
+              "name": "Whole grain bread",
+              "qty": "2 loaves"
+            },
+            {
+              "id": "t4-whole-wheat-tortillas",
+              "name": "Whole wheat tortillas",
+              "qty": "1 pack"
+            }
+          ]
+        },
+        {
+          "aisle": "Cans",
+          "color": "#1B4332",
+          "items": [
+            {
+              "id": "t4-canned-black-beans",
+              "name": "Canned black beans",
+              "qty": "2 cans"
+            },
+            {
+              "id": "t4-canned-chickpeas",
+              "name": "Canned chickpeas",
+              "qty": "2 cans"
+            },
+            {
+              "id": "t4-canned-lentils",
+              "name": "Canned lentils",
+              "qty": "2 cans"
+            },
+            {
+              "id": "t4-canned-white-beans",
+              "name": "Canned white beans",
+              "qty": "2 cans"
+            },
+            {
+              "id": "t4-crushed-tomatoes",
+              "name": "Crushed tomatoes",
+              "qty": "1 can"
+            }
+          ]
+        },
+        {
+          "aisle": "Grains",
+          "color": "#8A6A2F",
+          "items": [
+            {
+              "id": "t4-peanut-butter",
+              "name": "Peanut butter",
+              "qty": "buy once, it lasts"
+            }
+          ]
+        },
+        {
+          "aisle": "Frozen",
+          "color": "#3D5A80",
+          "items": [
+            {
+              "id": "t4-raspberries,-fresh-or-frozen",
+              "name": "Raspberries, fresh or frozen",
+              "qty": "1 bag"
+            }
+          ]
+        },
+        {
+          "aisle": "Treats",
+          "color": "#C73E54",
+          "items": [
+            {
+              "id": "t4-chocolate-chips",
+              "name": "Chocolate chips",
+              "qty": "1 bag"
+            },
+            {
+              "id": "t4-ice-cream",
+              "name": "Ice cream",
+              "qty": "1 tub"
+            }
+          ]
+        }
+      ],
+      "still": [
+        "Brown rice",
+        "Cumin",
+        "Ground flax",
+        "Olive oil",
+        "Quinoa",
+        "Rolled oats"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Trip 5, days 57 to 60",
+      "blurb": "Short trip. Four day shifts at the start of the next round.",
+      "shift": "day",
+      "groups": [
+        {
+          "aisle": "Fruit",
+          "color": "#BC6C25",
+          "items": [
+            {
+              "id": "t5-apples",
+              "name": "Apples",
+              "qty": "2 apples"
+            },
+            {
+              "id": "t5-lemons",
+              "name": "Lemons",
+              "qty": "1 lemon"
+            },
+            {
+              "id": "t5-pears",
+              "name": "Pears",
+              "qty": "1 pear"
+            }
+          ]
+        },
+        {
+          "aisle": "Produce",
+          "color": "#2D6A4F",
+          "items": [
+            {
+              "id": "t5-bell-peppers",
+              "name": "Bell peppers",
+              "qty": "3 peppers"
+            },
+            {
+              "id": "t5-broccoli",
+              "name": "Broccoli",
+              "qty": "1 crown"
+            },
+            {
+              "id": "t5-carrots",
+              "name": "Carrots",
+              "qty": "1 bag"
+            },
+            {
+              "id": "t5-cucumbers",
+              "name": "Cucumbers",
+              "qty": "1 cucumber"
+            },
+            {
+              "id": "t5-potatoes",
+              "name": "Potatoes",
+              "qty": "1 potato"
+            },
+            {
+              "id": "t5-salad-greens",
+              "name": "Salad greens",
+              "qty": "1 box"
+            },
+            {
+              "id": "t5-spinach",
+              "name": "Spinach",
+              "qty": "1 box"
+            },
+            {
+              "id": "t5-sweet-potatoes",
+              "name": "Sweet potatoes",
+              "qty": "1 sweet potato"
+            },
+            {
+              "id": "t5-tomatoes",
+              "name": "Tomatoes",
+              "qty": "1 tomato"
+            }
+          ]
+        },
+        {
+          "aisle": "Protein",
+          "color": "#1D4E89",
+          "items": [
+            {
+              "id": "t5-chicken-thighs",
+              "name": "Chicken thighs",
+              "qty": "1 thigh"
+            },
+            {
+              "id": "t5-ground-turkey",
+              "name": "Ground turkey",
+              "qty": "1 pack"
+            },
+            {
+              "id": "t5-salmon-fillets",
+              "name": "Salmon fillets",
+              "qty": "1 fillet"
+            }
+          ]
+        },
+        {
+          "aisle": "Dairy",
+          "color": "#5C4D7A",
+          "items": [
+            {
+              "id": "t5-cheddar",
+              "name": "Cheddar",
+              "qty": "1 block"
+            },
+            {
+              "id": "t5-eggs",
+              "name": "Eggs",
+              "qty": "1 dozen (3 eggs)"
+            },
+            {
+              "id": "t5-mozzarella",
+              "name": "Mozzarella",
+              "qty": "1 ball"
+            }
+          ]
+        },
+        {
+          "aisle": "Bread",
+          "color": "#9A5416",
+          "items": [
+            {
+              "id": "t5-whole-grain-bread",
+              "name": "Whole grain bread",
+              "qty": "1 loaf"
+            },
+            {
+              "id": "t5-whole-wheat-tortillas",
+              "name": "Whole wheat tortillas",
+              "qty": "1 pack"
+            }
+          ]
+        },
+        {
+          "aisle": "Cans",
+          "color": "#1B4332",
+          "items": [
+            {
+              "id": "t5-canned-black-beans",
+              "name": "Canned black beans",
+              "qty": "1 can"
+            },
+            {
+              "id": "t5-canned-chickpeas",
+              "name": "Canned chickpeas",
+              "qty": "1 can"
+            },
+            {
+              "id": "t5-canned-lentils",
+              "name": "Canned lentils",
+              "qty": "1 can"
+            },
+            {
+              "id": "t5-canned-white-beans",
+              "name": "Canned white beans",
+              "qty": "2 cans"
+            },
+            {
+              "id": "t5-salsa,-check-the-label-for-onion",
+              "name": "Salsa, check the label for onion",
+              "qty": "1 jar"
+            }
+          ]
+        },
+        {
+          "aisle": "Grains",
+          "color": "#8A6A2F",
+          "items": [
+            {
+              "id": "t5-jam",
+              "name": "Jam",
+              "qty": "buy once, it lasts"
+            }
+          ]
+        }
+      ],
+      "still": [
+        "Olive oil",
+        "Quinoa"
+      ]
+    }
+  ]
+}
