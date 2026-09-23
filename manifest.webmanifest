@@ -1,0 +1,8 @@
+{
+  "name": "Sarah's Fourteen",
+  "short_name": "Fourteen",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4efe4",
+  "theme_color": "#f4efe4"
+}
