@@ -1,6 +1,12 @@
 window.PLAN = {
   "name": "Sarah's Fourteen",
-  "tag": "Sixty days on the 14s",
+  "tag": "One full rotation. 56 days.",
+  "goals": {
+    "protein": 60,
+    "carbs": 180,
+    "fibre": 25
+  },
+  "block": 14,
   "days": [
     {
       "n": 1,
@@ -8,6 +14,10 @@ window.PLAN = {
       "blockDay": 1,
       "cheat": false,
       "total": 31,
+      "protein": 55,
+      "carbs": 139,
+      "fat": 31,
+      "kcal": 1028,
       "line": "Day shift 1 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Chicken tonight, if you are on days.",
       "meals": [
@@ -16,6 +26,10 @@ window.PLAN = {
           "when": "After you wake",
           "tag": "Brain",
           "g": 12,
+          "protein": 15,
+          "carbs": 69,
+          "fat": 11,
+          "kcal": 425,
           "name": "Apple oat bowl with chia",
           "items": [
             "1/2 cup rolled oats",
@@ -30,6 +44,10 @@ window.PLAN = {
           "when": "Mid shift",
           "tag": "Gut",
           "g": 10,
+          "protein": 11,
+          "carbs": 27,
+          "fat": 5,
+          "kcal": 193,
           "name": "Lentil bowl with spinach and tomato",
           "items": [
             "1/2 cup lentils, rinsed",
@@ -45,6 +63,10 @@ window.PLAN = {
           "when": "After work",
           "tag": "Steady",
           "g": 9,
+          "protein": 29,
+          "carbs": 43,
+          "fat": 15,
+          "kcal": 410,
           "name": "Chicken with broccoli and potato",
           "items": [
             "1 chicken thigh",
@@ -62,6 +84,10 @@ window.PLAN = {
       "blockDay": 2,
       "cheat": false,
       "total": 29,
+      "protein": 50,
+      "carbs": 135,
+      "fat": 30,
+      "kcal": 990,
       "line": "Day shift 2 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Chicken tonight, if you are on days.",
       "meals": [
@@ -70,6 +96,10 @@ window.PLAN = {
           "when": "After you wake",
           "tag": "Steady",
           "g": 10,
+          "protein": 14,
+          "carbs": 66,
+          "fat": 10,
+          "kcal": 402,
           "name": "Apple oat bowl with flax",
           "items": [
             "1/2 cup rolled oats",
@@ -84,6 +114,10 @@ window.PLAN = {
           "when": "Mid shift",
           "tag": "Gut",
           "g": 11,
+          "protein": 11,
+          "carbs": 31,
+          "fat": 5,
+          "kcal": 208,
           "name": "Lentil bowl with cucumber and pepper",
           "items": [
             "1/2 cup lentils, rinsed",
@@ -99,6 +133,10 @@ window.PLAN = {
           "when": "After work",
           "tag": "Steady",
           "g": 8,
+          "protein": 25,
+          "carbs": 38,
+          "fat": 15,
+          "kcal": 380,
           "name": "Chicken with carrots and sweet potato",
           "items": [
             "1 chicken thigh",
@@ -116,6 +154,10 @@ window.PLAN = {
       "blockDay": 3,
       "cheat": true,
       "total": 17,
+      "protein": 58,
+      "carbs": 142,
+      "fat": 49,
+      "kcal": 1248,
       "line": "Cheat day. Day shift 3 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
       "meals": [
@@ -124,6 +166,10 @@ window.PLAN = {
           "when": "After you wake",
           "tag": "Brain",
           "g": 9,
+          "protein": 15,
+          "carbs": 66,
+          "fat": 16,
+          "kcal": 455,
           "name": "Apple oat bowl with walnut",
           "items": [
             "1/2 cup rolled oats",
@@ -138,6 +184,10 @@ window.PLAN = {
           "when": "Mid shift",
           "tag": "Gut",
           "g": 4,
+          "protein": 18,
+          "carbs": 48,
+          "fat": 17,
+          "kcal": 433,
           "name": "Cheese pizza, no onion, and a salad",
           "items": [
             "2 slices cheese pizza, no onion",
@@ -153,6 +203,10 @@ window.PLAN = {
           "when": "After work",
           "tag": "Steady",
           "g": 4,
+          "protein": 25,
+          "carbs": 28,
+          "fat": 16,
+          "kcal": 360,
           "name": "Chicken with pepper and rice",
           "items": [
             "1 chicken thigh",
@@ -170,6 +224,10 @@ window.PLAN = {
       "blockDay": 4,
       "cheat": false,
       "total": 29,
+      "protein": 54,
+      "carbs": 124,
+      "fat": 33,
+      "kcal": 981,
       "line": "Day shift 4 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Chicken tonight, if you are on days.",
       "meals": [
@@ -178,6 +236,10 @@ window.PLAN = {
           "when": "After you wake",
           "tag": "Brain",
           "g": 14,
+          "protein": 16,
+          "carbs": 71,
+          "fat": 11,
+          "kcal": 430,
           "name": "Pear oat bowl with chia",
           "items": [
             "1/2 cup rolled oats",
@@ -192,6 +254,10 @@ window.PLAN = {
           "when": "Mid shift",
           "tag": "Gut",
           "g": 11,
+          "protein": 11,
+          "carbs": 30,
+          "fat": 5,
+          "kcal": 203,
           "name": "Lentil bowl with zucchini and tomato",
           "items": [
             "1/2 cup lentils, rinsed",
@@ -207,6 +273,10 @@ window.PLAN = {
           "when": "After work",
           "tag": "Steady",
           "g": 4,
+          "protein": 27,
+          "carbs": 23,
+          "fat": 17,
+          "kcal": 348,
           "name": "Chicken with spinach and quinoa",
           "items": [
             "1 chicken thigh",
@@ -225,6 +295,10 @@ window.PLAN = {
       "blockDay": 5,
       "cheat": false,
       "total": 31,
+      "protein": 54,
+      "carbs": 137,
+      "fat": 30,
+      "kcal": 1000,
       "line": "Day shift 5 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Chicken tonight, if you are on days.",
       "meals": [
@@ -233,6 +307,10 @@ window.PLAN = {
           "when": "After you wake",
           "tag": "Steady",
           "g": 12,
+          "protein": 15,
+          "carbs": 68,
+          "fat": 10,
+          "kcal": 407,
           "name": "Pear oat bowl with flax",
           "items": [
             "1/2 cup rolled oats",
@@ -247,6 +325,10 @@ window.PLAN = {
           "when": "Mid shift",
           "tag": "Gut",
           "g": 13,
+          "protein": 12,
+          "carbs": 28,
+          "fat": 5,
+          "kcal": 193,
           "name": "Lentil bowl with broccoli and lemon",
           "items": [
             "1/2 cup lentils, rinsed",
@@ -261,6 +343,10 @@ window.PLAN = {
           "when": "After work",
           "tag": "Steady",
           "g": 6,
+          "protein": 27,
+          "carbs": 41,
+          "fat": 15,
+          "kcal": 400,
           "name": "Chicken with zucchini and potato",
           "items": [
             "1 chicken thigh",
@@ -278,6 +364,10 @@ window.PLAN = {
       "blockDay": 6,
       "cheat": false,
       "total": 28,
+      "protein": 57,
+      "carbs": 141,
+      "fat": 40,
+      "kcal": 1118,
       "line": "Day shift 6 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Chicken tonight, if you are on days.",
       "meals": [
@@ -286,6 +376,10 @@ window.PLAN = {
           "when": "After you wake",
           "tag": "Brain",
           "g": 11,
+          "protein": 16,
+          "carbs": 68,
+          "fat": 16,
+          "kcal": 460,
           "name": "Pear oat bowl with walnut",
           "items": [
             "1/2 cup rolled oats",
@@ -300,6 +394,10 @@ window.PLAN = {
           "when": "Mid shift",
           "tag": "Gut",
           "g": 11,
+          "protein": 13,
+          "carbs": 39,
+          "fat": 8,
+          "kcal": 268,
           "name": "Chickpea bowl with spinach and tomato",
           "items": [
             "3/4 cup chickpeas, rinsed",
@@ -315,6 +413,10 @@ window.PLAN = {
           "when": "After work",
           "tag": "Steady",
           "g": 6,
+          "protein": 28,
+          "carbs": 34,
+          "fat": 16,
+          "kcal": 390,
           "name": "Chicken with tomato and pasta",
           "items": [
             "1 chicken thigh",
@@ -332,6 +434,10 @@ window.PLAN = {
       "blockDay": 7,
       "cheat": false,
       "total": 31,
+      "protein": 56,
+      "carbs": 122,
+      "fat": 35,
+      "kcal": 1005,
       "line": "Day shift 7 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Chicken tonight, if you are on days.",
       "meals": [
@@ -340,6 +446,10 @@ window.PLAN = {
           "when": "After you wake",
           "tag": "Brain",
           "g": 12,
+          "protein": 16,
+          "carbs": 51,
+          "fat": 11,
+          "kcal": 362,
           "name": "Raspberry oat bowl with chia",
           "items": [
             "1/2 cup rolled oats",
@@ -354,6 +464,10 @@ window.PLAN = {
           "when": "Mid shift",
           "tag": "Gut",
           "g": 12,
+          "protein": 13,
+          "carbs": 43,
+          "fat": 8,
+          "kcal": 283,
           "name": "Chickpea bowl with cucumber and pepper",
           "items": [
             "3/4 cup chickpeas, rinsed",
@@ -369,6 +483,10 @@ window.PLAN = {
           "when": "After work",
           "tag": "Steady",
           "g": 7,
+          "protein": 27,
+          "carbs": 28,
+          "fat": 16,
+          "kcal": 360,
           "name": "Chicken with broccoli and rice",
           "items": [
             "1 chicken thigh",
@@ -386,6 +504,10 @@ window.PLAN = {
       "blockDay": 8,
       "cheat": false,
       "total": 29,
+      "protein": 53,
+      "carbs": 124,
+      "fat": 33,
+      "kcal": 985,
       "line": "Day shift 8 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Chicken tonight, if you are on days.",
       "meals": [
@@ -394,6 +516,10 @@ window.PLAN = {
           "when": "After you wake",
           "tag": "Steady",
           "g": 10,
+          "protein": 15,
+          "carbs": 48,
+          "fat": 10,
+          "kcal": 339,
           "name": "Raspberry oat bowl with flax",
           "items": [
             "1/2 cup rolled oats",
@@ -408,6 +534,10 @@ window.PLAN = {
           "when": "Mid shift",
           "tag": "Gut",
           "g": 14,
+          "protein": 13,
+          "carbs": 47,
+          "fat": 8,
+          "kcal": 298,
           "name": "Chickpea bowl with carrot and greens",
           "items": [
             "3/4 cup chickpeas, rinsed",
@@ -423,6 +553,10 @@ window.PLAN = {
           "when": "After work",
           "tag": "Steady",
           "g": 5,
+          "protein": 25,
+          "carbs": 29,
+          "fat": 15,
+          "kcal": 348,
           "name": "Chicken with greens and sweet potato",
           "items": [
             "1 chicken thigh",
@@ -441,6 +575,10 @@ window.PLAN = {
       "blockDay": 9,
       "cheat": false,
       "total": 30,
+      "protein": 59,
+      "carbs": 133,
+      "fat": 41,
+      "kcal": 1106,
       "line": "Day shift 9 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Salmon tonight, if you are on days.",
       "meals": [
@@ -449,6 +587,10 @@ window.PLAN = {
           "when": "After you wake",
           "tag": "Brain",
           "g": 9,
+          "protein": 16,
+          "carbs": 48,
+          "fat": 16,
+          "kcal": 392,
           "name": "Raspberry oat bowl with walnut",
           "items": [
             "1/2 cup rolled oats",
@@ -463,6 +605,10 @@ window.PLAN = {
           "when": "Mid shift",
           "tag": "Gut",
           "g": 12,
+          "protein": 13,
+          "carbs": 42,
+          "fat": 8,
+          "kcal": 278,
           "name": "Chickpea bowl with zucchini and tomato",
           "items": [
             "3/4 cup chickpeas, rinsed",
@@ -478,6 +624,10 @@ window.PLAN = {
           "when": "After work",
           "tag": "Brain",
           "g": 9,
+          "protein": 30,
+          "carbs": 43,
+          "fat": 17,
+          "kcal": 436,
           "name": "Salmon with broccoli and potato",
           "items": [
             "1 salmon fillet",
@@ -495,6 +645,10 @@ window.PLAN = {
       "blockDay": 10,
       "cheat": false,
       "total": 32,
+      "protein": 55,
+      "carbs": 132,
+      "fat": 36,
+      "kcal": 1046,
       "line": "Day shift 10 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Salmon tonight, if you are on days.",
       "meals": [
@@ -503,6 +657,10 @@ window.PLAN = {
           "when": "After you wake",
           "tag": "Brain",
           "g": 10,
+          "protein": 15,
+          "carbs": 54,
+          "fat": 11,
+          "kcal": 372,
           "name": "Blueberry oat bowl with chia",
           "items": [
             "1/2 cup rolled oats",
@@ -517,6 +675,10 @@ window.PLAN = {
           "when": "Mid shift",
           "tag": "Gut",
           "g": 14,
+          "protein": 14,
+          "carbs": 40,
+          "fat": 8,
+          "kcal": 268,
           "name": "Chickpea bowl with broccoli and lemon",
           "items": [
             "3/4 cup chickpeas, rinsed",
@@ -531,6 +693,10 @@ window.PLAN = {
           "when": "After work",
           "tag": "Brain",
           "g": 8,
+          "protein": 26,
+          "carbs": 38,
+          "fat": 17,
+          "kcal": 406,
           "name": "Salmon with carrots and sweet potato",
           "items": [
             "1 salmon fillet",
@@ -548,6 +714,10 @@ window.PLAN = {
       "blockDay": 11,
       "cheat": false,
       "total": 26,
+      "protein": 50,
+      "carbs": 131,
+      "fat": 33,
+      "kcal": 1022,
       "line": "Day shift 11 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Salmon tonight, if you are on days.",
       "meals": [
@@ -556,6 +726,10 @@ window.PLAN = {
           "when": "After you wake",
           "tag": "Steady",
           "g": 12,
+          "protein": 14,
+          "carbs": 76,
+          "fat": 10,
+          "kcal": 444,
           "name": "Blueberry oat bowl with flax",
           "items": [
             "1/2 cup rolled oats",
@@ -571,6 +745,10 @@ window.PLAN = {
           "when": "Mid shift",
           "tag": "Gut",
           "g": 10,
+          "protein": 10,
+          "carbs": 27,
+          "fat": 5,
+          "kcal": 192,
           "name": "Black bean bowl with spinach and tomato",
           "items": [
             "1/2 cup black beans, rinsed",
@@ -587,6 +765,10 @@ window.PLAN = {
           "when": "After work",
           "tag": "Brain",
           "g": 4,
+          "protein": 26,
+          "carbs": 28,
+          "fat": 18,
+          "kcal": 386,
           "name": "Salmon with pepper and rice",
           "items": [
             "1 salmon fillet",
@@ -604,6 +786,10 @@ window.PLAN = {
       "blockDay": 12,
       "cheat": false,
       "total": 26,
+      "protein": 53,
+      "carbs": 130,
+      "fat": 40,
+      "kcal": 1078,
       "line": "Day shift 12 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Salmon tonight, if you are on days.",
       "meals": [
@@ -612,6 +798,10 @@ window.PLAN = {
           "when": "After you wake",
           "tag": "Brain",
           "g": 11,
+          "protein": 15,
+          "carbs": 76,
+          "fat": 16,
+          "kcal": 497,
           "name": "Blueberry oat bowl with walnut",
           "items": [
             "1/2 cup rolled oats",
@@ -627,6 +817,10 @@ window.PLAN = {
           "when": "Mid shift",
           "tag": "Gut",
           "g": 11,
+          "protein": 10,
+          "carbs": 31,
+          "fat": 5,
+          "kcal": 207,
           "name": "Black bean bowl with cucumber and pepper",
           "items": [
             "1/2 cup black beans, rinsed",
@@ -643,6 +837,10 @@ window.PLAN = {
           "when": "After work",
           "tag": "Brain",
           "g": 4,
+          "protein": 28,
+          "carbs": 23,
+          "fat": 19,
+          "kcal": 374,
           "name": "Salmon with spinach and quinoa",
           "items": [
             "1 salmon fillet",
@@ -661,6 +859,10 @@ window.PLAN = {
       "blockDay": 13,
       "cheat": true,
       "total": 24,
+      "protein": 74,
+      "carbs": 142,
+      "fat": 52,
+      "kcal": 1321,
       "line": "Cheat day. Day shift 13 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
       "meals": [
@@ -669,6 +871,10 @@ window.PLAN = {
           "when": "After you wake",
           "tag": "Brain",
           "g": 10,
+          "protein": 15,
+          "carbs": 50,
+          "fat": 11,
+          "kcal": 355,
           "name": "Strawberry oat bowl with chia",
           "items": [
             "1/2 cup rolled oats",
@@ -683,6 +889,10 @@ window.PLAN = {
           "when": "Mid shift",
           "tag": "Steady",
           "g": 8,
+          "protein": 31,
+          "carbs": 51,
+          "fat": 24,
+          "kcal": 540,
           "name": "Burger on a bun, no onion",
           "items": [
             "a beef or turkey patty",
@@ -698,6 +908,10 @@ window.PLAN = {
           "when": "After work",
           "tag": "Brain",
           "g": 6,
+          "protein": 28,
+          "carbs": 41,
+          "fat": 17,
+          "kcal": 426,
           "name": "Salmon with zucchini and potato",
           "items": [
             "1 salmon fillet",
@@ -715,6 +929,10 @@ window.PLAN = {
       "blockDay": 14,
       "cheat": false,
       "total": 25,
+      "protein": 53,
+      "carbs": 111,
+      "fat": 33,
+      "kcal": 950,
       "line": "Day shift 14 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Salmon tonight, if you are on days.",
       "meals": [
@@ -723,6 +941,10 @@ window.PLAN = {
           "when": "After you wake",
           "tag": "Steady",
           "g": 8,
+          "protein": 14,
+          "carbs": 47,
+          "fat": 10,
+          "kcal": 332,
           "name": "Strawberry oat bowl with flax",
           "items": [
             "1/2 cup rolled oats",
@@ -737,6 +959,10 @@ window.PLAN = {
           "when": "Mid shift",
           "tag": "Gut",
           "g": 11,
+          "protein": 10,
+          "carbs": 30,
+          "fat": 5,
+          "kcal": 202,
           "name": "Black bean bowl with zucchini and tomato",
           "items": [
             "1/2 cup black beans, rinsed",
@@ -753,6 +979,10 @@ window.PLAN = {
           "when": "After work",
           "tag": "Brain",
           "g": 6,
+          "protein": 29,
+          "carbs": 34,
+          "fat": 18,
+          "kcal": 416,
           "name": "Salmon with tomato and pasta",
           "items": [
             "1 salmon fillet",
@@ -770,6 +1000,10 @@ window.PLAN = {
       "blockDay": 1,
       "cheat": false,
       "total": 27,
+      "protein": 54,
+      "carbs": 103,
+      "fat": 39,
+      "kcal": 963,
       "line": "Off day 1 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Salmon is the main cook.",
       "meals": [
@@ -778,6 +1012,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Brain",
           "g": 7,
+          "protein": 15,
+          "carbs": 47,
+          "fat": 16,
+          "kcal": 385,
           "name": "Strawberry oat bowl with walnut",
           "items": [
             "1/2 cup rolled oats",
@@ -792,6 +1030,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Gut",
           "g": 13,
+          "protein": 11,
+          "carbs": 28,
+          "fat": 5,
+          "kcal": 192,
           "name": "Black bean bowl with broccoli and lemon",
           "items": [
             "1/2 cup black beans, rinsed",
@@ -807,6 +1049,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Brain",
           "g": 7,
+          "protein": 28,
+          "carbs": 28,
+          "fat": 18,
+          "kcal": 386,
           "name": "Salmon with broccoli and rice",
           "items": [
             "1 salmon fillet",
@@ -824,6 +1070,10 @@ window.PLAN = {
       "blockDay": 2,
       "cheat": true,
       "total": 23,
+      "protein": 67,
+      "carbs": 150,
+      "fat": 38,
+      "kcal": 1196,
       "line": "Cheat day. Off day 2 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
       "meals": [
@@ -832,6 +1082,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Brain",
           "g": 10,
+          "protein": 16,
+          "carbs": 57,
+          "fat": 11,
+          "kcal": 382,
           "name": "Banana oat bowl with chia",
           "items": [
             "1/2 cup rolled oats",
@@ -846,6 +1100,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Steady",
           "g": 8,
+          "protein": 25,
+          "carbs": 64,
+          "fat": 10,
+          "kcal": 440,
           "name": "Chicken tenders, potato, carrots",
           "items": [
             "baked chicken tenders",
@@ -859,6 +1117,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Brain",
           "g": 5,
+          "protein": 26,
+          "carbs": 29,
+          "fat": 17,
+          "kcal": 374,
           "name": "Salmon with greens and sweet potato",
           "items": [
             "1 salmon fillet",
@@ -877,6 +1139,10 @@ window.PLAN = {
       "blockDay": 3,
       "cheat": false,
       "total": 29,
+      "protein": 58,
+      "carbs": 138,
+      "fat": 29,
+      "kcal": 1022,
       "line": "Off day 3 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
       "meals": [
@@ -885,6 +1151,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Steady",
           "g": 8,
+          "protein": 15,
+          "carbs": 54,
+          "fat": 10,
+          "kcal": 359,
           "name": "Banana oat bowl with flax",
           "items": [
             "1/2 cup rolled oats",
@@ -899,6 +1169,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Calm",
           "g": 12,
+          "protein": 14,
+          "carbs": 41,
+          "fat": 6,
+          "kcal": 273,
           "name": "White bean bowl with cucumber and pepper",
           "items": [
             "3/4 cup white beans, rinsed",
@@ -914,6 +1188,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Steady",
           "g": 9,
+          "protein": 29,
+          "carbs": 43,
+          "fat": 13,
+          "kcal": 390,
           "name": "Turkey with broccoli and potato",
           "items": [
             "a palm of ground turkey",
@@ -931,6 +1209,10 @@ window.PLAN = {
       "blockDay": 4,
       "cheat": false,
       "total": 29,
+      "protein": 55,
+      "carbs": 137,
+      "fat": 35,
+      "kcal": 1060,
       "line": "Off day 4 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
       "meals": [
@@ -939,6 +1221,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Brain",
           "g": 7,
+          "protein": 16,
+          "carbs": 54,
+          "fat": 16,
+          "kcal": 412,
           "name": "Banana oat bowl with walnut",
           "items": [
             "1/2 cup rolled oats",
@@ -953,6 +1239,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Calm",
           "g": 14,
+          "protein": 14,
+          "carbs": 45,
+          "fat": 6,
+          "kcal": 288,
           "name": "White bean bowl with carrot and greens",
           "items": [
             "3/4 cup white beans, rinsed",
@@ -968,6 +1258,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Steady",
           "g": 8,
+          "protein": 25,
+          "carbs": 38,
+          "fat": 13,
+          "kcal": 360,
           "name": "Turkey with carrots and sweet potato",
           "items": [
             "a palm of ground turkey",
@@ -985,6 +1279,10 @@ window.PLAN = {
       "blockDay": 5,
       "cheat": false,
       "total": 26,
+      "protein": 55,
+      "carbs": 126,
+      "fat": 31,
+      "kcal": 998,
       "line": "Off day 5 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
       "meals": [
@@ -993,6 +1291,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Brain",
           "g": 10,
+          "protein": 16,
+          "carbs": 58,
+          "fat": 11,
+          "kcal": 390,
           "name": "Peach oat bowl with chia",
           "items": [
             "1/2 cup rolled oats",
@@ -1007,6 +1309,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Calm",
           "g": 12,
+          "protein": 14,
+          "carbs": 40,
+          "fat": 6,
+          "kcal": 268,
           "name": "White bean bowl with zucchini and tomato",
           "items": [
             "3/4 cup white beans, rinsed",
@@ -1022,6 +1328,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Steady",
           "g": 4,
+          "protein": 25,
+          "carbs": 28,
+          "fat": 14,
+          "kcal": 340,
           "name": "Turkey with pepper and rice",
           "items": [
             "a palm of ground turkey",
@@ -1039,6 +1349,10 @@ window.PLAN = {
       "blockDay": 6,
       "cheat": false,
       "total": 26,
+      "protein": 57,
+      "carbs": 116,
+      "fat": 31,
+      "kcal": 953,
       "line": "Off day 6 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
       "meals": [
@@ -1047,6 +1361,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Steady",
           "g": 8,
+          "protein": 15,
+          "carbs": 55,
+          "fat": 10,
+          "kcal": 367,
           "name": "Peach oat bowl with flax",
           "items": [
             "1/2 cup rolled oats",
@@ -1061,6 +1379,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Calm",
           "g": 14,
+          "protein": 15,
+          "carbs": 38,
+          "fat": 6,
+          "kcal": 258,
           "name": "White bean bowl with broccoli and lemon",
           "items": [
             "3/4 cup white beans, rinsed",
@@ -1075,6 +1397,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Steady",
           "g": 4,
+          "protein": 27,
+          "carbs": 23,
+          "fat": 15,
+          "kcal": 328,
           "name": "Turkey with spinach and quinoa",
           "items": [
             "a palm of ground turkey",
@@ -1093,6 +1419,10 @@ window.PLAN = {
       "blockDay": 7,
       "cheat": false,
       "total": 24,
+      "protein": 70,
+      "carbs": 149,
+      "fat": 45,
+      "kcal": 1255,
       "line": "Off day 7 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
       "meals": [
@@ -1101,6 +1431,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Brain",
           "g": 11,
+          "protein": 16,
+          "carbs": 80,
+          "fat": 16,
+          "kcal": 515,
           "name": "Peach oat bowl with walnut",
           "items": [
             "1/2 cup rolled oats",
@@ -1116,6 +1450,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Steady",
           "g": 7,
+          "protein": 27,
+          "carbs": 28,
+          "fat": 16,
+          "kcal": 360,
           "name": "Chicken with rice and broccoli",
           "items": [
             "1 chicken thigh",
@@ -1130,6 +1468,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Steady",
           "g": 6,
+          "protein": 27,
+          "carbs": 41,
+          "fat": 13,
+          "kcal": 380,
           "name": "Turkey with zucchini and potato",
           "items": [
             "a palm of ground turkey",
@@ -1147,6 +1489,10 @@ window.PLAN = {
       "blockDay": 8,
       "cheat": false,
       "total": 24,
+      "protein": 70,
+      "carbs": 147,
+      "fat": 41,
+      "kcal": 1225,
       "line": "Off day 8 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
       "meals": [
@@ -1155,6 +1501,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Brain",
           "g": 13,
+          "protein": 16,
+          "carbs": 81,
+          "fat": 11,
+          "kcal": 475,
           "name": "Cherry oat bowl with chia",
           "items": [
             "1/2 cup rolled oats",
@@ -1170,6 +1520,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Steady",
           "g": 5,
+          "protein": 26,
+          "carbs": 32,
+          "fat": 16,
+          "kcal": 380,
           "name": "Chicken with rice and pepper",
           "items": [
             "1 chicken thigh",
@@ -1185,6 +1539,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Steady",
           "g": 6,
+          "protein": 28,
+          "carbs": 34,
+          "fat": 14,
+          "kcal": 370,
           "name": "Turkey with tomato and pasta",
           "items": [
             "a palm of ground turkey",
@@ -1202,6 +1560,10 @@ window.PLAN = {
       "blockDay": 9,
       "cheat": false,
       "total": 26,
+      "protein": 71,
+      "carbs": 132,
+      "fat": 41,
+      "kcal": 1152,
       "line": "Off day 9 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
       "meals": [
@@ -1210,6 +1572,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Steady",
           "g": 11,
+          "protein": 15,
+          "carbs": 78,
+          "fat": 10,
+          "kcal": 452,
           "name": "Cherry oat bowl with flax",
           "items": [
             "1/2 cup rolled oats",
@@ -1225,6 +1591,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Steady",
           "g": 8,
+          "protein": 29,
+          "carbs": 26,
+          "fat": 17,
+          "kcal": 360,
           "name": "Chicken with quinoa and broccoli",
           "items": [
             "1 chicken thigh",
@@ -1239,6 +1609,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Steady",
           "g": 7,
+          "protein": 27,
+          "carbs": 28,
+          "fat": 14,
+          "kcal": 340,
           "name": "Turkey with broccoli and rice",
           "items": [
             "a palm of ground turkey",
@@ -1256,6 +1630,10 @@ window.PLAN = {
       "blockDay": 10,
       "cheat": false,
       "total": 21,
+      "protein": 69,
+      "carbs": 137,
+      "fat": 46,
+      "kcal": 1213,
       "line": "Off day 10 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
       "meals": [
@@ -1264,6 +1642,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Brain",
           "g": 10,
+          "protein": 16,
+          "carbs": 78,
+          "fat": 16,
+          "kcal": 505,
           "name": "Cherry oat bowl with walnut",
           "items": [
             "1/2 cup rolled oats",
@@ -1279,6 +1661,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Steady",
           "g": 6,
+          "protein": 28,
+          "carbs": 30,
+          "fat": 17,
+          "kcal": 380,
           "name": "Chicken with quinoa and pepper",
           "items": [
             "1 chicken thigh",
@@ -1294,6 +1680,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Steady",
           "g": 5,
+          "protein": 25,
+          "carbs": 29,
+          "fat": 13,
+          "kcal": 328,
           "name": "Turkey with greens and sweet potato",
           "items": [
             "a palm of ground turkey",
@@ -1312,6 +1702,10 @@ window.PLAN = {
       "blockDay": 11,
       "cheat": false,
       "total": 26,
+      "protein": 54,
+      "carbs": 128,
+      "fat": 23,
+      "kcal": 926,
       "line": "Off day 11 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Black bean chili is the main cook.",
       "meals": [
@@ -1320,6 +1714,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Steady",
           "g": 6,
+          "protein": 13,
+          "carbs": 35,
+          "fat": 7,
+          "kcal": 252,
           "name": "Apple yogurt cup with flax",
           "items": [
             "plain yogurt",
@@ -1333,6 +1731,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Steady",
           "g": 9,
+          "protein": 29,
+          "carbs": 43,
+          "fat": 15,
+          "kcal": 410,
           "name": "Chicken with potato and broccoli",
           "items": [
             "1 chicken thigh",
@@ -1347,6 +1749,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Gut",
           "g": 11,
+          "protein": 12,
+          "carbs": 50,
+          "fat": 1,
+          "kcal": 264,
           "name": "Black bean chili",
           "items": [
             "1/2 cup black beans, rinsed",
@@ -1365,6 +1771,10 @@ window.PLAN = {
       "blockDay": 12,
       "cheat": false,
       "total": 26,
+      "protein": 62,
+      "carbs": 148,
+      "fat": 34,
+      "kcal": 1125,
       "line": "Off day 12 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. White bean tomato pasta is the main cook.",
       "meals": [
@@ -1373,6 +1783,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Calm",
           "g": 5,
+          "protein": 17,
+          "carbs": 36,
+          "fat": 12,
+          "kcal": 305,
           "name": "Apple yogurt cup with pumpkin seed",
           "items": [
             "plain yogurt",
@@ -1386,6 +1800,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Steady",
           "g": 7,
+          "protein": 28,
+          "carbs": 47,
+          "fat": 15,
+          "kcal": 430,
           "name": "Chicken with potato and pepper",
           "items": [
             "1 chicken thigh",
@@ -1401,6 +1819,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Steady",
           "g": 14,
+          "protein": 17,
+          "carbs": 65,
+          "fat": 7,
+          "kcal": 390,
           "name": "White bean tomato pasta",
           "items": [
             "1/2 cup white beans, rinsed",
@@ -1419,6 +1841,10 @@ window.PLAN = {
       "blockDay": 13,
       "cheat": true,
       "total": 31,
+      "protein": 43,
+      "carbs": 138,
+      "fat": 20,
+      "kcal": 882,
       "line": "Cheat day. Off day 13 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
       "meals": [
@@ -1427,6 +1853,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Steady",
           "g": 8,
+          "protein": 14,
+          "carbs": 37,
+          "fat": 7,
+          "kcal": 257,
           "name": "Pear yogurt cup with flax",
           "items": [
             "plain yogurt",
@@ -1440,6 +1870,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Calm",
           "g": 7,
+          "protein": 13,
+          "carbs": 46,
+          "fat": 12,
+          "kcal": 340,
           "name": "Mac and broccoli",
           "items": [
             "macaroni and cheese",
@@ -1452,6 +1886,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Gut",
           "g": 16,
+          "protein": 16,
+          "carbs": 55,
+          "fat": 1,
+          "kcal": 285,
           "name": "Lentil carrot stew",
           "items": [
             "1/2 cup lentils, rinsed",
@@ -1470,6 +1908,10 @@ window.PLAN = {
       "blockDay": 14,
       "cheat": false,
       "total": 27,
+      "protein": 61,
+      "carbs": 127,
+      "fat": 32,
+      "kcal": 1010,
       "line": "Off day 14 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Chickpea pepper skillet is the main cook.",
       "meals": [
@@ -1478,6 +1920,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Calm",
           "g": 7,
+          "protein": 18,
+          "carbs": 38,
+          "fat": 12,
+          "kcal": 310,
           "name": "Pear yogurt cup with pumpkin seed",
           "items": [
             "plain yogurt",
@@ -1491,6 +1937,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Steady",
           "g": 6,
+          "protein": 28,
+          "carbs": 25,
+          "fat": 16,
+          "kcal": 350,
           "name": "Chicken with toast and pepper",
           "items": [
             "1 chicken thigh",
@@ -1506,6 +1956,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Gut",
           "g": 14,
+          "protein": 15,
+          "carbs": 64,
+          "fat": 4,
+          "kcal": 350,
           "name": "Chickpea pepper skillet",
           "items": [
             "3/4 cup chickpeas, rinsed",
@@ -1524,6 +1978,10 @@ window.PLAN = {
       "blockDay": 1,
       "cheat": false,
       "total": 24,
+      "protein": 53,
+      "carbs": 98,
+      "fat": 35,
+      "kcal": 877,
       "line": "Night shift 1 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat baked potato and broccoli before work.",
       "meals": [
@@ -1532,6 +1990,10 @@ window.PLAN = {
           "when": "When you wake, before work",
           "tag": "Steady",
           "g": 9,
+          "protein": 12,
+          "carbs": 43,
+          "fat": 12,
+          "kcal": 310,
           "name": "Baked potato and broccoli",
           "items": [
             "1 potato, skin on",
@@ -1546,6 +2008,10 @@ window.PLAN = {
           "when": "Pack this",
           "tag": "Steady",
           "g": 7,
+          "protein": 27,
+          "carbs": 18,
+          "fat": 16,
+          "kcal": 310,
           "name": "Chicken with tortilla and broccoli",
           "items": [
             "1 chicken thigh",
@@ -1560,6 +2026,10 @@ window.PLAN = {
           "when": "Smaller, then sleep",
           "tag": "Calm",
           "g": 8,
+          "protein": 14,
+          "carbs": 37,
+          "fat": 7,
+          "kcal": 257,
           "name": "Pear and yogurt",
           "items": [
             "plain yogurt",
@@ -1576,6 +2046,10 @@ window.PLAN = {
       "blockDay": 2,
       "cheat": false,
       "total": 24,
+      "protein": 52,
+      "carbs": 91,
+      "fat": 29,
+      "kcal": 830,
       "line": "Night shift 2 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat sweet potato and white beans before work.",
       "meals": [
@@ -1584,6 +2058,10 @@ window.PLAN = {
           "when": "When you wake, before work",
           "tag": "Calm",
           "g": 11,
+          "protein": 11,
+          "carbs": 49,
+          "fat": 5,
+          "kcal": 288,
           "name": "Sweet potato and white beans",
           "items": [
             "1 sweet potato, skin on",
@@ -1599,6 +2077,10 @@ window.PLAN = {
           "when": "Pack this",
           "tag": "Steady",
           "g": 5,
+          "protein": 26,
+          "carbs": 22,
+          "fat": 16,
+          "kcal": 330,
           "name": "Chicken with tortilla and pepper",
           "items": [
             "1 chicken thigh",
@@ -1614,6 +2096,10 @@ window.PLAN = {
           "when": "Smaller, then sleep",
           "tag": "Brain",
           "g": 8,
+          "protein": 15,
+          "carbs": 20,
+          "fat": 8,
+          "kcal": 212,
           "name": "Berries and yogurt",
           "items": [
             "plain yogurt",
@@ -1630,6 +2116,10 @@ window.PLAN = {
       "blockDay": 3,
       "cheat": false,
       "total": 25,
+      "protein": 50,
+      "carbs": 98,
+      "fat": 21,
+      "kcal": 772,
       "line": "Night shift 3 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat lentil spinach soup before work.",
       "meals": [
@@ -1638,6 +2128,10 @@ window.PLAN = {
           "when": "When you wake, before work",
           "tag": "Gut",
           "g": 14,
+          "protein": 13,
+          "carbs": 43,
+          "fat": 0,
+          "kcal": 223,
           "name": "Lentil spinach soup",
           "items": [
             "1/2 cup lentils, rinsed",
@@ -1653,6 +2147,10 @@ window.PLAN = {
           "when": "Pack this",
           "tag": "Steady",
           "g": 7,
+          "protein": 27,
+          "carbs": 28,
+          "fat": 14,
+          "kcal": 340,
           "name": "Turkey with rice and broccoli",
           "items": [
             "a palm of ground turkey",
@@ -1668,6 +2166,10 @@ window.PLAN = {
           "when": "Smaller, then sleep",
           "tag": "Steady",
           "g": 4,
+          "protein": 10,
+          "carbs": 27,
+          "fat": 7,
+          "kcal": 209,
           "name": "Banana and milk",
           "items": [
             "1/2 banana",
@@ -1684,6 +2186,10 @@ window.PLAN = {
       "blockDay": 4,
       "cheat": true,
       "total": 29,
+      "protein": 34,
+      "carbs": 109,
+      "fat": 22,
+      "kcal": 758,
       "line": "Cheat day. Night shift 4 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
       "meals": [
@@ -1692,6 +2198,10 @@ window.PLAN = {
           "when": "When you wake, before work",
           "tag": "Gut",
           "g": 14,
+          "protein": 14,
+          "carbs": 48,
+          "fat": 2,
+          "kcal": 264,
           "name": "Bean and zucchini skillet",
           "items": [
             "1/2 cup black beans, rinsed",
@@ -1707,6 +2217,10 @@ window.PLAN = {
           "when": "Pack this",
           "tag": "Gut",
           "g": 11,
+          "protein": 15,
+          "carbs": 42,
+          "fat": 14,
+          "kcal": 354,
           "name": "Bean nacho cup",
           "items": [
             "1/2 cup black beans, rinsed",
@@ -1721,6 +2235,10 @@ window.PLAN = {
           "when": "Smaller, then sleep",
           "tag": "Steady",
           "g": 4,
+          "protein": 5,
+          "carbs": 19,
+          "fat": 6,
+          "kcal": 140,
           "name": "Toast and tomato",
           "items": [
             "1 slice whole grain bread",
@@ -1737,6 +2255,10 @@ window.PLAN = {
       "blockDay": 5,
       "cheat": false,
       "total": 25,
+      "protein": 48,
+      "carbs": 107,
+      "fat": 23,
+      "kcal": 812,
       "line": "Night shift 5 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat black bean chili before work.",
       "meals": [
@@ -1745,6 +2267,10 @@ window.PLAN = {
           "when": "When you wake, before work",
           "tag": "Gut",
           "g": 13,
+          "protein": 14,
+          "carbs": 56,
+          "fat": 1,
+          "kcal": 297,
           "name": "Black bean chili with a side salad",
           "items": [
             "1/2 cup black beans, rinsed",
@@ -1763,6 +2289,10 @@ window.PLAN = {
           "when": "Pack this",
           "tag": "Steady",
           "g": 8,
+          "protein": 29,
+          "carbs": 26,
+          "fat": 15,
+          "kcal": 340,
           "name": "Turkey with quinoa and broccoli",
           "items": [
             "a palm of ground turkey",
@@ -1778,6 +2308,10 @@ window.PLAN = {
           "when": "Smaller, then sleep",
           "tag": "Steady",
           "g": 4,
+          "protein": 5,
+          "carbs": 25,
+          "fat": 7,
+          "kcal": 175,
           "name": "Apple and cheese",
           "items": [
             "1 apple, skin on",
@@ -1793,6 +2327,10 @@ window.PLAN = {
       "blockDay": 6,
       "cheat": false,
       "total": 27,
+      "protein": 54,
+      "carbs": 131,
+      "fat": 25,
+      "kcal": 961,
       "line": "Night shift 6 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat black bean chili before work.",
       "meals": [
@@ -1801,6 +2339,10 @@ window.PLAN = {
           "when": "When you wake, before work",
           "tag": "Gut",
           "g": 18,
+          "protein": 13,
+          "carbs": 78,
+          "fat": 6,
+          "kcal": 419,
           "name": "Black bean chili with avocado",
           "items": [
             "1/2 cup black beans, rinsed",
@@ -1818,6 +2360,10 @@ window.PLAN = {
           "when": "Pack this",
           "tag": "Steady",
           "g": 6,
+          "protein": 28,
+          "carbs": 30,
+          "fat": 15,
+          "kcal": 360,
           "name": "Turkey with quinoa and pepper",
           "items": [
             "a palm of ground turkey",
@@ -1834,6 +2380,10 @@ window.PLAN = {
           "when": "Smaller, then sleep",
           "tag": "Calm",
           "g": 3,
+          "protein": 13,
+          "carbs": 23,
+          "fat": 4,
+          "kcal": 182,
           "name": "Orange and yogurt",
           "items": [
             "1 orange",
@@ -1849,6 +2399,10 @@ window.PLAN = {
       "blockDay": 7,
       "cheat": false,
       "total": 27,
+      "protein": 58,
+      "carbs": 147,
+      "fat": 22,
+      "kcal": 1004,
       "line": "Night shift 7 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat black bean chili before work.",
       "meals": [
@@ -1857,6 +2411,10 @@ window.PLAN = {
           "when": "When you wake, before work",
           "tag": "Gut",
           "g": 14,
+          "protein": 16,
+          "carbs": 65,
+          "fat": 2,
+          "kcal": 344,
           "name": "Black bean chili with toast",
           "items": [
             "1/2 cup black beans, rinsed",
@@ -1873,6 +2431,10 @@ window.PLAN = {
           "when": "Pack this",
           "tag": "Steady",
           "g": 9,
+          "protein": 29,
+          "carbs": 43,
+          "fat": 13,
+          "kcal": 390,
           "name": "Turkey with potato and broccoli",
           "items": [
             "a palm of ground turkey",
@@ -1888,6 +2450,10 @@ window.PLAN = {
           "when": "Smaller, then sleep",
           "tag": "Steady",
           "g": 4,
+          "protein": 13,
+          "carbs": 39,
+          "fat": 7,
+          "kcal": 270,
           "name": "Warm milk oats",
           "items": [
             "1/2 cup rolled oats",
@@ -1904,6 +2470,10 @@ window.PLAN = {
       "blockDay": 8,
       "cheat": false,
       "total": 24,
+      "protein": 70,
+      "carbs": 121,
+      "fat": 28,
+      "kcal": 1008,
       "line": "Night shift 8 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat white bean tomato pasta before work.",
       "meals": [
@@ -1912,6 +2482,10 @@ window.PLAN = {
           "when": "When you wake, before work",
           "tag": "Steady",
           "g": 16,
+          "protein": 19,
+          "carbs": 71,
+          "fat": 7,
+          "kcal": 423,
           "name": "White bean tomato pasta with a side salad",
           "items": [
             "1/2 cup white beans, rinsed",
@@ -1930,6 +2504,10 @@ window.PLAN = {
           "when": "Pack this",
           "tag": "Steady",
           "g": 7,
+          "protein": 28,
+          "carbs": 47,
+          "fat": 13,
+          "kcal": 410,
           "name": "Turkey with potato and pepper",
           "items": [
             "a palm of ground turkey",
@@ -1946,6 +2524,10 @@ window.PLAN = {
           "when": "Smaller, then sleep",
           "tag": "Steady",
           "g": 1,
+          "protein": 23,
+          "carbs": 3,
+          "fat": 8,
+          "kcal": 175,
           "name": "Cucumber and turkey bite",
           "items": [
             "a palm of ground turkey",
@@ -1961,6 +2543,10 @@ window.PLAN = {
       "blockDay": 9,
       "cheat": false,
       "total": 26,
+      "protein": 54,
+      "carbs": 90,
+      "fat": 31,
+      "kcal": 840,
       "line": "Night shift 9 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat white bean tomato pasta before work.",
       "meals": [
@@ -1969,6 +2555,10 @@ window.PLAN = {
           "when": "When you wake, before work",
           "tag": "Steady",
           "g": 17,
+          "protein": 18,
+          "carbs": 68,
+          "fat": 12,
+          "kcal": 450,
           "name": "White bean tomato pasta with avocado",
           "items": [
             "1/2 cup white beans, rinsed",
@@ -1985,6 +2575,10 @@ window.PLAN = {
           "when": "Pack this",
           "tag": "Steady",
           "g": 8,
+          "protein": 29,
+          "carbs": 21,
+          "fat": 14,
+          "kcal": 310,
           "name": "Turkey with toast and broccoli",
           "items": [
             "a palm of ground turkey",
@@ -2000,6 +2594,10 @@ window.PLAN = {
           "when": "Smaller, then sleep",
           "tag": "Steady",
           "g": 1,
+          "protein": 7,
+          "carbs": 1,
+          "fat": 5,
+          "kcal": 80,
           "name": "Spinach egg",
           "items": [
             "1 egg",
@@ -2015,6 +2613,10 @@ window.PLAN = {
       "blockDay": 10,
       "cheat": false,
       "total": 26,
+      "protein": 67,
+      "carbs": 130,
+      "fat": 34,
+      "kcal": 1070,
       "line": "Night shift 10 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat white bean tomato pasta before work.",
       "meals": [
@@ -2023,6 +2625,10 @@ window.PLAN = {
           "when": "When you wake, before work",
           "tag": "Steady",
           "g": 17,
+          "protein": 21,
+          "carbs": 80,
+          "fat": 8,
+          "kcal": 470,
           "name": "White bean tomato pasta with toast",
           "items": [
             "1/2 cup white beans, rinsed",
@@ -2039,6 +2645,10 @@ window.PLAN = {
           "when": "Pack this",
           "tag": "Steady",
           "g": 6,
+          "protein": 28,
+          "carbs": 25,
+          "fat": 14,
+          "kcal": 330,
           "name": "Turkey with toast and pepper",
           "items": [
             "a palm of ground turkey",
@@ -2055,6 +2665,10 @@ window.PLAN = {
           "when": "Smaller, then sleep",
           "tag": "Calm",
           "g": 3,
+          "protein": 18,
+          "carbs": 25,
+          "fat": 12,
+          "kcal": 270,
           "name": "Peach and pumpkin seeds",
           "items": [
             "1 peach",
@@ -2071,6 +2685,10 @@ window.PLAN = {
       "blockDay": 11,
       "cheat": true,
       "total": 31,
+      "protein": 47,
+      "carbs": 133,
+      "fat": 18,
+      "kcal": 857,
       "line": "Cheat day. Night shift 11 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
       "meals": [
@@ -2079,6 +2697,10 @@ window.PLAN = {
           "when": "When you wake, before work",
           "tag": "Gut",
           "g": 18,
+          "protein": 18,
+          "carbs": 61,
+          "fat": 1,
+          "kcal": 318,
           "name": "Lentil carrot stew with a side salad",
           "items": [
             "1/2 cup lentils, rinsed",
@@ -2097,6 +2719,10 @@ window.PLAN = {
           "when": "Pack this",
           "tag": "Steady",
           "g": 9,
+          "protein": 16,
+          "carbs": 52,
+          "fat": 10,
+          "kcal": 340,
           "name": "Grilled cheese and tomato soup",
           "items": [
             "2 slices whole grain bread",
@@ -2111,6 +2737,10 @@ window.PLAN = {
           "when": "Smaller, then sleep",
           "tag": "Brain",
           "g": 4,
+          "protein": 13,
+          "carbs": 20,
+          "fat": 7,
+          "kcal": 199,
           "name": "Blueberries and flax",
           "items": [
             "1/2 cup blueberries",
@@ -2127,6 +2757,10 @@ window.PLAN = {
       "blockDay": 12,
       "cheat": false,
       "total": 37,
+      "protein": 55,
+      "carbs": 126,
+      "fat": 28,
+      "kcal": 943,
       "line": "Night shift 12 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat lentil carrot stew before work.",
       "meals": [
@@ -2135,6 +2769,10 @@ window.PLAN = {
           "when": "When you wake, before work",
           "tag": "Gut",
           "g": 19,
+          "protein": 17,
+          "carbs": 58,
+          "fat": 6,
+          "kcal": 345,
           "name": "Lentil carrot stew with avocado",
           "items": [
             "1/2 cup lentils, rinsed",
@@ -2151,6 +2789,10 @@ window.PLAN = {
           "when": "Pack this",
           "tag": "Steady",
           "g": 5,
+          "protein": 26,
+          "carbs": 22,
+          "fat": 14,
+          "kcal": 310,
           "name": "Turkey with tortilla and pepper",
           "items": [
             "a palm of ground turkey",
@@ -2167,6 +2809,10 @@ window.PLAN = {
           "when": "Smaller, then sleep",
           "tag": "Gut",
           "g": 13,
+          "protein": 12,
+          "carbs": 46,
+          "fat": 8,
+          "kcal": 288,
           "name": "Carrot coins and hummus mash",
           "items": [
             "1 cup carrots",
@@ -2184,6 +2830,10 @@ window.PLAN = {
       "blockDay": 13,
       "cheat": false,
       "total": 28,
+      "protein": 51,
+      "carbs": 115,
+      "fat": 26,
+      "kcal": 887,
       "line": "Night shift 13 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat lentil carrot stew before work.",
       "meals": [
@@ -2192,6 +2842,10 @@ window.PLAN = {
           "when": "When you wake, before work",
           "tag": "Gut",
           "g": 19,
+          "protein": 20,
+          "carbs": 70,
+          "fat": 2,
+          "kcal": 365,
           "name": "Lentil carrot stew with toast",
           "items": [
             "1/2 cup lentils, rinsed",
@@ -2208,6 +2862,10 @@ window.PLAN = {
           "when": "Pack this",
           "tag": "Brain",
           "g": 3,
+          "protein": 26,
+          "carbs": 25,
+          "fat": 18,
+          "kcal": 374,
           "name": "Salmon plate with rice and spinach",
           "items": [
             "1 salmon fillet",
@@ -2223,6 +2881,10 @@ window.PLAN = {
           "when": "Smaller, then sleep",
           "tag": "Steady",
           "g": 6,
+          "protein": 5,
+          "carbs": 20,
+          "fat": 6,
+          "kcal": 148,
           "name": "Half avocado and lemon",
           "items": [
             "1/4 avocado",
@@ -2239,6 +2901,10 @@ window.PLAN = {
       "blockDay": 14,
       "cheat": false,
       "total": 25,
+      "protein": 58,
+      "carbs": 152,
+      "fat": 26,
+      "kcal": 1061,
       "line": "Night shift 14 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat chickpea pepper skillet before work.",
       "meals": [
@@ -2247,6 +2913,10 @@ window.PLAN = {
           "when": "When you wake, before work",
           "tag": "Gut",
           "g": 20,
+          "protein": 17,
+          "carbs": 95,
+          "fat": 4,
+          "kcal": 478,
           "name": "Chickpea pepper skillet with a side salad",
           "items": [
             "3/4 cup chickpeas, rinsed",
@@ -2266,6 +2936,10 @@ window.PLAN = {
           "when": "Pack this",
           "tag": "Brain",
           "g": 4,
+          "protein": 28,
+          "carbs": 20,
+          "fat": 18,
+          "kcal": 349,
           "name": "Salmon plate with cucumber and bread",
           "items": [
             "1 salmon fillet",
@@ -2281,6 +2955,10 @@ window.PLAN = {
           "when": "Smaller, then sleep",
           "tag": "Calm",
           "g": 1,
+          "protein": 13,
+          "carbs": 37,
+          "fat": 4,
+          "kcal": 234,
           "name": "Cherries and yogurt",
           "items": [
             "1/2 cup cherries",
@@ -2297,6 +2975,10 @@ window.PLAN = {
       "blockDay": 1,
       "cheat": true,
       "total": 25,
+      "protein": 34,
+      "carbs": 126,
+      "fat": 27,
+      "kcal": 872,
       "line": "Cheat day. Off day 1 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
       "meals": [
@@ -2305,6 +2987,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Steady",
           "g": 4,
+          "protein": 16,
+          "carbs": 18,
+          "fat": 11,
+          "kcal": 230,
           "name": "Eggs and spinach on a corn tortilla",
           "items": [
             "2 eggs",
@@ -2319,6 +3005,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Calm",
           "g": 4,
+          "protein": 2,
+          "carbs": 41,
+          "fat": 7,
+          "kcal": 232,
           "name": "Ice cream and an apple",
           "items": [
             "a bowl of ice cream",
@@ -2331,6 +3021,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Gut",
           "g": 17,
+          "protein": 16,
+          "carbs": 67,
+          "fat": 9,
+          "kcal": 410,
           "name": "Chickpea pepper skillet with avocado",
           "items": [
             "3/4 cup chickpeas, rinsed",
@@ -2350,6 +3044,10 @@ window.PLAN = {
       "blockDay": 2,
       "cheat": false,
       "total": 26,
+      "protein": 65,
+      "carbs": 126,
+      "fat": 35,
+      "kcal": 1064,
       "line": "Off day 2 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Chickpea pepper skillet is the main cook.",
       "meals": [
@@ -2358,6 +3056,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Steady",
           "g": 5,
+          "protein": 18,
+          "carbs": 21,
+          "fat": 11,
+          "kcal": 250,
           "name": "Eggs and spinach with toast",
           "items": [
             "2 eggs",
@@ -2372,6 +3074,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Brain",
           "g": 4,
+          "protein": 28,
+          "carbs": 26,
+          "fat": 19,
+          "kcal": 384,
           "name": "Salmon plate with tomato and quinoa",
           "items": [
             "1 salmon fillet",
@@ -2387,6 +3093,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Gut",
           "g": 17,
+          "protein": 19,
+          "carbs": 79,
+          "fat": 5,
+          "kcal": 430,
           "name": "Chickpea pepper skillet with toast",
           "items": [
             "3/4 cup chickpeas, rinsed",
@@ -2406,6 +3116,10 @@ window.PLAN = {
       "blockDay": 3,
       "cheat": false,
       "total": 26,
+      "protein": 54,
+      "carbs": 108,
+      "fat": 36,
+      "kcal": 947,
       "line": "Off day 3 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Baked potato and broccoli is the main cook.",
       "meals": [
@@ -2414,6 +3128,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Steady",
           "g": 3,
+          "protein": 15,
+          "carbs": 17,
+          "fat": 11,
+          "kcal": 220,
           "name": "Eggs and tomato on a corn tortilla",
           "items": [
             "2 eggs",
@@ -2427,6 +3145,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Gut",
           "g": 12,
+          "protein": 25,
+          "carbs": 42,
+          "fat": 13,
+          "kcal": 384,
           "name": "Egg and bean wrap",
           "items": [
             "2 eggs",
@@ -2442,6 +3164,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Steady",
           "g": 11,
+          "protein": 14,
+          "carbs": 49,
+          "fat": 12,
+          "kcal": 343,
           "name": "Baked potato and broccoli with a side salad",
           "items": [
             "1 potato, skin on",
@@ -2462,6 +3188,10 @@ window.PLAN = {
       "blockDay": 4,
       "cheat": false,
       "total": 27,
+      "protein": 55,
+      "carbs": 105,
+      "fat": 46,
+      "kcal": 1013,
       "line": "Off day 4 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Baked potato and broccoli is the main cook.",
       "meals": [
@@ -2470,6 +3200,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Steady",
           "g": 4,
+          "protein": 17,
+          "carbs": 20,
+          "fat": 11,
+          "kcal": 240,
           "name": "Eggs and tomato with toast",
           "items": [
             "2 eggs",
@@ -2483,6 +3217,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Gut",
           "g": 11,
+          "protein": 25,
+          "carbs": 39,
+          "fat": 18,
+          "kcal": 403,
           "name": "Egg and chickpea salad",
           "items": [
             "2 eggs",
@@ -2499,6 +3237,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Steady",
           "g": 12,
+          "protein": 13,
+          "carbs": 46,
+          "fat": 17,
+          "kcal": 370,
           "name": "Baked potato and broccoli with avocado",
           "items": [
             "1 potato, skin on",
@@ -2517,6 +3259,10 @@ window.PLAN = {
       "blockDay": 5,
       "cheat": false,
       "total": 34,
+      "protein": 61,
+      "carbs": 132,
+      "fat": 47,
+      "kcal": 1144,
       "line": "Off day 5 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Baked potato and broccoli is the main cook.",
       "meals": [
@@ -2525,6 +3271,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Gut",
           "g": 10,
+          "protein": 22,
+          "carbs": 33,
+          "fat": 11,
+          "kcal": 314,
           "name": "Eggs and beans on a corn tortilla",
           "items": [
             "2 eggs",
@@ -2539,6 +3289,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Steady",
           "g": 12,
+          "protein": 23,
+          "carbs": 41,
+          "fat": 23,
+          "kcal": 440,
           "name": "Egg and avocado toast",
           "items": [
             "2 eggs",
@@ -2553,6 +3307,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Steady",
           "g": 12,
+          "protein": 16,
+          "carbs": 58,
+          "fat": 13,
+          "kcal": 390,
           "name": "Baked potato and broccoli with toast",
           "items": [
             "1 potato, skin on",
@@ -2571,6 +3329,10 @@ window.PLAN = {
       "blockDay": 6,
       "cheat": false,
       "total": 37,
+      "protein": 60,
+      "carbs": 127,
+      "fat": 26,
+      "kcal": 978,
       "line": "Off day 6 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Sweet potato and white beans is the main cook.",
       "meals": [
@@ -2579,6 +3341,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Gut",
           "g": 11,
+          "protein": 24,
+          "carbs": 36,
+          "fat": 11,
+          "kcal": 334,
           "name": "Eggs and beans with toast",
           "items": [
             "2 eggs",
@@ -2593,6 +3359,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Gut",
           "g": 13,
+          "protein": 23,
+          "carbs": 36,
+          "fat": 10,
+          "kcal": 323,
           "name": "Egg and lentil bowl",
           "items": [
             "2 eggs",
@@ -2608,6 +3378,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Calm",
           "g": 13,
+          "protein": 13,
+          "carbs": 55,
+          "fat": 5,
+          "kcal": 321,
           "name": "Sweet potato and white beans with a side salad",
           "items": [
             "1 sweet potato, skin on",
@@ -2629,6 +3403,10 @@ window.PLAN = {
       "blockDay": 7,
       "cheat": false,
       "total": 28,
+      "protein": 52,
+      "carbs": 111,
+      "fat": 37,
+      "kcal": 978,
       "line": "Off day 7 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Sweet potato and white beans is the main cook.",
       "meals": [
@@ -2637,6 +3415,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Steady",
           "g": 4,
+          "protein": 15,
+          "carbs": 19,
+          "fat": 11,
+          "kcal": 230,
           "name": "Eggs and pepper on a corn tortilla",
           "items": [
             "2 eggs",
@@ -2650,6 +3432,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Calm",
           "g": 10,
+          "protein": 25,
+          "carbs": 40,
+          "fat": 16,
+          "kcal": 400,
           "name": "Egg and white beans",
           "items": [
             "2 eggs",
@@ -2665,6 +3451,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Calm",
           "g": 14,
+          "protein": 12,
+          "carbs": 52,
+          "fat": 10,
+          "kcal": 348,
           "name": "Sweet potato and white beans with avocado",
           "items": [
             "1 sweet potato, skin on",
@@ -2684,6 +3474,10 @@ window.PLAN = {
       "blockDay": 8,
       "cheat": false,
       "total": 24,
+      "protein": 47,
+      "carbs": 114,
+      "fat": 32,
+      "kcal": 918,
       "line": "Off day 8 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Sweet potato and white beans is the main cook.",
       "meals": [
@@ -2692,6 +3486,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Steady",
           "g": 5,
+          "protein": 17,
+          "carbs": 22,
+          "fat": 11,
+          "kcal": 250,
           "name": "Eggs and pepper with toast",
           "items": [
             "2 eggs",
@@ -2705,6 +3503,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Steady",
           "g": 5,
+          "protein": 15,
+          "carbs": 28,
+          "fat": 15,
+          "kcal": 300,
           "name": "Egg and sweet potato",
           "items": [
             "2 eggs",
@@ -2719,6 +3521,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Calm",
           "g": 14,
+          "protein": 15,
+          "carbs": 64,
+          "fat": 6,
+          "kcal": 368,
           "name": "Sweet potato and white beans with toast",
           "items": [
             "1 sweet potato, skin on",
@@ -2738,6 +3544,10 @@ window.PLAN = {
       "blockDay": 9,
       "cheat": false,
       "total": 27,
+      "protein": 50,
+      "carbs": 107,
+      "fat": 29,
+      "kcal": 871,
       "line": "Off day 9 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Lentil spinach soup is the main cook.",
       "meals": [
@@ -2746,6 +3556,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Steady",
           "g": 7,
+          "protein": 15,
+          "carbs": 39,
+          "fat": 11,
+          "kcal": 305,
           "name": "Eggs and greens on a corn tortilla",
           "items": [
             "2 eggs",
@@ -2760,6 +3574,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Steady",
           "g": 4,
+          "protein": 20,
+          "carbs": 19,
+          "fat": 18,
+          "kcal": 310,
           "name": "Egg and pepper tortilla",
           "items": [
             "2 eggs",
@@ -2774,6 +3592,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Gut",
           "g": 16,
+          "protein": 15,
+          "carbs": 49,
+          "fat": 0,
+          "kcal": 256,
           "name": "Lentil spinach soup with a side salad",
           "items": [
             "1/2 cup lentils, rinsed",
@@ -2795,6 +3617,10 @@ window.PLAN = {
       "blockDay": 10,
       "cheat": false,
       "total": 28,
+      "protein": 48,
+      "carbs": 92,
+      "fat": 32,
+      "kcal": 833,
       "line": "Off day 10 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Lentil spinach soup is the main cook.",
       "meals": [
@@ -2803,6 +3629,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Steady",
           "g": 4,
+          "protein": 17,
+          "carbs": 17,
+          "fat": 11,
+          "kcal": 230,
           "name": "Eggs and greens with toast",
           "items": [
             "2 eggs",
@@ -2816,6 +3646,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Steady",
           "g": 7,
+          "protein": 17,
+          "carbs": 29,
+          "fat": 16,
+          "kcal": 320,
           "name": "Egg and broccoli rice",
           "items": [
             "2 eggs",
@@ -2830,6 +3664,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Gut",
           "g": 17,
+          "protein": 14,
+          "carbs": 46,
+          "fat": 5,
+          "kcal": 283,
           "name": "Lentil spinach soup with avocado",
           "items": [
             "1/2 cup lentils, rinsed",
@@ -2849,6 +3687,10 @@ window.PLAN = {
       "blockDay": 11,
       "cheat": false,
       "total": 41,
+      "protein": 51,
+      "carbs": 141,
+      "fat": 21,
+      "kcal": 916,
       "line": "Off day 11 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Lentil spinach soup is the main cook.",
       "meals": [
@@ -2857,6 +3699,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Gut",
           "g": 7,
+          "protein": 17,
+          "carbs": 19,
+          "fat": 11,
+          "kcal": 230,
           "name": "Eggs and broccoli on a corn tortilla",
           "items": [
             "2 eggs",
@@ -2870,6 +3716,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Gut",
           "g": 17,
+          "protein": 17,
+          "carbs": 64,
+          "fat": 9,
+          "kcal": 383,
           "name": "Hummus-style chickpea mash plate",
           "items": [
             "3/4 cup chickpeas, rinsed",
@@ -2886,6 +3736,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Gut",
           "g": 17,
+          "protein": 17,
+          "carbs": 58,
+          "fat": 1,
+          "kcal": 303,
           "name": "Lentil spinach soup with toast",
           "items": [
             "1/2 cup lentils, rinsed",
@@ -2905,6 +3759,10 @@ window.PLAN = {
       "blockDay": 12,
       "cheat": true,
       "total": 35,
+      "protein": 51,
+      "carbs": 133,
+      "fat": 28,
+      "kcal": 966,
       "line": "Cheat day. Off day 12 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
       "meals": [
@@ -2913,6 +3771,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Gut",
           "g": 8,
+          "protein": 19,
+          "carbs": 22,
+          "fat": 11,
+          "kcal": 250,
           "name": "Eggs and broccoli with toast",
           "items": [
             "2 eggs",
@@ -2926,6 +3788,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Brain",
           "g": 11,
+          "protein": 16,
+          "carbs": 57,
+          "fat": 15,
+          "kcal": 419,
           "name": "Chocolate chip oats",
           "items": [
             "1/2 cup rolled oats",
@@ -2941,6 +3807,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Gut",
           "g": 16,
+          "protein": 16,
+          "carbs": 54,
+          "fat": 2,
+          "kcal": 297,
           "name": "Bean and zucchini skillet with a side salad",
           "items": [
             "1/2 cup black beans, rinsed",
@@ -2962,6 +3832,10 @@ window.PLAN = {
       "blockDay": 13,
       "cheat": false,
       "total": 36,
+      "protein": 70,
+      "carbs": 136,
+      "fat": 38,
+      "kcal": 1141,
       "line": "Off day 13 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Bean and zucchini skillet is the main cook.",
       "meals": [
@@ -2970,6 +3844,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Steady",
           "g": 12,
+          "protein": 11,
+          "carbs": 42,
+          "fat": 13,
+          "kcal": 308,
           "name": "Avocado toast",
           "items": [
             "2 slices whole grain bread",
@@ -2984,6 +3862,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Brain",
           "g": 7,
+          "protein": 44,
+          "carbs": 43,
+          "fat": 18,
+          "kcal": 509,
           "name": "Tuna-free salmon salad toast",
           "items": [
             "2 slices whole grain bread",
@@ -2999,6 +3881,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Gut",
           "g": 17,
+          "protein": 15,
+          "carbs": 51,
+          "fat": 7,
+          "kcal": 324,
           "name": "Bean and zucchini skillet with avocado",
           "items": [
             "1/2 cup black beans, rinsed",
@@ -3018,6 +3904,10 @@ window.PLAN = {
       "blockDay": 14,
       "cheat": false,
       "total": 38,
+      "protein": 45,
+      "carbs": 152,
+      "fat": 14,
+      "kcal": 890,
       "line": "Off day 14 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Bean and zucchini skillet is the main cook.",
       "meals": [
@@ -3026,6 +3916,10 @@ window.PLAN = {
           "when": "While you are awake",
           "tag": "Steady",
           "g": 9,
+          "protein": 13,
+          "carbs": 46,
+          "fat": 10,
+          "kcal": 306,
           "name": "Peanut and banana toast",
           "items": [
             "2 slices whole grain bread",
@@ -3039,6 +3933,10 @@ window.PLAN = {
           "when": "Main plate",
           "tag": "Calm",
           "g": 12,
+          "protein": 14,
+          "carbs": 43,
+          "fat": 1,
+          "kcal": 240,
           "name": "Zucchini bean skillet",
           "items": [
             "1 zucchini",
@@ -3054,6 +3952,10 @@ window.PLAN = {
           "when": "Earlier if sleep is soon",
           "tag": "Gut",
           "g": 17,
+          "protein": 18,
+          "carbs": 63,
+          "fat": 3,
+          "kcal": 344,
           "name": "Bean and zucchini skillet with toast",
           "items": [
             "1/2 cup black beans, rinsed",
@@ -3066,228 +3968,13 @@ window.PLAN = {
           "method": "Soften the zucchini. Add beans and tomato. Quinoa underneath. Toast on the side."
         }
       ]
-    },
-    {
-      "n": 57,
-      "shift": "day",
-      "blockDay": 1,
-      "cheat": false,
-      "total": 26,
-      "line": "Day shift 1 of 14. Stop caffeine about 6 hours before sleep.",
-      "note": "Salmon, beans, and greens tonight, if you are on days.",
-      "meals": [
-        {
-          "slot": "Breakfast",
-          "when": "After you wake",
-          "tag": "Steady",
-          "g": 7,
-          "name": "Cheese and tomato toast",
-          "items": [
-            "2 slices whole grain bread",
-            "a little cheddar",
-            "tomato"
-          ],
-          "method": "Toast. Cheese and tomato. Warm it if you want the cheese soft."
-        },
-        {
-          "slot": "Lunch",
-          "when": "Mid shift",
-          "tag": "Gut",
-          "g": 12,
-          "name": "Spinach lentil wrap",
-          "items": [
-            "1 whole wheat tortilla",
-            "1/2 cup lentils, rinsed",
-            "a handful of spinach",
-            "lemon",
-            "olive oil"
-          ],
-          "method": "Warm lentils. Roll with spinach and lemon."
-        },
-        {
-          "slot": "Dinner",
-          "when": "After work",
-          "tag": "Brain",
-          "g": 7,
-          "name": "Salmon, beans, and greens",
-          "items": [
-            "1 salmon fillet",
-            "1/2 cup white beans, rinsed",
-            "a handful of salad greens",
-            "lemon",
-            "olive oil"
-          ],
-          "method": "Bake the salmon 15 to 18 minutes. Warm the beans. Greens with lemon."
-        }
-      ]
-    },
-    {
-      "n": 58,
-      "shift": "day",
-      "blockDay": 2,
-      "cheat": false,
-      "total": 32,
-      "line": "Day shift 2 of 14. Stop caffeine about 6 hours before sleep.",
-      "note": "Chicken, apple, and sweet potato tonight, if you are on days.",
-      "meals": [
-        {
-          "slot": "Breakfast",
-          "when": "After you wake",
-          "tag": "Steady",
-          "g": 10,
-          "name": "Jam and apple toast",
-          "items": [
-            "2 slices whole grain bread",
-            "a spoon of jam",
-            "1 apple, skin on"
-          ],
-          "method": "Toast and jam. Eat the apple whole, skin on."
-        },
-        {
-          "slot": "Lunch",
-          "when": "Mid shift",
-          "tag": "Gut",
-          "g": 14,
-          "name": "Pepper chickpea wrap",
-          "items": [
-            "1 whole wheat tortilla",
-            "3/4 cup chickpeas, rinsed",
-            "1 bell pepper",
-            "lemon",
-            "olive oil"
-          ],
-          "method": "Toss chickpeas with pepper and lemon. Roll in the tortilla."
-        },
-        {
-          "slot": "Dinner",
-          "when": "After work",
-          "tag": "Steady",
-          "g": 8,
-          "name": "Chicken, apple, and sweet potato",
-          "items": [
-            "1 chicken thigh",
-            "1 apple, skin on",
-            "1 sweet potato, skin on",
-            "olive oil"
-          ],
-          "method": "400 F. Chicken and sweet potato. Eat the apple whole on the side."
-        }
-      ]
-    },
-    {
-      "n": 59,
-      "shift": "day",
-      "blockDay": 3,
-      "cheat": true,
-      "total": 34,
-      "line": "Cheat day. Day shift 3 of 14. Stop caffeine about 6 hours before sleep.",
-      "note": "Cheat day. One fun plate. The other meals still feed you.",
-      "meals": [
-        {
-          "slot": "Breakfast",
-          "when": "After you wake",
-          "tag": "Gut",
-          "g": 10,
-          "name": "Bean mash toast",
-          "items": [
-            "1 slice whole grain bread",
-            "1/2 cup white beans, rinsed",
-            "lemon",
-            "cucumber"
-          ],
-          "method": "Mash the beans with lemon. Spread on toast. Cucumber beside it."
-        },
-        {
-          "slot": "Lunch",
-          "when": "Mid shift",
-          "tag": "Gut",
-          "g": 14,
-          "name": "Cheese quesadilla, no onion",
-          "items": [
-            "1 whole wheat tortilla",
-            "a little mozzarella",
-            "1/2 cup black beans, rinsed",
-            "1 bell pepper",
-            "salsa with no onion"
-          ],
-          "method": "Warm beans and pepper. Cheese in the tortilla. Brown both sides. Salsa only if it has no onion."
-        },
-        {
-          "slot": "Dinner",
-          "when": "After work",
-          "tag": "Steady",
-          "g": 10,
-          "name": "Turkey, pear, and quinoa",
-          "items": [
-            "a palm of ground turkey",
-            "1 pear, skin on",
-            "1/2 cup cooked quinoa",
-            "a handful of spinach",
-            "olive oil"
-          ],
-          "method": "Brown the turkey. Quinoa and spinach. Pear after, not in the pan."
-        }
-      ]
-    },
-    {
-      "n": 60,
-      "shift": "day",
-      "blockDay": 4,
-      "cheat": false,
-      "total": 27,
-      "line": "Day shift 4 of 14. Stop caffeine about 6 hours before sleep.",
-      "note": "Egg, potato, and broccoli night plate tonight, if you are on days.",
-      "meals": [
-        {
-          "slot": "Breakfast",
-          "when": "After you wake",
-          "tag": "Steady",
-          "g": 5,
-          "name": "Egg and pepper toast",
-          "items": [
-            "1 slice whole grain bread",
-            "1 egg",
-            "1 bell pepper"
-          ],
-          "method": "Scramble one egg with the pepper. Pile it on toast."
-        },
-        {
-          "slot": "Lunch",
-          "when": "Mid shift",
-          "tag": "Calm",
-          "g": 13,
-          "name": "Carrot and white bean mash",
-          "items": [
-            "1 cup carrots",
-            "1/2 cup white beans, rinsed",
-            "lemon",
-            "olive oil",
-            "1 slice whole grain bread"
-          ],
-          "method": "Mash the beans. Eat with carrot sticks and bread."
-        },
-        {
-          "slot": "Dinner",
-          "when": "After work",
-          "tag": "Steady",
-          "g": 9,
-          "name": "Egg, potato, and broccoli night plate",
-          "items": [
-            "2 eggs",
-            "1 potato, skin on",
-            "1 cup broccoli",
-            "olive oil"
-          ],
-          "method": "Potato and broccoli. Top with eggs. Fine on a day off too."
-        }
-      ]
     }
   ],
   "trips": [
     {
       "id": 1,
       "title": "Trip 1, days 1 to 14",
-      "blurb": "Day shifts. Buy the pantry tubs this time.",
+      "blurb": "Day shifts. Buy the pantry tubs this time. Streak and XP reset after day 14.",
       "shift": "day",
       "groups": [
         {
@@ -3525,7 +4212,7 @@ window.PLAN = {
     {
       "id": 2,
       "title": "Trip 2, days 15 to 28",
-      "blurb": "First 14 days off. Mostly fresh food. The oats tub should still be here.",
+      "blurb": "First 14 days off. Mostly fresh food. New streak starts on day 15.",
       "shift": "off",
       "groups": [
         {
@@ -3762,7 +4449,7 @@ window.PLAN = {
     {
       "id": 3,
       "title": "Trip 3, days 29 to 42",
-      "blurb": "Night shifts. Buy fruit you can eat cold, and the salmon.",
+      "blurb": "Night shifts. Buy fruit you can eat cold, and the salmon. New streak on day 29.",
       "shift": "night",
       "groups": [
         {
@@ -4035,7 +4722,7 @@ window.PLAN = {
     {
       "id": 4,
       "title": "Trip 4, days 43 to 56",
-      "blurb": "Second break. Restock bread, eggs, and greens.",
+      "blurb": "Second break. Restock bread, eggs, and greens. New streak on day 43.",
       "shift": "off",
       "groups": [
         {
@@ -4255,190 +4942,6 @@ window.PLAN = {
         "Olive oil",
         "Quinoa",
         "Rolled oats"
-      ]
-    },
-    {
-      "id": 5,
-      "title": "Trip 5, days 57 to 60",
-      "blurb": "Short trip. Four day shifts at the start of the next round.",
-      "shift": "day",
-      "groups": [
-        {
-          "aisle": "Fruit",
-          "color": "#BC6C25",
-          "items": [
-            {
-              "id": "t5-apples",
-              "name": "Apples",
-              "qty": "2 apples"
-            },
-            {
-              "id": "t5-lemons",
-              "name": "Lemons",
-              "qty": "1 lemon"
-            },
-            {
-              "id": "t5-pears",
-              "name": "Pears",
-              "qty": "1 pear"
-            }
-          ]
-        },
-        {
-          "aisle": "Produce",
-          "color": "#2D6A4F",
-          "items": [
-            {
-              "id": "t5-bell-peppers",
-              "name": "Bell peppers",
-              "qty": "3 peppers"
-            },
-            {
-              "id": "t5-broccoli",
-              "name": "Broccoli",
-              "qty": "1 crown"
-            },
-            {
-              "id": "t5-carrots",
-              "name": "Carrots",
-              "qty": "1 bag"
-            },
-            {
-              "id": "t5-cucumbers",
-              "name": "Cucumbers",
-              "qty": "1 cucumber"
-            },
-            {
-              "id": "t5-potatoes",
-              "name": "Potatoes",
-              "qty": "1 potato"
-            },
-            {
-              "id": "t5-salad-greens",
-              "name": "Salad greens",
-              "qty": "1 box"
-            },
-            {
-              "id": "t5-spinach",
-              "name": "Spinach",
-              "qty": "1 box"
-            },
-            {
-              "id": "t5-sweet-potatoes",
-              "name": "Sweet potatoes",
-              "qty": "1 sweet potato"
-            },
-            {
-              "id": "t5-tomatoes",
-              "name": "Tomatoes",
-              "qty": "1 tomato"
-            }
-          ]
-        },
-        {
-          "aisle": "Protein",
-          "color": "#1D4E89",
-          "items": [
-            {
-              "id": "t5-chicken-thighs",
-              "name": "Chicken thighs",
-              "qty": "1 thigh"
-            },
-            {
-              "id": "t5-ground-turkey",
-              "name": "Ground turkey",
-              "qty": "1 pack"
-            },
-            {
-              "id": "t5-salmon-fillets",
-              "name": "Salmon fillets",
-              "qty": "1 fillet"
-            }
-          ]
-        },
-        {
-          "aisle": "Dairy",
-          "color": "#5C4D7A",
-          "items": [
-            {
-              "id": "t5-cheddar",
-              "name": "Cheddar",
-              "qty": "1 block"
-            },
-            {
-              "id": "t5-eggs",
-              "name": "Eggs",
-              "qty": "1 dozen (3 eggs)"
-            },
-            {
-              "id": "t5-mozzarella",
-              "name": "Mozzarella",
-              "qty": "1 ball"
-            }
-          ]
-        },
-        {
-          "aisle": "Bread",
-          "color": "#9A5416",
-          "items": [
-            {
-              "id": "t5-whole-grain-bread",
-              "name": "Whole grain bread",
-              "qty": "1 loaf"
-            },
-            {
-              "id": "t5-whole-wheat-tortillas",
-              "name": "Whole wheat tortillas",
-              "qty": "1 pack"
-            }
-          ]
-        },
-        {
-          "aisle": "Cans",
-          "color": "#1B4332",
-          "items": [
-            {
-              "id": "t5-canned-black-beans",
-              "name": "Canned black beans",
-              "qty": "1 can"
-            },
-            {
-              "id": "t5-canned-chickpeas",
-              "name": "Canned chickpeas",
-              "qty": "1 can"
-            },
-            {
-              "id": "t5-canned-lentils",
-              "name": "Canned lentils",
-              "qty": "1 can"
-            },
-            {
-              "id": "t5-canned-white-beans",
-              "name": "Canned white beans",
-              "qty": "2 cans"
-            },
-            {
-              "id": "t5-salsa,-check-the-label-for-onion",
-              "name": "Salsa, check the label for onion",
-              "qty": "1 jar"
-            }
-          ]
-        },
-        {
-          "aisle": "Grains",
-          "color": "#8A6A2F",
-          "items": [
-            {
-              "id": "t5-jam",
-              "name": "Jam",
-              "qty": "buy once, it lasts"
-            }
-          ]
-        }
-      ],
-      "still": [
-        "Olive oil",
-        "Quinoa"
       ]
     }
   ]

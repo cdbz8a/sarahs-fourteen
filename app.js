@@ -2,7 +2,10 @@
   const PLAN = window.PLAN;
   const app = document.getElementById("app");
   const tabs = document.getElementById("tabs");
-  const KEY = "sarahs-fourteen-v1";
+  const KEY = "sarahs-fourteen-v2";
+  const LEN = PLAN.days.length;
+  const BLOCK = PLAN.block || 14;
+  const GOALS = PLAN.goals || { protein: 60, carbs: 180, fibre: 25 };
   let state = load();
   let view = "today";
   let filter = "all";
@@ -23,7 +26,7 @@
     const start = new Date(state.start + "T00:00:00");
     const now = new Date();
     const diff = Math.floor((now - start) / 86400000);
-    return ((diff % 60) + 60) % 60 + 1;
+    return ((diff % LEN) + LEN) % LEN + 1;
   }
   function el(tag, cls, text) {
     const n = document.createElement(tag);
@@ -38,6 +41,99 @@
     tabs.querySelectorAll("button").forEach(function (b) {
       b.classList.toggle("on", b.dataset.view === name);
     });
+  }
+
+  function blockStart(n) {
+    return Math.floor((n - 1) / BLOCK) * BLOCK + 1;
+  }
+  function blockEnd(n) {
+    return Math.min(LEN, blockStart(n) + BLOCK - 1);
+  }
+  function loggedMap() {
+    state.logged = state.logged || {};
+    return state.logged;
+  }
+  function xpFor(day) {
+    let xp = 25;
+    if ((day.protein || 0) >= GOALS.protein) xp += 15;
+    if ((day.total || 0) >= GOALS.fibre) xp += 15;
+    if ((day.carbs || 0) >= 100) xp += 5;
+    return xp;
+  }
+  function blockStats(today) {
+    const start = blockStart(today);
+    const end = blockEnd(today);
+    const logged = loggedMap();
+    let xp = 0;
+    let count = 0;
+    const dots = [];
+    for (let n = start; n <= end; n++) {
+      const on = !!logged[String(n)];
+      dots.push({ n: n, on: on, isToday: n === today });
+      if (on) {
+        count += 1;
+        xp += xpFor(dayBy(n));
+      }
+    }
+    let streak = 0;
+    let cursor = logged[String(today)] ? today : today - 1;
+    while (cursor >= start && logged[String(cursor)]) {
+      streak += 1;
+      cursor -= 1;
+    }
+    return { start: start, end: end, xp: xp, count: count, dots: dots, streak: streak };
+  }
+  function macroBar(label, value, goal, kind) {
+    const wrap = el("div", "macro");
+    const top = el("div", "macro-top");
+    top.appendChild(el("span", null, label));
+    top.appendChild(el("span", null, value + " / " + goal + " g"));
+    wrap.appendChild(top);
+    const track = el("div", "track");
+    const fill = el("div", "fill " + kind);
+    const pct = Math.max(4, Math.min(100, Math.round((value / goal) * 100)));
+    fill.style.width = pct + "%";
+    track.appendChild(fill);
+    wrap.appendChild(track);
+    return wrap;
+  }
+  function renderTracker(day) {
+    const today = todayNum();
+    const stats = blockStats(today);
+    const box = el("section", "tracker");
+    const head = el("div", "row");
+    head.appendChild(el("div", null, "Streak " + stats.streak));
+    head.appendChild(el("div", "xp", stats.xp + " XP"));
+    box.appendChild(head);
+    const dots = el("div", "dots");
+    stats.dots.forEach(function (dot) {
+      const d = el("span", "dot" + (dot.on ? " on" : "") + (dot.isToday ? " now" : ""), String(dot.n));
+      dots.appendChild(d);
+    });
+    box.appendChild(dots);
+    box.appendChild(el("p", "muted", stats.count + " of " + BLOCK + " days logged in this block."));
+    const resetDay = stats.end < LEN ? stats.end + 1 : 1;
+    const resetName = stats.end < LEN ? "day " + resetDay : "day 1, the next rotation";
+    box.appendChild(el("p", "muted", "Streak and XP reset on " + resetName + ". That is the next 14-day block."));
+    box.appendChild(macroBar("Protein", day.protein || 0, GOALS.protein, "protein"));
+    box.appendChild(macroBar("Carbs", day.carbs || 0, GOALS.carbs, "carbs"));
+    box.appendChild(macroBar("Fibre", day.total || 0, GOALS.fibre, "fibre"));
+    box.appendChild(el("p", "muted", "Fat about " + (day.fat || 0) + " g. About " + (day.kcal || 0) + " kcal. Kitchen estimate, not a lab label."));
+    if (day.n <= today) {
+      const logged = !!loggedMap()[String(day.n)];
+      const btn = el("button", "log" + (logged ? " done" : ""), logged ? "Logged. Tap to undo." : "Log this day");
+      btn.addEventListener("click", function () {
+        if (loggedMap()[String(day.n)]) delete loggedMap()[String(day.n)];
+        else loggedMap()[String(day.n)] = xpFor(day);
+        save();
+        render();
+      });
+      box.appendChild(btn);
+      box.appendChild(el("p", "muted", "Logging pays 25 XP, plus 15 if protein hits " + GOALS.protein + " g, plus 15 if fibre hits " + GOALS.fibre + " g, plus 5 if carbs are at least 100 g."));
+    } else {
+      box.appendChild(el("p", "muted", "You can log a day once it arrives. Future days stay closed."));
+    }
+    return box;
   }
 
   function renderCook(n) {
@@ -55,6 +151,7 @@
     badges.appendChild(el("span", "badge " + day.shift, shiftLabel));
     if (day.cheat) badges.appendChild(el("span", "badge cheat", "Cheat day"));
     app.appendChild(badges);
+    app.appendChild(renderTracker(day));
     const note = el("div", "note");
     note.appendChild(el("p", null, day.note));
     note.appendChild(el("p", "muted", day.line));
@@ -69,6 +166,7 @@
       row.appendChild(el("div", "tag " + m.tag, m.tag + "  " + m.g + " g"));
       card.appendChild(row);
       card.appendChild(el("h2", null, m.name));
+      card.appendChild(el("p", "macros-line", "Protein " + (m.protein || 0) + " g. Carbs " + (m.carbs || 0) + " g. Fibre " + m.g + " g. Fat " + (m.fat || 0) + " g."));
       const ul = el("ul");
       m.items.forEach(function (item) { ul.appendChild(el("li", null, item)); });
       card.appendChild(ul);
@@ -79,7 +177,7 @@
     const prev = el("button", null, "Previous");
     const next = el("button", null, "Next");
     prev.disabled = n === 1;
-    next.disabled = n === 60;
+    next.disabled = n === LEN;
     prev.addEventListener("click", function () { openDay(n - 1); });
     next.addEventListener("click", function () { openDay(n + 1); });
     arrows.appendChild(prev);
@@ -89,11 +187,11 @@
     const input = document.createElement("input");
     input.type = "number";
     input.min = "1";
-    input.max = "60";
+    input.max = String(LEN);
     input.value = String(n);
     const btn = el("button", null, "Make this today");
     btn.addEventListener("click", function () {
-      const want = Math.max(1, Math.min(60, parseInt(input.value, 10) || n));
+      const want = Math.max(1, Math.min(LEN, parseInt(input.value, 10) || n));
       const start = new Date();
       start.setDate(start.getDate() - (want - 1));
       state.start = start.toISOString().slice(0, 10);
@@ -111,7 +209,7 @@
 
   function renderDays() {
     app.innerHTML = "";
-    app.appendChild(el("p", "kicker", "All 60"));
+    app.appendChild(el("p", "kicker", "All " + LEN));
     app.appendChild(el("h1", null, "Pick a day"));
     const filters = el("div", "filters");
     [["all", "All"], ["day", "Day shifts"], ["night", "Nights"], ["off", "Off"], ["cheat", "Cheat"]].forEach(function (pair) {
