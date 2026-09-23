@@ -159,6 +159,11 @@
     if (day.cheat) badges.appendChild(el("span", "badge cheat", "Cheat day"));
     app.appendChild(badges);
     app.appendChild(renderTracker(day));
+    if (day.motivation) {
+      const motive = el("div", "note");
+      motive.appendChild(el("p", null, day.motivation));
+      app.appendChild(motive);
+    }
     const note = el("div", "note");
     note.appendChild(el("p", null, day.note));
     note.appendChild(el("p", "muted", day.line));
@@ -173,15 +178,11 @@
       row.appendChild(el("div", "tag " + m.tag, jobName(m.tag)));
       card.appendChild(row);
       card.appendChild(el("h2", null, m.name));
-      const stats = el("div", "stats");
-      [["Protein", m.protein || 0], ["Carbs", m.carbs || 0], ["Fibre", m.g || 0]].forEach(function (pair) {
-        const cell = el("div", "stat");
-        cell.appendChild(el("b", null, pair[1] + " g"));
-        cell.appendChild(el("span", null, pair[0]));
-        stats.appendChild(cell);
+      const nuts = el("ul", "nuts");
+      (m.nutrients || []).forEach(function (line) {
+        nuts.appendChild(el("li", null, line));
       });
-      card.appendChild(stats);
-      card.appendChild(el("p", "muted", "Fat " + (m.fat || 0) + " g"));
+      card.appendChild(nuts);
       const ul = el("ul");
       m.items.forEach(function (item) { ul.appendChild(el("li", null, item)); });
       card.appendChild(ul);
@@ -221,7 +222,7 @@
     const guideBtn = el("button", "primary", "How to read this");
     guideBtn.addEventListener("click", function () { view = "guide"; render(); });
     app.appendChild(guideBtn);
-    app.appendChild(el("p", "muted", "The three big numbers are protein, carbs, and fibre. The colored words say why the meal is there. No onions. Food supports mood. It does not treat it."));
+    app.appendChild(el("p", "muted", "Under each meal name is a short list of its top nutrients. The colored words say why the meal is there. No onions. Food supports mood. It does not treat it."));
     window.scrollTo(0, 0);
   }
 
@@ -343,7 +344,7 @@
       "Gut means beans, oats, or yogurt. They feed the gut bacteria tied to mood. That research is real and still young. It is a reason to eat the beans, not a promise that lunch fixes a hard month."
     ]));
     app.appendChild(guideCard("What the grams mean", [
-      "Each meal has three big numbers: Protein, Carbs, Fibre. The word under the number is the name of that number.",
+      "Under the meal name is a plain list. Those are the top nutrients in that plate, written as words, like Protein, about 22 g.",
       "Brain fats, Steady energy, Calmer plate, and Feeds the gut are the job of the meal. They are not a dose. There is no such thing as 5 grams of brain.",
       "The bars at the top add the whole day. Protein guide is 60 g. Carbs guide is 180 g. Fibre guide is 25 g, the daily target for women 19 to 50.",
       "Going past a bar is fine. The bar is a guide, not a limit.",

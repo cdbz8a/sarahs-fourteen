@@ -93,10 +93,8 @@ li { margin: 2px 0; }
 .fill.protein { background: #1d4e89; }
 .fill.carbs { background: #bc6c25; }
 .fill.fibre { background: #2d6a4f; }
-.stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin: 8px 0; }
-.stat { background: rgba(255, 255, 255, 0.62); border-radius: 12px; padding: 8px 4px; text-align: center; }
-.stat b { display: block; font-size: 22px; line-height: 1.1; }
-.stat span { display: block; margin-top: 2px; font-size: 11px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+.nuts { margin: 8px 0; padding-left: 1.1em; }
+.nuts li { margin: 2px 0; font-size: 16px; }
 .log { width: 100%; margin-top: 8px; border: 0; background: var(--ink); color: var(--card); border-radius: 14px; padding: 14px; font-size: 17px; font-weight: 700; }
 .log.done { background: var(--gut); }
 .guide-card { background: var(--card); border-radius: 16px; padding: 12px 14px; margin: 0 0 10px; }

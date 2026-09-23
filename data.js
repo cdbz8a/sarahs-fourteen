@@ -20,6 +20,7 @@ window.PLAN = {
       "kcal": 1028,
       "line": "Day shift 1 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Chicken tonight, if you are on days.",
+      "motivation": "13 days left in this block. Day shift 1 of 14. Eat before the house gets loud, then go to work knowing the kids are covered. Say a short prayer before the first bite. Sit down to eat. Standing at the counter makes everyone rush.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -37,7 +38,14 @@ window.PLAN = {
             "1 apple, skin on",
             "1 tbsp chia"
           ],
-          "method": "Chop the apple, skin on, and simmer it with the oats 5 minutes. Add the chia at the end."
+          "method": "Chop the apple, skin on, and simmer it with the oats 5 minutes. Add the chia at the end.",
+          "nutrients": [
+            "Omega-3, about 2400 mg",
+            "Fibre, about 12 g",
+            "Carbs, about 69 g",
+            "Calcium, about 376 mg",
+            "Magnesium, about 96 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -56,7 +64,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Warm the lentils or eat them cold. Toss with spinach and tomato."
+          "method": "Warm the lentils or eat them cold. Toss with spinach and tomato.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Vitamin C, about 45 mg",
+            "Folate, about 237 mcg",
+            "Fibre, about 10 g",
+            "Lycopene, about 3 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -74,7 +89,14 @@ window.PLAN = {
             "1 potato, skin on",
             "olive oil"
           ],
-          "method": "400 F, about 30 minutes, until the juices run clear. Cook the broccoli and potato on the same tray or in a pan beside it."
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the broccoli and potato on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Vitamin C, about 98 mg",
+            "Vitamin K, about 90 mcg",
+            "Niacin, about 7 mg",
+            "Protein, about 29 g",
+            "Potassium, about 1188 mg"
+          ]
         }
       ]
     },
@@ -90,6 +112,7 @@ window.PLAN = {
       "kcal": 990,
       "line": "Day shift 2 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Chicken tonight, if you are on days.",
+      "motivation": "12 days left in this block. Day shift 2 of 14. Eat before the house gets loud, then go to work knowing the kids are covered. Pray for each child by name, even if it is only one sentence. If the kitchen is chaos, do the next right thing, not five things.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -107,7 +130,14 @@ window.PLAN = {
             "1 apple, skin on",
             "1 tbsp ground flax"
           ],
-          "method": "Chop the apple, skin on, and simmer it with the oats 5 minutes. Add the flax at the end."
+          "method": "Chop the apple, skin on, and simmer it with the oats 5 minutes. Add the flax at the end.",
+          "nutrients": [
+            "Omega-3, about 1600 mg",
+            "Fibre, about 10 g",
+            "Carbs, about 66 g",
+            "Calcium, about 300 mg",
+            "Potassium, about 718 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -126,7 +156,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Warm the lentils or eat them cold. Toss with cucumber and pepper."
+          "method": "Warm the lentils or eat them cold. Toss with cucumber and pepper.",
+          "nutrients": [
+            "Vitamin C, about 180 mg",
+            "Folate, about 179 mcg",
+            "Fibre, about 11 g",
+            "Vitamin A, about 180 mcg",
+            "Potassium, about 505 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -144,7 +181,14 @@ window.PLAN = {
             "1 sweet potato, skin on",
             "olive oil"
           ],
-          "method": "400 F, about 30 minutes, until the juices run clear. Cook the carrots and sweet potato on the same tray or in a pan beside it."
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the carrots and sweet potato on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Vitamin A, about 1960 mcg",
+            "Niacin, about 7 mg",
+            "Protein, about 25 g",
+            "Selenium, about 20 mcg",
+            "Vitamin C, about 27 mg"
+          ]
         }
       ]
     },
@@ -160,6 +204,7 @@ window.PLAN = {
       "kcal": 1248,
       "line": "Cheat day. Day shift 3 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "motivation": "Cheat day, and that is allowed. 11 days left in this block. Day shift 3 of 14. Eat before the house gets loud, then go to work knowing the kids are covered. Ask for patience for the hour you walk in the door. Notice the first three bites instead of eating on the way out.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -177,7 +222,14 @@ window.PLAN = {
             "1 apple, skin on",
             "8 walnut halves"
           ],
-          "method": "Chop the apple, skin on, and simmer it with the oats 5 minutes. Add the walnut at the end."
+          "method": "Chop the apple, skin on, and simmer it with the oats 5 minutes. Add the walnut at the end.",
+          "nutrients": [
+            "Omega-3, about 1280 mg",
+            "Carbs, about 66 g",
+            "Fibre, about 9 g",
+            "Calcium, about 300 mg",
+            "Potassium, about 778 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -196,7 +248,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Heat the pizza. Eat the salad with it so the plate is not only crust."
+          "method": "Heat the pizza. Eat the salad with it so the plate is not only crust.",
+          "nutrients": [
+            "Vitamin K, about 161 mcg",
+            "Vitamin C, about 30 mg",
+            "Protein, about 18 g",
+            "Fat, about 17 g",
+            "Carbs, about 48 g"
+          ]
         },
         {
           "slot": "Dinner",
@@ -214,7 +273,14 @@ window.PLAN = {
             "1/2 cup cooked brown rice",
             "olive oil"
           ],
-          "method": "400 F, about 30 minutes, until the juices run clear. Cook the pepper and rice on the same tray or in a pan beside it."
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the pepper and rice on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Vitamin C, about 150 mg",
+            "Niacin, about 7 mg",
+            "Protein, about 25 g",
+            "Selenium, about 20 mcg",
+            "Vitamin B6, about 0.4 mg"
+          ]
         }
       ]
     },
@@ -230,6 +296,7 @@ window.PLAN = {
       "kcal": 981,
       "line": "Day shift 4 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Chicken tonight, if you are on days.",
+      "motivation": "10 days left in this block. Day shift 4 of 14. Eat before the house gets loud, then go to work knowing the kids are covered. Thank God for the food and for the two kids, out loud if you can. Look at the two of them once before you talk about the schedule.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -247,7 +314,14 @@ window.PLAN = {
             "1 pear, skin on",
             "1 tbsp chia"
           ],
-          "method": "Chop the pear, skin on. Simmer it with the oats 5 minutes. Add the chia at the end."
+          "method": "Chop the pear, skin on. Simmer it with the oats 5 minutes. Add the chia at the end.",
+          "nutrients": [
+            "Omega-3, about 2400 mg",
+            "Fibre, about 14 g",
+            "Carbs, about 71 g",
+            "Calcium, about 376 mg",
+            "Magnesium, about 96 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -266,7 +340,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Warm the lentils or eat them cold. Toss with zucchini and tomato."
+          "method": "Warm the lentils or eat them cold. Toss with zucchini and tomato.",
+          "nutrients": [
+            "Vitamin C, about 62 mg",
+            "Folate, about 179 mcg",
+            "Fibre, about 11 g",
+            "Potassium, about 915 mg",
+            "Lycopene, about 3 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -285,7 +366,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "400 F, about 30 minutes, until the juices run clear. Cook the spinach and quinoa on the same tray or in a pan beside it."
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the spinach and quinoa on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Niacin, about 7 mg",
+            "Protein, about 27 g",
+            "Vitamin C, about 30 mg",
+            "Selenium, about 20 mcg"
+          ]
         }
       ]
     },
@@ -301,6 +389,7 @@ window.PLAN = {
       "kcal": 1000,
       "line": "Day shift 5 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Chicken tonight, if you are on days.",
+      "motivation": "9 days left in this block. Day shift 5 of 14. Eat before the house gets loud, then go to work knowing the kids are covered. A thirty-second prayer in the car counts. Be where your feet are for one plate.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -318,7 +407,14 @@ window.PLAN = {
             "1 pear, skin on",
             "1 tbsp ground flax"
           ],
-          "method": "Chop the pear, skin on. Simmer it with the oats 5 minutes. Add the flax at the end."
+          "method": "Chop the pear, skin on. Simmer it with the oats 5 minutes. Add the flax at the end.",
+          "nutrients": [
+            "Omega-3, about 1600 mg",
+            "Fibre, about 12 g",
+            "Carbs, about 68 g",
+            "Calcium, about 300 mg",
+            "Potassium, about 703 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -336,7 +432,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Warm the lentils or eat them cold. Toss with broccoli and lemon."
+          "method": "Warm the lentils or eat them cold. Toss with broccoli and lemon.",
+          "nutrients": [
+            "Vitamin C, about 111 mg",
+            "Vitamin K, about 90 mcg",
+            "Folate, about 236 mcg",
+            "Fibre, about 13 g",
+            "Potassium, about 653 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -354,7 +457,14 @@ window.PLAN = {
             "1 potato, skin on",
             "olive oil"
           ],
-          "method": "400 F, about 30 minutes, until the juices run clear. Cook the zucchini and potato on the same tray or in a pan beside it."
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the zucchini and potato on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Niacin, about 7 mg",
+            "Vitamin C, about 34 mg",
+            "Protein, about 27 g",
+            "Potassium, about 1160 mg",
+            "Selenium, about 20 mcg"
+          ]
         }
       ]
     },
@@ -370,6 +480,7 @@ window.PLAN = {
       "kcal": 1118,
       "line": "Day shift 6 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Chicken tonight, if you are on days.",
+      "motivation": "8 days left in this block. Day shift 6 of 14. Eat before the house gets loud, then go to work knowing the kids are covered. Pray for their sleep, and for yours. One slow breath before you answer a child.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -387,7 +498,14 @@ window.PLAN = {
             "1 pear, skin on",
             "8 walnut halves"
           ],
-          "method": "Chop the pear, skin on. Simmer it with the oats 5 minutes. Add the walnut at the end."
+          "method": "Chop the pear, skin on. Simmer it with the oats 5 minutes. Add the walnut at the end.",
+          "nutrients": [
+            "Omega-3, about 1280 mg",
+            "Fibre, about 11 g",
+            "Carbs, about 68 g",
+            "Calcium, about 300 mg",
+            "Potassium, about 763 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -406,7 +524,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Rinse the chickpeas. No cooking if the can is already cooked. Toss with spinach and tomato."
+          "method": "Rinse the chickpeas. No cooking if the can is already cooked. Toss with spinach and tomato.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Folate, about 268 mcg",
+            "Vitamin C, about 45 mg",
+            "Fibre, about 11 g",
+            "Lycopene, about 3 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -424,7 +549,14 @@ window.PLAN = {
             "3/4 cup cooked whole wheat pasta",
             "olive oil"
           ],
-          "method": "400 F, about 30 minutes, until the juices run clear. Cook the tomato and pasta on the same tray or in a pan beside it."
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the tomato and pasta on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Niacin, about 7 mg",
+            "Protein, about 28 g",
+            "Selenium, about 20 mcg",
+            "Vitamin B6, about 0.4 mg",
+            "Lycopene, about 3 mg"
+          ]
         }
       ]
     },
@@ -440,6 +572,7 @@ window.PLAN = {
       "kcal": 1005,
       "line": "Day shift 7 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Chicken tonight, if you are on days.",
+      "motivation": "7 days left in this block. Day shift 7 of 14. Eat before the house gets loud, then go to work knowing the kids are covered. If you are too tired for a long prayer, one honest line is enough. Leave the work story until after you have eaten.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -457,7 +590,14 @@ window.PLAN = {
             "1/2 cup raspberries",
             "1 tbsp chia"
           ],
-          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the chia at the end."
+          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the chia at the end.",
+          "nutrients": [
+            "Omega-3, about 2400 mg",
+            "Fibre, about 12 g",
+            "Calcium, about 376 mg",
+            "Magnesium, about 96 mg",
+            "Carbs, about 51 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -476,7 +616,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Rinse the chickpeas. No cooking if the can is already cooked. Toss with cucumber and pepper."
+          "method": "Rinse the chickpeas. No cooking if the can is already cooked. Toss with cucumber and pepper.",
+          "nutrients": [
+            "Vitamin C, about 180 mg",
+            "Folate, about 210 mcg",
+            "Fibre, about 12 g",
+            "Vitamin A, about 180 mcg",
+            "Carbs, about 43 g"
+          ]
         },
         {
           "slot": "Dinner",
@@ -494,7 +641,14 @@ window.PLAN = {
             "1/2 cup cooked brown rice",
             "olive oil"
           ],
-          "method": "400 F, about 30 minutes, until the juices run clear. Cook the broccoli and rice on the same tray or in a pan beside it."
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the broccoli and rice on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Vitamin C, about 81 mg",
+            "Vitamin K, about 90 mcg",
+            "Niacin, about 7 mg",
+            "Protein, about 27 g",
+            "Selenium, about 20 mcg"
+          ]
         }
       ]
     },
@@ -510,6 +664,7 @@ window.PLAN = {
       "kcal": 985,
       "line": "Day shift 8 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Chicken tonight, if you are on days.",
+      "motivation": "6 days left in this block. Day shift 8 of 14. Eat before the house gets loud, then go to work knowing the kids are covered. Bless the hands that will eat with you today. Put the phone face down for the first five minutes of the meal.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -527,7 +682,14 @@ window.PLAN = {
             "1/2 cup raspberries",
             "1 tbsp ground flax"
           ],
-          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the flax at the end."
+          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the flax at the end.",
+          "nutrients": [
+            "Omega-3, about 1600 mg",
+            "Fibre, about 10 g",
+            "Calcium, about 300 mg",
+            "Carbs, about 48 g",
+            "Magnesium, about 84 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -546,7 +708,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Rinse the chickpeas. No cooking if the can is already cooked. Toss with carrot and greens."
+          "method": "Rinse the chickpeas. No cooking if the can is already cooked. Toss with carrot and greens.",
+          "nutrients": [
+            "Vitamin A, about 1080 mcg",
+            "Vitamin K, about 80 mcg",
+            "Folate, about 240 mcg",
+            "Fibre, about 14 g",
+            "Vitamin C, about 37 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -565,7 +734,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "400 F, about 30 minutes, until the juices run clear. Cook the greens and sweet potato on the same tray or in a pan beside it."
+          "method": "400 F, about 30 minutes, until the juices run clear. Cook the greens and sweet potato on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Vitamin A, about 1040 mcg",
+            "Vitamin K, about 80 mcg",
+            "Vitamin C, about 50 mg",
+            "Niacin, about 7 mg",
+            "Protein, about 25 g"
+          ]
         }
       ]
     },
@@ -581,6 +757,7 @@ window.PLAN = {
       "kcal": 1106,
       "line": "Day shift 9 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Salmon tonight, if you are on days.",
+      "motivation": "5 days left in this block. Day shift 9 of 14. Eat before the house gets loud, then go to work knowing the kids are covered. Say a short prayer before the first bite. Sit down to eat. Standing at the counter makes everyone rush.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -598,7 +775,14 @@ window.PLAN = {
             "1/2 cup raspberries",
             "8 walnut halves"
           ],
-          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the walnut at the end."
+          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the walnut at the end.",
+          "nutrients": [
+            "Omega-3, about 1280 mg",
+            "Fibre, about 9 g",
+            "Calcium, about 300 mg",
+            "Protein, about 16 g",
+            "Fat, about 16 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -617,7 +801,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Rinse the chickpeas. No cooking if the can is already cooked. Toss with zucchini and tomato."
+          "method": "Rinse the chickpeas. No cooking if the can is already cooked. Toss with zucchini and tomato.",
+          "nutrients": [
+            "Vitamin C, about 62 mg",
+            "Folate, about 210 mcg",
+            "Fibre, about 12 g",
+            "Potassium, about 910 mg",
+            "Lycopene, about 3 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -635,7 +826,14 @@ window.PLAN = {
             "1 potato, skin on",
             "olive oil"
           ],
-          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the broccoli and potato on the same tray or in a pan beside it."
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the broccoli and potato on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Omega-3, about 1800 mg",
+            "Vitamin C, about 98 mg",
+            "Vitamin B12, about 3 mcg",
+            "Vitamin K, about 90 mcg",
+            "Vitamin D, about 10 mcg"
+          ]
         }
       ]
     },
@@ -651,6 +849,7 @@ window.PLAN = {
       "kcal": 1046,
       "line": "Day shift 10 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Salmon tonight, if you are on days.",
+      "motivation": "4 days left in this block. Day shift 10 of 14. Eat before the house gets loud, then go to work knowing the kids are covered. Pray for each child by name, even if it is only one sentence. If the kitchen is chaos, do the next right thing, not five things.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -668,7 +867,14 @@ window.PLAN = {
             "1/2 cup blueberries",
             "1 tbsp chia"
           ],
-          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the chia at the end."
+          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the chia at the end.",
+          "nutrients": [
+            "Omega-3, about 2400 mg",
+            "Fibre, about 10 g",
+            "Calcium, about 376 mg",
+            "Magnesium, about 96 mg",
+            "Carbs, about 54 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -686,7 +892,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Rinse the chickpeas. No cooking if the can is already cooked. Toss with broccoli and lemon."
+          "method": "Rinse the chickpeas. No cooking if the can is already cooked. Toss with broccoli and lemon.",
+          "nutrients": [
+            "Vitamin C, about 111 mg",
+            "Vitamin K, about 90 mcg",
+            "Folate, about 267 mcg",
+            "Fibre, about 14 g",
+            "Potassium, about 648 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -704,7 +917,14 @@ window.PLAN = {
             "1 sweet potato, skin on",
             "olive oil"
           ],
-          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the carrots and sweet potato on the same tray or in a pan beside it."
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the carrots and sweet potato on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Vitamin A, about 1960 mcg",
+            "Omega-3, about 1800 mg",
+            "Vitamin B12, about 3 mcg",
+            "Vitamin D, about 10 mcg",
+            "Selenium, about 30 mcg"
+          ]
         }
       ]
     },
@@ -720,6 +940,7 @@ window.PLAN = {
       "kcal": 1022,
       "line": "Day shift 11 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Salmon tonight, if you are on days.",
+      "motivation": "3 days left in this block. Day shift 11 of 14. Eat before the house gets loud, then go to work knowing the kids are covered. Ask for patience for the hour you walk in the door. Notice the first three bites instead of eating on the way out.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -738,7 +959,14 @@ window.PLAN = {
             "1 tbsp ground flax",
             "1 apple, skin on"
           ],
-          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the flax at the end. Apple on the side."
+          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the flax at the end. Apple on the side.",
+          "nutrients": [
+            "Omega-3, about 1600 mg",
+            "Fibre, about 8 g",
+            "Calcium, about 300 mg",
+            "Carbs, about 51 g",
+            "Magnesium, about 84 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -758,7 +986,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Rinse the beans. Cumin, salt, done. Toss with spinach and tomato."
+          "method": "Rinse the beans. Cumin, salt, done. Toss with spinach and tomato.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Vitamin C, about 45 mg",
+            "Folate, about 186 mcg",
+            "Fibre, about 10 g",
+            "Lycopene, about 3 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -776,7 +1011,14 @@ window.PLAN = {
             "1/2 cup cooked brown rice",
             "olive oil"
           ],
-          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the pepper and rice on the same tray or in a pan beside it."
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the pepper and rice on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Vitamin C, about 150 mg",
+            "Omega-3, about 1800 mg",
+            "Vitamin B12, about 3 mcg",
+            "Vitamin D, about 10 mcg",
+            "Selenium, about 30 mcg"
+          ]
         }
       ]
     },
@@ -792,6 +1034,7 @@ window.PLAN = {
       "kcal": 1078,
       "line": "Day shift 12 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Salmon tonight, if you are on days.",
+      "motivation": "2 days left in this block. Day shift 12 of 14. The days-on stretch is almost done. Come home and give the two kids the first good minutes, not the leftovers of your patience. Thank God for the food and for the two kids, out loud if you can. Look at the two of them once before you talk about the schedule.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -810,7 +1053,14 @@ window.PLAN = {
             "8 walnut halves",
             "1 apple, skin on"
           ],
-          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the walnut at the end. Apple on the side."
+          "method": "Simmer the oats 5 minutes. Stir the berries in at the end. Add the walnut at the end. Apple on the side.",
+          "nutrients": [
+            "Omega-3, about 1280 mg",
+            "Calcium, about 300 mg",
+            "Carbs, about 51 g",
+            "Fibre, about 7 g",
+            "Fat, about 16 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -830,7 +1080,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Rinse the beans. Cumin, salt, done. Toss with cucumber and pepper."
+          "method": "Rinse the beans. Cumin, salt, done. Toss with cucumber and pepper.",
+          "nutrients": [
+            "Vitamin C, about 180 mg",
+            "Fibre, about 11 g",
+            "Folate, about 128 mcg",
+            "Vitamin A, about 180 mcg",
+            "Magnesium, about 60 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -849,7 +1106,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the spinach and quinoa on the same tray or in a pan beside it."
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the spinach and quinoa on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Omega-3, about 1800 mg",
+            "Vitamin K, about 145 mcg",
+            "Vitamin B12, about 3 mcg",
+            "Vitamin D, about 10 mcg",
+            "Selenium, about 30 mcg"
+          ]
         }
       ]
     },
@@ -865,6 +1129,7 @@ window.PLAN = {
       "kcal": 1321,
       "line": "Cheat day. Day shift 13 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "motivation": "Cheat day, and that is allowed. 1 day left in this block. Day shift 13 of 14. The days-on stretch is almost done. Come home and give the two kids the first good minutes, not the leftovers of your patience. A thirty-second prayer in the car counts. Be where your feet are for one plate.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -882,7 +1147,14 @@ window.PLAN = {
             "1/2 cup strawberries",
             "1 tbsp chia"
           ],
-          "method": "Simmer the oats. Slice the berries over the top. Add the chia at the end."
+          "method": "Simmer the oats. Slice the berries over the top. Add the chia at the end.",
+          "nutrients": [
+            "Omega-3, about 2400 mg",
+            "Vitamin C, about 45 mg",
+            "Fibre, about 10 g",
+            "Calcium, about 376 mg",
+            "Magnesium, about 96 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -901,7 +1173,14 @@ window.PLAN = {
             "tomato",
             "1 apple, skin on"
           ],
-          "method": "Cook the patty in a pan. Cheese and tomato. No onion. Apple on the side."
+          "method": "Cook the patty in a pan. Cheese and tomato. No onion. Apple on the side.",
+          "nutrients": [
+            "Protein, about 31 g",
+            "Fat, about 24 g",
+            "Fibre, about 8 g",
+            "Vitamin C, about 23 mg",
+            "Lycopene, about 3 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -919,7 +1198,14 @@ window.PLAN = {
             "1 potato, skin on",
             "olive oil"
           ],
-          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the zucchini and potato on the same tray or in a pan beside it."
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the zucchini and potato on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Omega-3, about 1800 mg",
+            "Vitamin B12, about 3 mcg",
+            "Vitamin D, about 10 mcg",
+            "Selenium, about 30 mcg",
+            "Protein, about 28 g"
+          ]
         }
       ]
     },
@@ -935,6 +1221,7 @@ window.PLAN = {
       "kcal": 950,
       "line": "Day shift 14 of 14. Stop caffeine about 6 hours before sleep.",
       "note": "Salmon tonight, if you are on days.",
+      "motivation": "Last day of this block. Day shift 14 of 14. The days-on stretch is almost done. Come home and give the two kids the first good minutes, not the leftovers of your patience. Pray for their sleep, and for yours. One slow breath before you answer a child.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -952,7 +1239,14 @@ window.PLAN = {
             "1/2 cup strawberries",
             "1 tbsp ground flax"
           ],
-          "method": "Simmer the oats. Slice the berries over the top. Add the flax at the end."
+          "method": "Simmer the oats. Slice the berries over the top. Add the flax at the end.",
+          "nutrients": [
+            "Omega-3, about 1600 mg",
+            "Vitamin C, about 45 mg",
+            "Fibre, about 8 g",
+            "Calcium, about 300 mg",
+            "Magnesium, about 84 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -972,7 +1266,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Rinse the beans. Cumin, salt, done. Toss with zucchini and tomato."
+          "method": "Rinse the beans. Cumin, salt, done. Toss with zucchini and tomato.",
+          "nutrients": [
+            "Vitamin C, about 62 mg",
+            "Fibre, about 11 g",
+            "Potassium, about 855 mg",
+            "Folate, about 128 mcg",
+            "Lycopene, about 3 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -990,7 +1291,14 @@ window.PLAN = {
             "3/4 cup cooked whole wheat pasta",
             "olive oil"
           ],
-          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the tomato and pasta on the same tray or in a pan beside it."
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the tomato and pasta on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Omega-3, about 1800 mg",
+            "Vitamin B12, about 3 mcg",
+            "Vitamin D, about 10 mcg",
+            "Selenium, about 30 mcg",
+            "Protein, about 29 g"
+          ]
         }
       ]
     },
@@ -1006,6 +1314,7 @@ window.PLAN = {
       "kcal": 963,
       "line": "Off day 1 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Salmon is the main cook.",
+      "motivation": "13 days left in this block. Off day 1 of 14. Nights have not started. Use one of these days for a slow meal with both kids. If you are too tired for a long prayer, one honest line is enough. Leave the work story until after you have eaten.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -1023,7 +1332,14 @@ window.PLAN = {
             "1/2 cup strawberries",
             "8 walnut halves"
           ],
-          "method": "Simmer the oats. Slice the berries over the top. Add the walnut at the end."
+          "method": "Simmer the oats. Slice the berries over the top. Add the walnut at the end.",
+          "nutrients": [
+            "Omega-3, about 1280 mg",
+            "Vitamin C, about 45 mg",
+            "Calcium, about 300 mg",
+            "Fibre, about 7 g",
+            "Fat, about 16 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -1042,7 +1358,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Rinse the beans. Cumin, salt, done. Toss with broccoli and lemon."
+          "method": "Rinse the beans. Cumin, salt, done. Toss with broccoli and lemon.",
+          "nutrients": [
+            "Vitamin C, about 111 mg",
+            "Vitamin K, about 90 mcg",
+            "Fibre, about 13 g",
+            "Folate, about 185 mcg",
+            "Potassium, about 593 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -1060,7 +1383,14 @@ window.PLAN = {
             "1/2 cup cooked brown rice",
             "olive oil"
           ],
-          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the broccoli and rice on the same tray or in a pan beside it."
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the broccoli and rice on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Omega-3, about 1800 mg",
+            "Vitamin B12, about 3 mcg",
+            "Vitamin C, about 81 mg",
+            "Vitamin K, about 90 mcg",
+            "Vitamin D, about 10 mcg"
+          ]
         }
       ]
     },
@@ -1076,6 +1406,7 @@ window.PLAN = {
       "kcal": 1196,
       "line": "Cheat day. Off day 2 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "motivation": "Cheat day, and that is allowed. 12 days left in this block. Off day 2 of 14. Nights have not started. Use one of these days for a slow meal with both kids. Bless the hands that will eat with you today. Put the phone face down for the first five minutes of the meal.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -1093,7 +1424,14 @@ window.PLAN = {
             "1/2 banana",
             "1 tbsp chia"
           ],
-          "method": "Mash the banana into the oats while they simmer. Add the chia at the end."
+          "method": "Mash the banana into the oats while they simmer. Add the chia at the end.",
+          "nutrients": [
+            "Omega-3, about 2400 mg",
+            "Fibre, about 10 g",
+            "Calcium, about 376 mg",
+            "Carbs, about 57 g",
+            "Magnesium, about 96 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -1110,7 +1448,14 @@ window.PLAN = {
             "1 potato, skin on",
             "1 cup carrots"
           ],
-          "method": "Bake the tenders and the potato. Do not deep fry. Carrots on the plate."
+          "method": "Bake the tenders and the potato. Do not deep fry. Carrots on the plate.",
+          "nutrients": [
+            "Vitamin A, about 1000 mcg",
+            "Potassium, about 1290 mg",
+            "Protein, about 25 g",
+            "Carbs, about 64 g",
+            "Vitamin C, about 24 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -1129,7 +1474,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the greens and sweet potato on the same tray or in a pan beside it."
+          "method": "400 F, 15 to 18 minutes. Do not cook it until it is dry. Cook the greens and sweet potato on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Omega-3, about 1800 mg",
+            "Vitamin A, about 1040 mcg",
+            "Vitamin B12, about 3 mcg",
+            "Vitamin K, about 80 mcg",
+            "Vitamin D, about 10 mcg"
+          ]
         }
       ]
     },
@@ -1145,6 +1497,7 @@ window.PLAN = {
       "kcal": 1022,
       "line": "Off day 3 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
+      "motivation": "11 days left in this block. Off day 3 of 14. Nights have not started. Use one of these days for a slow meal with both kids. Say a short prayer before the first bite. Sit down to eat. Standing at the counter makes everyone rush.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -1162,7 +1515,14 @@ window.PLAN = {
             "1/2 banana",
             "1 tbsp ground flax"
           ],
-          "method": "Mash the banana into the oats while they simmer. Add the flax at the end."
+          "method": "Mash the banana into the oats while they simmer. Add the flax at the end.",
+          "nutrients": [
+            "Omega-3, about 1600 mg",
+            "Fibre, about 8 g",
+            "Carbs, about 54 g",
+            "Calcium, about 300 mg",
+            "Potassium, about 733 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -1181,7 +1541,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Rinse the beans. They are the mild ones. Toss with cucumber and pepper."
+          "method": "Rinse the beans. They are the mild ones. Toss with cucumber and pepper.",
+          "nutrients": [
+            "Vitamin C, about 180 mg",
+            "Fibre, about 12 g",
+            "Folate, about 140 mcg",
+            "Vitamin A, about 180 mcg",
+            "Magnesium, about 80 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -1199,7 +1566,14 @@ window.PLAN = {
             "1 potato, skin on",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan, breaking it up. Cook the broccoli and potato on the same tray or in a pan beside it."
+          "method": "Brown the turkey in a pan, breaking it up. Cook the broccoli and potato on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Vitamin C, about 98 mg",
+            "Vitamin K, about 90 mcg",
+            "Protein, about 29 g",
+            "Potassium, about 1188 mg",
+            "Niacin, about 6 mg"
+          ]
         }
       ]
     },
@@ -1215,6 +1589,7 @@ window.PLAN = {
       "kcal": 1060,
       "line": "Off day 4 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
+      "motivation": "10 days left in this block. Off day 4 of 14. Nights have not started. Use one of these days for a slow meal with both kids. Pray for each child by name, even if it is only one sentence. If the kitchen is chaos, do the next right thing, not five things.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -1232,7 +1607,14 @@ window.PLAN = {
             "1/2 banana",
             "8 walnut halves"
           ],
-          "method": "Mash the banana into the oats while they simmer. Add the walnut at the end."
+          "method": "Mash the banana into the oats while they simmer. Add the walnut at the end.",
+          "nutrients": [
+            "Omega-3, about 1280 mg",
+            "Potassium, about 793 mg",
+            "Carbs, about 54 g",
+            "Calcium, about 300 mg",
+            "Fibre, about 7 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -1251,7 +1633,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Rinse the beans. They are the mild ones. Toss with carrot and greens."
+          "method": "Rinse the beans. They are the mild ones. Toss with carrot and greens.",
+          "nutrients": [
+            "Vitamin A, about 1080 mcg",
+            "Vitamin K, about 80 mcg",
+            "Fibre, about 14 g",
+            "Vitamin C, about 37 mg",
+            "Folate, about 170 mcg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -1269,7 +1658,14 @@ window.PLAN = {
             "1 sweet potato, skin on",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan, breaking it up. Cook the carrots and sweet potato on the same tray or in a pan beside it."
+          "method": "Brown the turkey in a pan, breaking it up. Cook the carrots and sweet potato on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Vitamin A, about 1960 mcg",
+            "Niacin, about 6 mg",
+            "Protein, about 25 g",
+            "Selenium, about 22 mcg",
+            "Vitamin C, about 27 mg"
+          ]
         }
       ]
     },
@@ -1285,6 +1681,7 @@ window.PLAN = {
       "kcal": 998,
       "line": "Off day 5 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
+      "motivation": "9 days left in this block. Off day 5 of 14. Nights have not started. Use one of these days for a slow meal with both kids. Ask for patience for the hour you walk in the door. Notice the first three bites instead of eating on the way out.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -1302,7 +1699,14 @@ window.PLAN = {
             "1 peach",
             "1 tbsp chia"
           ],
-          "method": "Chop the peach. Stir it in when the oats are soft. Add the chia at the end."
+          "method": "Chop the peach. Stir it in when the oats are soft. Add the chia at the end.",
+          "nutrients": [
+            "Omega-3, about 2400 mg",
+            "Fibre, about 10 g",
+            "Calcium, about 376 mg",
+            "Carbs, about 58 g",
+            "Magnesium, about 96 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -1321,7 +1725,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Rinse the beans. They are the mild ones. Toss with zucchini and tomato."
+          "method": "Rinse the beans. They are the mild ones. Toss with zucchini and tomato.",
+          "nutrients": [
+            "Vitamin C, about 62 mg",
+            "Fibre, about 12 g",
+            "Potassium, about 1050 mg",
+            "Folate, about 140 mcg",
+            "Lycopene, about 3 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -1339,7 +1750,14 @@ window.PLAN = {
             "1/2 cup cooked brown rice",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan, breaking it up. Cook the pepper and rice on the same tray or in a pan beside it."
+          "method": "Brown the turkey in a pan, breaking it up. Cook the pepper and rice on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Vitamin C, about 150 mg",
+            "Niacin, about 6 mg",
+            "Protein, about 25 g",
+            "Selenium, about 22 mcg",
+            "Vitamin B6, about 0.4 mg"
+          ]
         }
       ]
     },
@@ -1355,6 +1773,7 @@ window.PLAN = {
       "kcal": 953,
       "line": "Off day 6 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
+      "motivation": "8 days left in this block. Off day 6 of 14. Nights have not started. Use one of these days for a slow meal with both kids. Thank God for the food and for the two kids, out loud if you can. Look at the two of them once before you talk about the schedule.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -1372,7 +1791,14 @@ window.PLAN = {
             "1 peach",
             "1 tbsp ground flax"
           ],
-          "method": "Chop the peach. Stir it in when the oats are soft. Add the flax at the end."
+          "method": "Chop the peach. Stir it in when the oats are soft. Add the flax at the end.",
+          "nutrients": [
+            "Omega-3, about 1600 mg",
+            "Fibre, about 8 g",
+            "Carbs, about 55 g",
+            "Calcium, about 300 mg",
+            "Magnesium, about 84 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -1390,7 +1816,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Rinse the beans. They are the mild ones. Toss with broccoli and lemon."
+          "method": "Rinse the beans. They are the mild ones. Toss with broccoli and lemon.",
+          "nutrients": [
+            "Vitamin C, about 111 mg",
+            "Vitamin K, about 90 mcg",
+            "Fibre, about 14 g",
+            "Folate, about 197 mcg",
+            "Potassium, about 788 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -1409,7 +1842,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan, breaking it up. Cook the spinach and quinoa on the same tray or in a pan beside it."
+          "method": "Brown the turkey in a pan, breaking it up. Cook the spinach and quinoa on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Protein, about 27 g",
+            "Niacin, about 6 mg",
+            "Vitamin C, about 30 mg",
+            "Selenium, about 22 mcg"
+          ]
         }
       ]
     },
@@ -1425,6 +1865,7 @@ window.PLAN = {
       "kcal": 1255,
       "line": "Off day 7 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
+      "motivation": "7 days left in this block. Off day 7 of 14. Nights have not started. Use one of these days for a slow meal with both kids. A thirty-second prayer in the car counts. Be where your feet are for one plate.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -1443,7 +1884,14 @@ window.PLAN = {
             "8 walnut halves",
             "1 apple, skin on"
           ],
-          "method": "Chop the peach. Stir it in when the oats are soft. Add the walnut at the end. Apple on the side."
+          "method": "Chop the peach. Stir it in when the oats are soft. Add the walnut at the end. Apple on the side.",
+          "nutrients": [
+            "Omega-3, about 1280 mg",
+            "Carbs, about 55 g",
+            "Calcium, about 300 mg",
+            "Fibre, about 7 g",
+            "Protein, about 16 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -1461,7 +1909,14 @@ window.PLAN = {
             "1 cup broccoli",
             "olive oil"
           ],
-          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the rice with the broccoli."
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the rice with the broccoli.",
+          "nutrients": [
+            "Vitamin C, about 81 mg",
+            "Vitamin K, about 90 mcg",
+            "Niacin, about 7 mg",
+            "Protein, about 27 g",
+            "Selenium, about 20 mcg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -1479,7 +1934,14 @@ window.PLAN = {
             "1 potato, skin on",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan, breaking it up. Cook the zucchini and potato on the same tray or in a pan beside it."
+          "method": "Brown the turkey in a pan, breaking it up. Cook the zucchini and potato on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Vitamin C, about 34 mg",
+            "Protein, about 27 g",
+            "Potassium, about 1160 mg",
+            "Niacin, about 6 mg",
+            "Selenium, about 22 mcg"
+          ]
         }
       ]
     },
@@ -1495,6 +1957,7 @@ window.PLAN = {
       "kcal": 1225,
       "line": "Off day 8 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
+      "motivation": "6 days left in this block. Off day 8 of 14. Nights have not started. Use one of these days for a slow meal with both kids. Pray for their sleep, and for yours. One slow breath before you answer a child.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -1513,7 +1976,14 @@ window.PLAN = {
             "1 tbsp chia",
             "1 apple, skin on"
           ],
-          "method": "Simmer the oats. Fold the cherries in at the end. Add the chia at the end. Apple on the side."
+          "method": "Simmer the oats. Fold the cherries in at the end. Add the chia at the end. Apple on the side.",
+          "nutrients": [
+            "Omega-3, about 2400 mg",
+            "Calcium, about 376 mg",
+            "Fibre, about 9 g",
+            "Carbs, about 56 g",
+            "Magnesium, about 96 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -1532,7 +2002,14 @@ window.PLAN = {
             "tomato",
             "olive oil"
           ],
-          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the rice with the pepper."
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the rice with the pepper.",
+          "nutrients": [
+            "Vitamin C, about 165 mg",
+            "Niacin, about 7 mg",
+            "Protein, about 26 g",
+            "Selenium, about 20 mcg",
+            "Vitamin B6, about 0.4 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -1550,7 +2027,14 @@ window.PLAN = {
             "3/4 cup cooked whole wheat pasta",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan, breaking it up. Cook the tomato and pasta on the same tray or in a pan beside it."
+          "method": "Brown the turkey in a pan, breaking it up. Cook the tomato and pasta on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Protein, about 28 g",
+            "Niacin, about 6 mg",
+            "Selenium, about 22 mcg",
+            "Vitamin B6, about 0.4 mg",
+            "Lycopene, about 3 mg"
+          ]
         }
       ]
     },
@@ -1566,6 +2050,7 @@ window.PLAN = {
       "kcal": 1152,
       "line": "Off day 9 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
+      "motivation": "5 days left in this block. Off day 9 of 14. Nights have not started. Use one of these days for a slow meal with both kids. If you are too tired for a long prayer, one honest line is enough. Leave the work story until after you have eaten.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -1584,7 +2069,14 @@ window.PLAN = {
             "1 tbsp ground flax",
             "1 apple, skin on"
           ],
-          "method": "Simmer the oats. Fold the cherries in at the end. Add the flax at the end. Apple on the side."
+          "method": "Simmer the oats. Fold the cherries in at the end. Add the flax at the end. Apple on the side.",
+          "nutrients": [
+            "Omega-3, about 1600 mg",
+            "Calcium, about 300 mg",
+            "Carbs, about 53 g",
+            "Fibre, about 7 g",
+            "Magnesium, about 84 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -1602,7 +2094,14 @@ window.PLAN = {
             "1 cup broccoli",
             "olive oil"
           ],
-          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the quinoa with the broccoli."
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the quinoa with the broccoli.",
+          "nutrients": [
+            "Vitamin C, about 81 mg",
+            "Vitamin K, about 90 mcg",
+            "Niacin, about 7 mg",
+            "Protein, about 29 g",
+            "Selenium, about 20 mcg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -1620,7 +2119,14 @@ window.PLAN = {
             "1/2 cup cooked brown rice",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan, breaking it up. Cook the broccoli and rice on the same tray or in a pan beside it."
+          "method": "Brown the turkey in a pan, breaking it up. Cook the broccoli and rice on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Vitamin C, about 81 mg",
+            "Vitamin K, about 90 mcg",
+            "Protein, about 27 g",
+            "Niacin, about 6 mg",
+            "Selenium, about 22 mcg"
+          ]
         }
       ]
     },
@@ -1636,6 +2142,7 @@ window.PLAN = {
       "kcal": 1213,
       "line": "Off day 10 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Turkey is the main cook.",
+      "motivation": "4 days left in this block. Off day 10 of 14. Nights have not started. Use one of these days for a slow meal with both kids. Bless the hands that will eat with you today. Put the phone face down for the first five minutes of the meal.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -1654,7 +2161,14 @@ window.PLAN = {
             "8 walnut halves",
             "1 apple, skin on"
           ],
-          "method": "Simmer the oats. Fold the cherries in at the end. Add the walnut at the end. Apple on the side."
+          "method": "Simmer the oats. Fold the cherries in at the end. Add the walnut at the end. Apple on the side.",
+          "nutrients": [
+            "Omega-3, about 1280 mg",
+            "Calcium, about 300 mg",
+            "Carbs, about 53 g",
+            "Potassium, about 713 mg",
+            "Protein, about 16 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -1673,7 +2187,14 @@ window.PLAN = {
             "tomato",
             "olive oil"
           ],
-          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the quinoa with the pepper."
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the quinoa with the pepper.",
+          "nutrients": [
+            "Vitamin C, about 165 mg",
+            "Niacin, about 7 mg",
+            "Protein, about 28 g",
+            "Selenium, about 20 mcg",
+            "Vitamin B6, about 0.4 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -1692,7 +2213,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan, breaking it up. Cook the greens and sweet potato on the same tray or in a pan beside it."
+          "method": "Brown the turkey in a pan, breaking it up. Cook the greens and sweet potato on the same tray or in a pan beside it.",
+          "nutrients": [
+            "Vitamin A, about 1040 mcg",
+            "Vitamin K, about 80 mcg",
+            "Vitamin C, about 50 mg",
+            "Niacin, about 6 mg",
+            "Protein, about 25 g"
+          ]
         }
       ]
     },
@@ -1708,6 +2236,7 @@ window.PLAN = {
       "kcal": 926,
       "line": "Off day 11 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Black bean chili is the main cook.",
+      "motivation": "3 days left in this block. Off day 11 of 14. Nights have not started. Use one of these days for a slow meal with both kids. Say a short prayer before the first bite. Sit down to eat. Standing at the counter makes everyone rush.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -1724,7 +2253,14 @@ window.PLAN = {
             "1 apple, skin on",
             "1 tbsp ground flax"
           ],
-          "method": "Stir the flax into the yogurt. Apple on top. No cooking."
+          "method": "Stir the flax into the yogurt. Apple on top. No cooking.",
+          "nutrients": [
+            "Omega-3, about 1600 mg",
+            "Fibre, about 6 g",
+            "Protein, about 13 g",
+            "Vitamin B12, about 0.5 mcg",
+            "Carbs, about 35 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -1742,7 +2278,14 @@ window.PLAN = {
             "1 cup broccoli",
             "olive oil"
           ],
-          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the potato with the broccoli."
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the potato with the broccoli.",
+          "nutrients": [
+            "Vitamin C, about 98 mg",
+            "Vitamin K, about 90 mcg",
+            "Niacin, about 7 mg",
+            "Protein, about 29 g",
+            "Potassium, about 1188 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -1761,7 +2304,14 @@ window.PLAN = {
             "chili powder",
             "1/2 cup cooked brown rice"
           ],
-          "method": "Simmer beans, tomato, cumin, and chili powder 15 minutes. No onion. Spoon over rice."
+          "method": "Simmer beans, tomato, cumin, and chili powder 15 minutes. No onion. Spoon over rice.",
+          "nutrients": [
+            "Lycopene, about 8 mg",
+            "Fibre, about 11 g",
+            "Folate, about 128 mcg",
+            "Magnesium, about 99 mg",
+            "Carbs, about 50 g"
+          ]
         }
       ]
     },
@@ -1777,6 +2327,7 @@ window.PLAN = {
       "kcal": 1125,
       "line": "Off day 12 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. White bean tomato pasta is the main cook.",
+      "motivation": "2 days left in this block. Off day 12 of 14. Nights have not started. Use one of these days for a slow meal with both kids. Pray for each child by name, even if it is only one sentence. If the kitchen is chaos, do the next right thing, not five things.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -1793,7 +2344,14 @@ window.PLAN = {
             "1 apple, skin on",
             "2 tbsp pumpkin seeds"
           ],
-          "method": "Stir the pumpkin seed into the yogurt. Apple on top. No cooking."
+          "method": "Stir the pumpkin seed into the yogurt. Apple on top. No cooking.",
+          "nutrients": [
+            "Protein, about 17 g",
+            "Potassium, about 635 mg",
+            "Magnesium, about 74 mg",
+            "Vitamin B12, about 0.5 mcg",
+            "Fibre, about 5 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -1812,7 +2370,14 @@ window.PLAN = {
             "tomato",
             "olive oil"
           ],
-          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the potato with the pepper."
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the potato with the pepper.",
+          "nutrients": [
+            "Vitamin C, about 182 mg",
+            "Niacin, about 7 mg",
+            "Protein, about 28 g",
+            "Potassium, about 1190 mg",
+            "Selenium, about 20 mcg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -1831,7 +2396,14 @@ window.PLAN = {
             "a handful of spinach",
             "olive oil"
           ],
-          "method": "Boil the pasta. Toss with beans, tomato, and spinach."
+          "method": "Boil the pasta. Toss with beans, tomato, and spinach.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Folate, about 238 mcg",
+            "Fibre, about 14 g",
+            "Carbs, about 65 g",
+            "Lycopene, about 3 mg"
+          ]
         }
       ]
     },
@@ -1847,6 +2419,7 @@ window.PLAN = {
       "kcal": 882,
       "line": "Cheat day. Off day 13 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "motivation": "Cheat day, and that is allowed. 1 day left in this block. Off day 13 of 14. Nights have not started. Use one of these days for a slow meal with both kids. Ask for patience for the hour you walk in the door. Notice the first three bites instead of eating on the way out.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -1863,7 +2436,14 @@ window.PLAN = {
             "1 pear, skin on",
             "1 tbsp ground flax"
           ],
-          "method": "Stir the flax into the yogurt. Pear on top. No cooking."
+          "method": "Stir the flax into the yogurt. Pear on top. No cooking.",
+          "nutrients": [
+            "Omega-3, about 1600 mg",
+            "Fibre, about 8 g",
+            "Protein, about 14 g",
+            "Vitamin B12, about 0.5 mcg",
+            "Carbs, about 37 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -1879,7 +2459,14 @@ window.PLAN = {
             "macaroni and cheese",
             "1 cup broccoli"
           ],
-          "method": "Make the mac. Stir in the broccoli. The broccoli is not optional."
+          "method": "Make the mac. Stir in the broccoli. The broccoli is not optional.",
+          "nutrients": [
+            "Vitamin C, about 81 mg",
+            "Vitamin K, about 90 mcg",
+            "Fibre, about 7 g",
+            "Carbs, about 46 g",
+            "Protein, about 13 g"
+          ]
         },
         {
           "slot": "Dinner",
@@ -1898,7 +2485,14 @@ window.PLAN = {
             "cumin",
             "1 slice whole grain bread"
           ],
-          "method": "Simmer lentils, carrots, and tomato 15 minutes. Bread on the side."
+          "method": "Simmer lentils, carrots, and tomato 15 minutes. Bread on the side.",
+          "nutrients": [
+            "Vitamin A, about 1000 mcg",
+            "Lycopene, about 8 mg",
+            "Fibre, about 16 g",
+            "Folate, about 199 mcg",
+            "Potassium, about 1005 mg"
+          ]
         }
       ]
     },
@@ -1914,6 +2508,7 @@ window.PLAN = {
       "kcal": 1010,
       "line": "Off day 14 of 14. Nights start when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Chickpea pepper skillet is the main cook.",
+      "motivation": "Last day of this block. Off day 14 of 14. Nights have not started. Use one of these days for a slow meal with both kids. Thank God for the food and for the two kids, out loud if you can. Look at the two of them once before you talk about the schedule.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -1930,7 +2525,14 @@ window.PLAN = {
             "1 pear, skin on",
             "2 tbsp pumpkin seeds"
           ],
-          "method": "Stir the pumpkin seed into the yogurt. Pear on top. No cooking."
+          "method": "Stir the pumpkin seed into the yogurt. Pear on top. No cooking.",
+          "nutrients": [
+            "Protein, about 18 g",
+            "Fibre, about 7 g",
+            "Potassium, about 620 mg",
+            "Magnesium, about 74 mg",
+            "Carbs, about 38 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -1949,7 +2551,14 @@ window.PLAN = {
             "tomato",
             "olive oil"
           ],
-          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the toast with the pepper."
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the toast with the pepper.",
+          "nutrients": [
+            "Vitamin C, about 165 mg",
+            "Niacin, about 7 mg",
+            "Protein, about 28 g",
+            "Selenium, about 20 mcg",
+            "Vitamin B6, about 0.4 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -1968,7 +2577,14 @@ window.PLAN = {
             "cumin",
             "1/2 cup cooked brown rice"
           ],
-          "method": "Warm chickpeas with pepper and tomato. Serve on rice."
+          "method": "Warm chickpeas with pepper and tomato. Serve on rice.",
+          "nutrients": [
+            "Vitamin C, about 165 mg",
+            "Fibre, about 14 g",
+            "Folate, about 210 mcg",
+            "Carbs, about 64 g",
+            "Magnesium, about 99 mg"
+          ]
         }
       ]
     },
@@ -1984,6 +2600,7 @@ window.PLAN = {
       "kcal": 877,
       "line": "Night shift 1 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat baked potato and broccoli before work.",
+      "motivation": "13 days left in this block. Night shift 1 of 14. They may be asleep when you leave. Pray over both kids before you go. Eat the big plate first. A thirty-second prayer in the car counts. Be where your feet are for one plate.",
       "meals": [
         {
           "slot": "Before shift",
@@ -2001,7 +2618,14 @@ window.PLAN = {
             "a little cheddar",
             "olive oil"
           ],
-          "method": "Microwave or bake the potato. Steam the broccoli. Cheese. Eat the skin."
+          "method": "Microwave or bake the potato. Steam the broccoli. Cheese. Eat the skin.",
+          "nutrients": [
+            "Vitamin C, about 98 mg",
+            "Vitamin K, about 90 mcg",
+            "Potassium, about 1188 mg",
+            "Fibre, about 9 g",
+            "Carbs, about 43 g"
+          ]
         },
         {
           "slot": "Mid shift",
@@ -2019,7 +2643,14 @@ window.PLAN = {
             "1 cup broccoli",
             "olive oil"
           ],
-          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the tortilla with the broccoli."
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the tortilla with the broccoli.",
+          "nutrients": [
+            "Vitamin C, about 81 mg",
+            "Vitamin K, about 90 mcg",
+            "Niacin, about 7 mg",
+            "Protein, about 27 g",
+            "Selenium, about 20 mcg"
+          ]
         },
         {
           "slot": "After shift",
@@ -2036,7 +2667,14 @@ window.PLAN = {
             "1 pear, skin on",
             "1 tbsp ground flax"
           ],
-          "method": "Small bowl. Then sleep."
+          "method": "Small bowl. Then sleep.",
+          "nutrients": [
+            "Omega-3, about 1600 mg",
+            "Fibre, about 8 g",
+            "Protein, about 14 g",
+            "Vitamin B12, about 0.5 mcg",
+            "Carbs, about 37 g"
+          ]
         }
       ]
     },
@@ -2052,6 +2690,7 @@ window.PLAN = {
       "kcal": 830,
       "line": "Night shift 2 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat sweet potato and white beans before work.",
+      "motivation": "12 days left in this block. Night shift 2 of 14. They may be asleep when you leave. Pray over both kids before you go. Eat the big plate first. Pray for their sleep, and for yours. One slow breath before you answer a child.",
       "meals": [
         {
           "slot": "Before shift",
@@ -2070,7 +2709,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Split the sweet potato. Pile on the beans and spinach."
+          "method": "Split the sweet potato. Pile on the beans and spinach.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Vitamin A, about 1100 mcg",
+            "Vitamin C, about 50 mg",
+            "Fibre, about 11 g",
+            "Folate, about 148 mcg"
+          ]
         },
         {
           "slot": "Mid shift",
@@ -2089,7 +2735,14 @@ window.PLAN = {
             "tomato",
             "olive oil"
           ],
-          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the tortilla with the pepper."
+          "method": "Use a cooked thigh, or bake one at 400 F for about 30 minutes. Put it on the tortilla with the pepper.",
+          "nutrients": [
+            "Vitamin C, about 165 mg",
+            "Niacin, about 7 mg",
+            "Protein, about 26 g",
+            "Selenium, about 20 mcg",
+            "Vitamin B6, about 0.4 mg"
+          ]
         },
         {
           "slot": "After shift",
@@ -2106,7 +2759,14 @@ window.PLAN = {
             "1/2 cup raspberries",
             "1 tbsp chia"
           ],
-          "method": "Stir the chia in. Ten minutes if you can wait. Then bed."
+          "method": "Stir the chia in. Ten minutes if you can wait. Then bed.",
+          "nutrients": [
+            "Omega-3, about 2400 mg",
+            "Fibre, about 8 g",
+            "Calcium, about 256 mg",
+            "Protein, about 15 g",
+            "Manganese, about 0.4 mg"
+          ]
         }
       ]
     },
@@ -2122,6 +2782,7 @@ window.PLAN = {
       "kcal": 772,
       "line": "Night shift 3 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat lentil spinach soup before work.",
+      "motivation": "11 days left in this block. Night shift 3 of 14. They may be asleep when you leave. Pray over both kids before you go. Eat the big plate first. If you are too tired for a long prayer, one honest line is enough. Leave the work story until after you have eaten.",
       "meals": [
         {
           "slot": "Before shift",
@@ -2140,7 +2801,14 @@ window.PLAN = {
             "1 cup carrots",
             "lemon"
           ],
-          "method": "Simmer lentils, tomato, and carrots 15 minutes. Spinach at the end."
+          "method": "Simmer lentils, tomato, and carrots 15 minutes. Spinach at the end.",
+          "nutrients": [
+            "Vitamin A, about 1140 mcg",
+            "Vitamin K, about 145 mcg",
+            "Lycopene, about 8 mg",
+            "Vitamin C, about 49 mg",
+            "Folate, about 237 mcg"
+          ]
         },
         {
           "slot": "Mid shift",
@@ -2159,7 +2827,14 @@ window.PLAN = {
             "1 cup broccoli",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan. Add cumin. Put it on the rice with the broccoli."
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the rice with the broccoli.",
+          "nutrients": [
+            "Vitamin C, about 81 mg",
+            "Vitamin K, about 90 mcg",
+            "Protein, about 27 g",
+            "Niacin, about 6 mg",
+            "Selenium, about 22 mcg"
+          ]
         },
         {
           "slot": "After shift",
@@ -2176,7 +2851,14 @@ window.PLAN = {
             "milk or soy milk",
             "1 tbsp ground flax"
           ],
-          "method": "A glass and the banana. Not a second dinner."
+          "method": "A glass and the banana. Not a second dinner.",
+          "nutrients": [
+            "Omega-3, about 1600 mg",
+            "Calcium, about 300 mg",
+            "Potassium, about 590 mg",
+            "Vitamin D, about 2.5 mcg",
+            "Protein, about 10 g"
+          ]
         }
       ]
     },
@@ -2192,6 +2874,7 @@ window.PLAN = {
       "kcal": 758,
       "line": "Cheat day. Night shift 4 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "motivation": "Cheat day, and that is allowed. 10 days left in this block. Night shift 4 of 14. They may be asleep when you leave. Pray over both kids before you go. Eat the big plate first. Bless the hands that will eat with you today. Put the phone face down for the first five minutes of the meal.",
       "meals": [
         {
           "slot": "Before shift",
@@ -2210,7 +2893,14 @@ window.PLAN = {
             "cumin",
             "1/2 cup cooked quinoa"
           ],
-          "method": "Soften the zucchini. Add beans and tomato. Quinoa underneath."
+          "method": "Soften the zucchini. Add beans and tomato. Quinoa underneath.",
+          "nutrients": [
+            "Fibre, about 14 g",
+            "Vitamin C, about 32 mg",
+            "Folate, about 167 mcg",
+            "Potassium, about 1015 mg",
+            "Magnesium, about 119 mg"
+          ]
         },
         {
           "slot": "Mid shift",
@@ -2228,7 +2918,14 @@ window.PLAN = {
             "salsa with no onion",
             "a little cheddar"
           ],
-          "method": "Warm the beans. Chips in a separate bag so they stay crisp. Salsa only if the jar has no onion."
+          "method": "Warm the beans. Chips in a separate bag so they stay crisp. Salsa only if the jar has no onion.",
+          "nutrients": [
+            "Fibre, about 11 g",
+            "Folate, about 128 mcg",
+            "Protein, about 15 g",
+            "Fat, about 14 g",
+            "Carbs, about 42 g"
+          ]
         },
         {
           "slot": "After shift",
@@ -2245,7 +2942,14 @@ window.PLAN = {
             "tomato",
             "olive oil"
           ],
-          "method": "One slice. Tomato. Stop there."
+          "method": "One slice. Tomato. Stop there.",
+          "nutrients": [
+            "Lycopene, about 3 mg",
+            "Vitamin C, about 15 mg",
+            "Fibre, about 4 g",
+            "Potassium, about 290 mg",
+            "Carbs, about 19 g"
+          ]
         }
       ]
     },
@@ -2261,6 +2965,7 @@ window.PLAN = {
       "kcal": 812,
       "line": "Night shift 5 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat black bean chili before work.",
+      "motivation": "9 days left in this block. Night shift 5 of 14. They may be asleep when you leave. Pray over both kids before you go. Eat the big plate first. Say a short prayer before the first bite. Sit down to eat. Standing at the counter makes everyone rush.",
       "meals": [
         {
           "slot": "Before shift",
@@ -2282,7 +2987,14 @@ window.PLAN = {
             "cucumber",
             "lemon"
           ],
-          "method": "Simmer beans, tomato, cumin, and chili powder 15 minutes. No onion. Spoon over rice. Put a salad beside it."
+          "method": "Simmer beans, tomato, cumin, and chili powder 15 minutes. No onion. Spoon over rice. Put a salad beside it.",
+          "nutrients": [
+            "Vitamin K, about 96 mcg",
+            "Lycopene, about 8 mg",
+            "Vitamin C, about 42 mg",
+            "Fibre, about 13 g",
+            "Folate, about 158 mcg"
+          ]
         },
         {
           "slot": "Mid shift",
@@ -2301,7 +3013,14 @@ window.PLAN = {
             "1 cup broccoli",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan. Add cumin. Put it on the quinoa with the broccoli."
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the quinoa with the broccoli.",
+          "nutrients": [
+            "Vitamin C, about 81 mg",
+            "Vitamin K, about 90 mcg",
+            "Protein, about 29 g",
+            "Niacin, about 6 mg",
+            "Selenium, about 22 mcg"
+          ]
         },
         {
           "slot": "After shift",
@@ -2317,7 +3036,14 @@ window.PLAN = {
             "1 apple, skin on",
             "a little cheddar"
           ],
-          "method": "Apple first. A little cheese. Then sleep."
+          "method": "Apple first. A little cheese. Then sleep.",
+          "nutrients": [
+            "Fibre, about 4 g",
+            "Calcium, about 140 mg",
+            "Carbs, about 25 g",
+            "Fat, about 7 g",
+            "Vitamin C, about 8 mg"
+          ]
         }
       ]
     },
@@ -2333,6 +3059,7 @@ window.PLAN = {
       "kcal": 961,
       "line": "Night shift 6 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat black bean chili before work.",
+      "motivation": "8 days left in this block. Night shift 6 of 14. They may be asleep when you leave. Pray over both kids before you go. Eat the big plate first. Pray for each child by name, even if it is only one sentence. If the kitchen is chaos, do the next right thing, not five things.",
       "meals": [
         {
           "slot": "Before shift",
@@ -2353,7 +3080,14 @@ window.PLAN = {
             "1/4 avocado",
             "1 apple, skin on"
           ],
-          "method": "Simmer beans, tomato, cumin, and chili powder 15 minutes. No onion. Spoon over rice. Avocado on top at the last minute. Apple on the side."
+          "method": "Simmer beans, tomato, cumin, and chili powder 15 minutes. No onion. Spoon over rice. Avocado on top at the last minute. Apple on the side.",
+          "nutrients": [
+            "Lycopene, about 8 mg",
+            "Fibre, about 14 g",
+            "Folate, about 158 mcg",
+            "Magnesium, about 99 mg",
+            "Carbs, about 53 g"
+          ]
         },
         {
           "slot": "Mid shift",
@@ -2373,7 +3107,14 @@ window.PLAN = {
             "tomato",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan. Add cumin. Put it on the quinoa with the pepper."
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the quinoa with the pepper.",
+          "nutrients": [
+            "Vitamin C, about 165 mg",
+            "Protein, about 28 g",
+            "Niacin, about 6 mg",
+            "Selenium, about 22 mcg",
+            "Vitamin B6, about 0.4 mg"
+          ]
         },
         {
           "slot": "After shift",
@@ -2389,7 +3130,14 @@ window.PLAN = {
             "1 orange",
             "plain yogurt"
           ],
-          "method": "Eat the orange whole. A few spoons of yogurt."
+          "method": "Eat the orange whole. A few spoons of yogurt.",
+          "nutrients": [
+            "Vitamin C, about 70 mg",
+            "Protein, about 13 g",
+            "Vitamin B12, about 0.5 mcg",
+            "Calcium, about 180 mg",
+            "Potassium, about 460 mg"
+          ]
         }
       ]
     },
@@ -2405,6 +3153,7 @@ window.PLAN = {
       "kcal": 1004,
       "line": "Night shift 7 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat black bean chili before work.",
+      "motivation": "7 days left in this block. Night shift 7 of 14. They may be asleep when you leave. Pray over both kids before you go. Eat the big plate first. Ask for patience for the hour you walk in the door. Notice the first three bites instead of eating on the way out.",
       "meals": [
         {
           "slot": "Before shift",
@@ -2424,7 +3173,14 @@ window.PLAN = {
             "1/2 cup cooked brown rice",
             "1 slice whole grain bread"
           ],
-          "method": "Simmer beans, tomato, cumin, and chili powder 15 minutes. No onion. Spoon over rice. Toast on the side."
+          "method": "Simmer beans, tomato, cumin, and chili powder 15 minutes. No onion. Spoon over rice. Toast on the side.",
+          "nutrients": [
+            "Lycopene, about 8 mg",
+            "Fibre, about 14 g",
+            "Magnesium, about 119 mg",
+            "Folate, about 148 mcg",
+            "Carbs, about 65 g"
+          ]
         },
         {
           "slot": "Mid shift",
@@ -2443,7 +3199,14 @@ window.PLAN = {
             "1 cup broccoli",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan. Add cumin. Put it on the potato with the broccoli."
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the potato with the broccoli.",
+          "nutrients": [
+            "Vitamin C, about 98 mg",
+            "Vitamin K, about 90 mcg",
+            "Protein, about 29 g",
+            "Potassium, about 1188 mg",
+            "Niacin, about 6 mg"
+          ]
         },
         {
           "slot": "After shift",
@@ -2460,7 +3223,14 @@ window.PLAN = {
             "milk or soy milk",
             "cinnamon"
           ],
-          "method": "A small bowl of oats, half the usual pot. Cinnamon."
+          "method": "A small bowl of oats, half the usual pot. Cinnamon.",
+          "nutrients": [
+            "Calcium, about 300 mg",
+            "Protein, about 13 g",
+            "Carbs, about 39 g",
+            "Potassium, about 523 mg",
+            "Magnesium, about 56 mg"
+          ]
         }
       ]
     },
@@ -2476,6 +3246,7 @@ window.PLAN = {
       "kcal": 1008,
       "line": "Night shift 8 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat white bean tomato pasta before work.",
+      "motivation": "6 days left in this block. Night shift 8 of 14. They may be asleep when you leave. Pray over both kids before you go. Eat the big plate first. Thank God for the food and for the two kids, out loud if you can. Look at the two of them once before you talk about the schedule.",
       "meals": [
         {
           "slot": "Before shift",
@@ -2497,7 +3268,14 @@ window.PLAN = {
             "cucumber",
             "lemon"
           ],
-          "method": "Boil the pasta. Toss with beans, tomato, and spinach. Put a salad beside it."
+          "method": "Boil the pasta. Toss with beans, tomato, and spinach. Put a salad beside it.",
+          "nutrients": [
+            "Vitamin K, about 241 mcg",
+            "Folate, about 268 mcg",
+            "Fibre, about 16 g",
+            "Vitamin C, about 45 mg",
+            "Carbs, about 71 g"
+          ]
         },
         {
           "slot": "Mid shift",
@@ -2517,7 +3295,14 @@ window.PLAN = {
             "tomato",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan. Add cumin. Put it on the potato with the pepper."
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the potato with the pepper.",
+          "nutrients": [
+            "Vitamin C, about 182 mg",
+            "Protein, about 28 g",
+            "Potassium, about 1190 mg",
+            "Niacin, about 6 mg",
+            "Selenium, about 22 mcg"
+          ]
         },
         {
           "slot": "After shift",
@@ -2533,7 +3318,14 @@ window.PLAN = {
             "a palm of ground turkey",
             "cucumber"
           ],
-          "method": "A few bites of turkey you already cooked, plus cucumber. Not a full pan."
+          "method": "A few bites of turkey you already cooked, plus cucumber. Not a full pan.",
+          "nutrients": [
+            "Niacin, about 6 mg",
+            "Selenium, about 22 mcg",
+            "Protein, about 23 g",
+            "Vitamin B6, about 0.4 mg",
+            "Vitamin K, about 16 mcg"
+          ]
         }
       ]
     },
@@ -2549,6 +3341,7 @@ window.PLAN = {
       "kcal": 840,
       "line": "Night shift 9 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat white bean tomato pasta before work.",
+      "motivation": "5 days left in this block. Night shift 9 of 14. They may be asleep when you leave. Pray over both kids before you go. Eat the big plate first. A thirty-second prayer in the car counts. Be where your feet are for one plate.",
       "meals": [
         {
           "slot": "Before shift",
@@ -2568,7 +3361,14 @@ window.PLAN = {
             "olive oil",
             "1/4 avocado"
           ],
-          "method": "Boil the pasta. Toss with beans, tomato, and spinach. Avocado on top at the last minute."
+          "method": "Boil the pasta. Toss with beans, tomato, and spinach. Avocado on top at the last minute.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Fibre, about 17 g",
+            "Folate, about 268 mcg",
+            "Carbs, about 68 g",
+            "Potassium, about 790 mg"
+          ]
         },
         {
           "slot": "Mid shift",
@@ -2587,7 +3387,14 @@ window.PLAN = {
             "1 cup broccoli",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan. Add cumin. Put it on the toast with the broccoli."
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the toast with the broccoli.",
+          "nutrients": [
+            "Vitamin C, about 81 mg",
+            "Vitamin K, about 90 mcg",
+            "Protein, about 29 g",
+            "Niacin, about 6 mg",
+            "Selenium, about 22 mcg"
+          ]
         },
         {
           "slot": "After shift",
@@ -2603,7 +3410,14 @@ window.PLAN = {
             "1 egg",
             "a handful of spinach"
           ],
-          "method": "One egg and a handful of spinach. That is the whole plate."
+          "method": "One egg and a handful of spinach. That is the whole plate.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Choline, about 147 mg",
+            "Vitamin B12, about 0.5 mcg",
+            "Vitamin A, about 140 mcg",
+            "Folate, about 58 mcg"
+          ]
         }
       ]
     },
@@ -2619,6 +3433,7 @@ window.PLAN = {
       "kcal": 1070,
       "line": "Night shift 10 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat white bean tomato pasta before work.",
+      "motivation": "4 days left in this block. Night shift 10 of 14. They may be asleep when you leave. Pray over both kids before you go. Eat the big plate first. Pray for their sleep, and for yours. One slow breath before you answer a child.",
       "meals": [
         {
           "slot": "Before shift",
@@ -2638,7 +3453,14 @@ window.PLAN = {
             "olive oil",
             "1 slice whole grain bread"
           ],
-          "method": "Boil the pasta. Toss with beans, tomato, and spinach. Toast on the side."
+          "method": "Boil the pasta. Toss with beans, tomato, and spinach. Toast on the side.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Fibre, about 17 g",
+            "Folate, about 258 mcg",
+            "Carbs, about 80 g",
+            "Magnesium, about 115 mg"
+          ]
         },
         {
           "slot": "Mid shift",
@@ -2658,7 +3480,14 @@ window.PLAN = {
             "tomato",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan. Add cumin. Put it on the toast with the pepper."
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the toast with the pepper.",
+          "nutrients": [
+            "Vitamin C, about 165 mg",
+            "Protein, about 28 g",
+            "Niacin, about 6 mg",
+            "Selenium, about 22 mcg",
+            "Vitamin B6, about 0.4 mg"
+          ]
         },
         {
           "slot": "After shift",
@@ -2675,7 +3504,14 @@ window.PLAN = {
             "2 tbsp pumpkin seeds",
             "plain yogurt"
           ],
-          "method": "Chop the peach into the yogurt. Seeds on top."
+          "method": "Chop the peach into the yogurt. Seeds on top.",
+          "nutrients": [
+            "Protein, about 18 g",
+            "Magnesium, about 74 mg",
+            "Vitamin B12, about 0.5 mcg",
+            "Fat, about 12 g",
+            "Calcium, about 180 mg"
+          ]
         }
       ]
     },
@@ -2691,6 +3527,7 @@ window.PLAN = {
       "kcal": 857,
       "line": "Cheat day. Night shift 11 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "motivation": "Cheat day, and that is allowed. 3 days left in this block. Night shift 11 of 14. They may be asleep when you leave. Pray over both kids before you go. Eat the big plate first. If you are too tired for a long prayer, one honest line is enough. Leave the work story until after you have eaten.",
       "meals": [
         {
           "slot": "Before shift",
@@ -2712,7 +3549,14 @@ window.PLAN = {
             "cucumber",
             "lemon"
           ],
-          "method": "Simmer lentils, carrots, and tomato 15 minutes. Bread on the side. Put a salad beside it."
+          "method": "Simmer lentils, carrots, and tomato 15 minutes. Bread on the side. Put a salad beside it.",
+          "nutrients": [
+            "Vitamin A, about 1080 mcg",
+            "Vitamin K, about 96 mcg",
+            "Lycopene, about 8 mg",
+            "Fibre, about 18 g",
+            "Vitamin C, about 49 mg"
+          ]
         },
         {
           "slot": "Mid shift",
@@ -2730,7 +3574,14 @@ window.PLAN = {
             "tomato",
             "tomato soup, no onion"
           ],
-          "method": "Toast the cheese sandwich in a pan. Heat the soup. Check the soup label for onion."
+          "method": "Toast the cheese sandwich in a pan. Heat the soup. Check the soup label for onion.",
+          "nutrients": [
+            "Fibre, about 9 g",
+            "Lycopene, about 3 mg",
+            "Carbs, about 52 g",
+            "Protein, about 16 g",
+            "Vitamin C, about 15 mg"
+          ]
         },
         {
           "slot": "After shift",
@@ -2747,7 +3598,14 @@ window.PLAN = {
             "1 tbsp ground flax",
             "plain yogurt"
           ],
-          "method": "Yogurt, berries, flax. Small."
+          "method": "Yogurt, berries, flax. Small.",
+          "nutrients": [
+            "Omega-3, about 1600 mg",
+            "Protein, about 13 g",
+            "Vitamin B12, about 0.5 mcg",
+            "Calcium, about 180 mg",
+            "Fibre, about 4 g"
+          ]
         }
       ]
     },
@@ -2763,6 +3621,7 @@ window.PLAN = {
       "kcal": 943,
       "line": "Night shift 12 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat lentil carrot stew before work.",
+      "motivation": "2 days left in this block. Night shift 12 of 14. Nights are almost over. Sleep when you get home. The kids need you rested more than they need a long talk at dawn. Bless the hands that will eat with you today. Put the phone face down for the first five minutes of the meal.",
       "meals": [
         {
           "slot": "Before shift",
@@ -2782,7 +3641,14 @@ window.PLAN = {
             "1 slice whole grain bread",
             "1/4 avocado"
           ],
-          "method": "Simmer lentils, carrots, and tomato 15 minutes. Bread on the side. Avocado on top at the last minute."
+          "method": "Simmer lentils, carrots, and tomato 15 minutes. Bread on the side. Avocado on top at the last minute.",
+          "nutrients": [
+            "Vitamin A, about 1000 mcg",
+            "Lycopene, about 8 mg",
+            "Fibre, about 19 g",
+            "Folate, about 229 mcg",
+            "Potassium, about 1175 mg"
+          ]
         },
         {
           "slot": "Mid shift",
@@ -2802,7 +3668,14 @@ window.PLAN = {
             "tomato",
             "olive oil"
           ],
-          "method": "Brown the turkey in a pan. Add cumin. Put it on the tortilla with the pepper."
+          "method": "Brown the turkey in a pan. Add cumin. Put it on the tortilla with the pepper.",
+          "nutrients": [
+            "Vitamin C, about 165 mg",
+            "Protein, about 26 g",
+            "Niacin, about 6 mg",
+            "Selenium, about 22 mcg",
+            "Vitamin B6, about 0.4 mg"
+          ]
         },
         {
           "slot": "After shift",
@@ -2820,7 +3693,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Mash a few chickpeas with lemon. Carrot coins. Stop when you are not hungry."
+          "method": "Mash a few chickpeas with lemon. Carrot coins. Stop when you are not hungry.",
+          "nutrients": [
+            "Vitamin A, about 1000 mcg",
+            "Folate, about 210 mcg",
+            "Fibre, about 13 g",
+            "Vitamin C, about 37 mg",
+            "Potassium, about 750 mg"
+          ]
         }
       ]
     },
@@ -2836,6 +3716,7 @@ window.PLAN = {
       "kcal": 887,
       "line": "Night shift 13 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat lentil carrot stew before work.",
+      "motivation": "1 day left in this block. Night shift 13 of 14. Nights are almost over. Sleep when you get home. The kids need you rested more than they need a long talk at dawn. Say a short prayer before the first bite. Sit down to eat. Standing at the counter makes everyone rush.",
       "meals": [
         {
           "slot": "Before shift",
@@ -2855,7 +3736,14 @@ window.PLAN = {
             "1 slice whole grain bread",
             "1 slice whole grain bread"
           ],
-          "method": "Simmer lentils, carrots, and tomato 15 minutes. Bread on the side. Toast on the side."
+          "method": "Simmer lentils, carrots, and tomato 15 minutes. Bread on the side. Toast on the side.",
+          "nutrients": [
+            "Vitamin A, about 1000 mcg",
+            "Lycopene, about 8 mg",
+            "Fibre, about 19 g",
+            "Folate, about 219 mcg",
+            "Carbs, about 70 g"
+          ]
         },
         {
           "slot": "Mid shift",
@@ -2874,7 +3762,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "400 F, 15 to 18 minutes. Lemon at the end. Eat it with rice and spinach."
+          "method": "400 F, 15 to 18 minutes. Lemon at the end. Eat it with rice and spinach.",
+          "nutrients": [
+            "Omega-3, about 1800 mg",
+            "Vitamin K, about 145 mcg",
+            "Vitamin B12, about 3 mcg",
+            "Vitamin D, about 10 mcg",
+            "Selenium, about 30 mcg"
+          ]
         },
         {
           "slot": "After shift",
@@ -2891,7 +3786,14 @@ window.PLAN = {
             "lemon",
             "1 slice whole grain bread"
           ],
-          "method": "A quarter avocado on one slice of toast."
+          "method": "A quarter avocado on one slice of toast.",
+          "nutrients": [
+            "Vitamin C, about 30 mg",
+            "Fibre, about 6 g",
+            "Folate, about 50 mcg",
+            "Carbs, about 20 g",
+            "Fat, about 6 g"
+          ]
         }
       ]
     },
@@ -2907,6 +3809,7 @@ window.PLAN = {
       "kcal": 1061,
       "line": "Night shift 14 of 14. Biggest plate before work. Pack the middle. Small plate after, then sleep. Stop caffeine about 6 hours before sleep.",
       "note": "Night block. Eat chickpea pepper skillet before work.",
+      "motivation": "Last day of this block. Night shift 14 of 14. Nights are almost over. Sleep when you get home. The kids need you rested more than they need a long talk at dawn. Pray for each child by name, even if it is only one sentence. If the kitchen is chaos, do the next right thing, not five things.",
       "meals": [
         {
           "slot": "Before shift",
@@ -2929,7 +3832,14 @@ window.PLAN = {
             "lemon",
             "1 apple, skin on"
           ],
-          "method": "Warm chickpeas with pepper and tomato. Serve on rice. Put a salad beside it. Apple on the side."
+          "method": "Warm chickpeas with pepper and tomato. Serve on rice. Put a salad beside it. Apple on the side.",
+          "nutrients": [
+            "Vitamin C, about 195 mg",
+            "Vitamin K, about 96 mcg",
+            "Fibre, about 16 g",
+            "Folate, about 240 mcg",
+            "Carbs, about 70 g"
+          ]
         },
         {
           "slot": "Mid shift",
@@ -2948,7 +3858,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "400 F, 15 to 18 minutes. Lemon at the end. Eat it with cucumber and bread."
+          "method": "400 F, 15 to 18 minutes. Lemon at the end. Eat it with cucumber and bread.",
+          "nutrients": [
+            "Omega-3, about 1800 mg",
+            "Vitamin B12, about 3 mcg",
+            "Vitamin D, about 10 mcg",
+            "Selenium, about 30 mcg",
+            "Protein, about 28 g"
+          ]
         },
         {
           "slot": "After shift",
@@ -2965,7 +3882,14 @@ window.PLAN = {
             "plain yogurt",
             "a spoon of honey"
           ],
-          "method": "Cherries in the yogurt. A spoon of honey if you want it. Then sleep."
+          "method": "Cherries in the yogurt. A spoon of honey if you want it. Then sleep.",
+          "nutrients": [
+            "Protein, about 13 g",
+            "Vitamin B12, about 0.5 mcg",
+            "Carbs, about 37 g",
+            "Calcium, about 180 mg",
+            "Potassium, about 350 mg"
+          ]
         }
       ]
     },
@@ -2981,6 +3905,7 @@ window.PLAN = {
       "kcal": 872,
       "line": "Cheat day. Off day 1 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "motivation": "Cheat day, and that is allowed. 13 days left in this block. Off day 1 of 14. Day shifts start again when this break ends. Let the kids see you sit down to eat. Ask for patience for the hour you walk in the door. Notice the first three bites instead of eating on the way out.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -2998,7 +3923,14 @@ window.PLAN = {
             "tomato",
             "1 corn tortilla"
           ],
-          "method": "Wilt the spinach in the pan with the eggs. Warm the tortilla in a dry pan."
+          "method": "Wilt the spinach in the pan with the eggs. Warm the tortilla in a dry pan.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Choline, about 294 mg",
+            "Vitamin B12, about 1 mcg",
+            "Lycopene, about 3 mg",
+            "Protein, about 16 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -3014,7 +3946,14 @@ window.PLAN = {
             "a bowl of ice cream",
             "1 apple, skin on"
           ],
-          "method": "Apple first or apple after. Eat the apple. That is the fibre."
+          "method": "Apple first or apple after. Eat the apple. That is the fibre.",
+          "nutrients": [
+            "Carbs, about 41 g",
+            "Fibre, about 4 g",
+            "Fat, about 7 g",
+            "Vitamin C, about 8 mg",
+            "Potassium, about 195 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -3034,7 +3973,14 @@ window.PLAN = {
             "1/2 cup cooked brown rice",
             "1/4 avocado"
           ],
-          "method": "Warm chickpeas with pepper and tomato. Serve on rice. Avocado on top at the last minute."
+          "method": "Warm chickpeas with pepper and tomato. Serve on rice. Avocado on top at the last minute.",
+          "nutrients": [
+            "Vitamin C, about 165 mg",
+            "Fibre, about 17 g",
+            "Folate, about 240 mcg",
+            "Carbs, about 67 g",
+            "Potassium, about 820 mg"
+          ]
         }
       ]
     },
@@ -3050,6 +3996,7 @@ window.PLAN = {
       "kcal": 1064,
       "line": "Off day 2 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Chickpea pepper skillet is the main cook.",
+      "motivation": "12 days left in this block. Off day 2 of 14. Day shifts start again when this break ends. Let the kids see you sit down to eat. Thank God for the food and for the two kids, out loud if you can. Look at the two of them once before you talk about the schedule.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -3067,7 +4014,14 @@ window.PLAN = {
             "tomato",
             "1 slice whole grain bread"
           ],
-          "method": "Wilt the spinach in the pan with the eggs. Toast the bread while the eggs cook."
+          "method": "Wilt the spinach in the pan with the eggs. Toast the bread while the eggs cook.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Choline, about 294 mg",
+            "Vitamin B12, about 1 mcg",
+            "Protein, about 18 g",
+            "Lycopene, about 3 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -3086,7 +4040,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "400 F, 15 to 18 minutes. Lemon at the end. Eat it with tomato and quinoa."
+          "method": "400 F, 15 to 18 minutes. Lemon at the end. Eat it with tomato and quinoa.",
+          "nutrients": [
+            "Omega-3, about 1800 mg",
+            "Vitamin B12, about 3 mcg",
+            "Vitamin D, about 10 mcg",
+            "Vitamin C, about 45 mg",
+            "Selenium, about 30 mcg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -3106,7 +4067,14 @@ window.PLAN = {
             "1/2 cup cooked brown rice",
             "1 slice whole grain bread"
           ],
-          "method": "Warm chickpeas with pepper and tomato. Serve on rice. Toast on the side."
+          "method": "Warm chickpeas with pepper and tomato. Serve on rice. Toast on the side.",
+          "nutrients": [
+            "Vitamin C, about 165 mg",
+            "Fibre, about 17 g",
+            "Folate, about 230 mcg",
+            "Carbs, about 79 g",
+            "Magnesium, about 119 mg"
+          ]
         }
       ]
     },
@@ -3122,6 +4090,7 @@ window.PLAN = {
       "kcal": 947,
       "line": "Off day 3 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Baked potato and broccoli is the main cook.",
+      "motivation": "11 days left in this block. Off day 3 of 14. Day shifts start again when this break ends. Let the kids see you sit down to eat. A thirty-second prayer in the car counts. Be where your feet are for one plate.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -3138,7 +4107,14 @@ window.PLAN = {
             "tomato",
             "1 corn tortilla"
           ],
-          "method": "Eggs in a small pan. Tomato on the side, raw. Warm the tortilla in a dry pan."
+          "method": "Eggs in a small pan. Tomato on the side, raw. Warm the tortilla in a dry pan.",
+          "nutrients": [
+            "Choline, about 294 mg",
+            "Vitamin B12, about 1 mcg",
+            "Lycopene, about 3 mg",
+            "Protein, about 15 g",
+            "Vitamin C, about 15 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -3157,7 +4133,14 @@ window.PLAN = {
             "a handful of spinach",
             "cumin"
           ],
-          "method": "Scramble the eggs. Warm the beans. Roll them in the tortilla with spinach."
+          "method": "Scramble the eggs. Warm the beans. Roll them in the tortilla with spinach.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Choline, about 294 mg",
+            "Fibre, about 12 g",
+            "Folate, about 186 mcg",
+            "Vitamin B12, about 1 mcg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -3178,7 +4161,14 @@ window.PLAN = {
             "cucumber",
             "lemon"
           ],
-          "method": "Microwave or bake the potato. Steam the broccoli. Cheese. Eat the skin. Put a salad beside it."
+          "method": "Microwave or bake the potato. Steam the broccoli. Cheese. Eat the skin. Put a salad beside it.",
+          "nutrients": [
+            "Vitamin K, about 186 mcg",
+            "Vitamin C, about 128 mg",
+            "Potassium, about 1328 mg",
+            "Fibre, about 11 g",
+            "Carbs, about 49 g"
+          ]
         }
       ]
     },
@@ -3194,6 +4184,7 @@ window.PLAN = {
       "kcal": 1013,
       "line": "Off day 4 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Baked potato and broccoli is the main cook.",
+      "motivation": "10 days left in this block. Off day 4 of 14. Day shifts start again when this break ends. Let the kids see you sit down to eat. Pray for their sleep, and for yours. One slow breath before you answer a child.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -3210,7 +4201,14 @@ window.PLAN = {
             "tomato",
             "1 slice whole grain bread"
           ],
-          "method": "Eggs in a small pan. Tomato on the side, raw. Toast the bread while the eggs cook."
+          "method": "Eggs in a small pan. Tomato on the side, raw. Toast the bread while the eggs cook.",
+          "nutrients": [
+            "Choline, about 294 mg",
+            "Vitamin B12, about 1 mcg",
+            "Lycopene, about 3 mg",
+            "Protein, about 17 g",
+            "Vitamin C, about 15 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -3230,7 +4228,14 @@ window.PLAN = {
             "lemon",
             "olive oil"
           ],
-          "method": "Chop the eggs. Toss with chickpeas, cucumber, and greens."
+          "method": "Chop the eggs. Toss with chickpeas, cucumber, and greens.",
+          "nutrients": [
+            "Vitamin K, about 96 mcg",
+            "Choline, about 294 mg",
+            "Folate, about 240 mcg",
+            "Fibre, about 11 g",
+            "Vitamin B12, about 1 mcg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -3249,7 +4254,14 @@ window.PLAN = {
             "olive oil",
             "1/4 avocado"
           ],
-          "method": "Microwave or bake the potato. Steam the broccoli. Cheese. Eat the skin. Avocado on top at the last minute."
+          "method": "Microwave or bake the potato. Steam the broccoli. Cheese. Eat the skin. Avocado on top at the last minute.",
+          "nutrients": [
+            "Vitamin C, about 98 mg",
+            "Vitamin K, about 90 mcg",
+            "Potassium, about 1358 mg",
+            "Fibre, about 12 g",
+            "Fat, about 17 g"
+          ]
         }
       ]
     },
@@ -3265,6 +4277,7 @@ window.PLAN = {
       "kcal": 1144,
       "line": "Off day 5 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Baked potato and broccoli is the main cook.",
+      "motivation": "9 days left in this block. Off day 5 of 14. Day shifts start again when this break ends. Let the kids see you sit down to eat. If you are too tired for a long prayer, one honest line is enough. Leave the work story until after you have eaten.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -3282,7 +4295,14 @@ window.PLAN = {
             "cumin",
             "1 corn tortilla"
           ],
-          "method": "Scramble the eggs. Warm the beans with cumin. Warm the tortilla in a dry pan."
+          "method": "Scramble the eggs. Warm the beans with cumin. Warm the tortilla in a dry pan.",
+          "nutrients": [
+            "Choline, about 294 mg",
+            "Vitamin B12, about 1 mcg",
+            "Fibre, about 10 g",
+            "Protein, about 22 g",
+            "Folate, about 128 mcg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -3300,7 +4320,14 @@ window.PLAN = {
             "2 slices whole grain bread",
             "tomato"
           ],
-          "method": "Toast. Avocado, eggs, tomato."
+          "method": "Toast. Avocado, eggs, tomato.",
+          "nutrients": [
+            "Choline, about 294 mg",
+            "Fibre, about 12 g",
+            "Vitamin B12, about 1 mcg",
+            "Protein, about 23 g",
+            "Fat, about 23 g"
+          ]
         },
         {
           "slot": "Dinner",
@@ -3319,7 +4346,14 @@ window.PLAN = {
             "olive oil",
             "1 slice whole grain bread"
           ],
-          "method": "Microwave or bake the potato. Steam the broccoli. Cheese. Eat the skin. Toast on the side."
+          "method": "Microwave or bake the potato. Steam the broccoli. Cheese. Eat the skin. Toast on the side.",
+          "nutrients": [
+            "Vitamin C, about 98 mg",
+            "Vitamin K, about 90 mcg",
+            "Fibre, about 12 g",
+            "Potassium, about 1188 mg",
+            "Carbs, about 58 g"
+          ]
         }
       ]
     },
@@ -3335,6 +4369,7 @@ window.PLAN = {
       "kcal": 978,
       "line": "Off day 6 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Sweet potato and white beans is the main cook.",
+      "motivation": "8 days left in this block. Off day 6 of 14. Day shifts start again when this break ends. Let the kids see you sit down to eat. Bless the hands that will eat with you today. Put the phone face down for the first five minutes of the meal.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -3352,7 +4387,14 @@ window.PLAN = {
             "cumin",
             "1 slice whole grain bread"
           ],
-          "method": "Scramble the eggs. Warm the beans with cumin. Toast the bread while the eggs cook."
+          "method": "Scramble the eggs. Warm the beans with cumin. Toast the bread while the eggs cook.",
+          "nutrients": [
+            "Choline, about 294 mg",
+            "Fibre, about 11 g",
+            "Vitamin B12, about 1 mcg",
+            "Protein, about 24 g",
+            "Folate, about 148 mcg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -3371,7 +4413,14 @@ window.PLAN = {
             "a handful of spinach",
             "lemon"
           ],
-          "method": "Warm the lentils and carrots. Top with the eggs."
+          "method": "Warm the lentils and carrots. Top with the eggs.",
+          "nutrients": [
+            "Vitamin A, about 1140 mcg",
+            "Vitamin K, about 145 mcg",
+            "Choline, about 294 mg",
+            "Folate, about 237 mcg",
+            "Fibre, about 13 g"
+          ]
         },
         {
           "slot": "Dinner",
@@ -3393,7 +4442,14 @@ window.PLAN = {
             "cucumber",
             "lemon"
           ],
-          "method": "Split the sweet potato. Pile on the beans and spinach. Put a salad beside it."
+          "method": "Split the sweet potato. Pile on the beans and spinach. Put a salad beside it.",
+          "nutrients": [
+            "Vitamin K, about 241 mcg",
+            "Vitamin A, about 1180 mcg",
+            "Vitamin C, about 80 mg",
+            "Fibre, about 13 g",
+            "Folate, about 178 mcg"
+          ]
         }
       ]
     },
@@ -3409,6 +4465,7 @@ window.PLAN = {
       "kcal": 978,
       "line": "Off day 7 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Sweet potato and white beans is the main cook.",
+      "motivation": "7 days left in this block. Off day 7 of 14. Day shifts start again when this break ends. Let the kids see you sit down to eat. Say a short prayer before the first bite. Sit down to eat. Standing at the counter makes everyone rush.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -3425,7 +4482,14 @@ window.PLAN = {
             "1 bell pepper",
             "1 corn tortilla"
           ],
-          "method": "Slice the pepper thin and soften it, then add the eggs. Warm the tortilla in a dry pan."
+          "method": "Slice the pepper thin and soften it, then add the eggs. Warm the tortilla in a dry pan.",
+          "nutrients": [
+            "Vitamin C, about 150 mg",
+            "Choline, about 294 mg",
+            "Vitamin B12, about 1 mcg",
+            "Vitamin A, about 180 mcg",
+            "Protein, about 15 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -3444,7 +4508,14 @@ window.PLAN = {
             "1 slice whole grain bread",
             "olive oil"
           ],
-          "method": "Warm the beans with tomato. Eggs on the side. Toast if you want it."
+          "method": "Warm the beans with tomato. Eggs on the side. Toast if you want it.",
+          "nutrients": [
+            "Choline, about 294 mg",
+            "Vitamin B12, about 1 mcg",
+            "Protein, about 25 g",
+            "Fibre, about 10 g",
+            "Lycopene, about 3 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -3464,7 +4535,14 @@ window.PLAN = {
             "olive oil",
             "1/4 avocado"
           ],
-          "method": "Split the sweet potato. Pile on the beans and spinach. Avocado on top at the last minute."
+          "method": "Split the sweet potato. Pile on the beans and spinach. Avocado on top at the last minute.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Vitamin A, about 1100 mcg",
+            "Vitamin C, about 50 mg",
+            "Fibre, about 14 g",
+            "Folate, about 178 mcg"
+          ]
         }
       ]
     },
@@ -3480,6 +4558,7 @@ window.PLAN = {
       "kcal": 918,
       "line": "Off day 8 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Sweet potato and white beans is the main cook.",
+      "motivation": "6 days left in this block. Off day 8 of 14. Day shifts start again when this break ends. Let the kids see you sit down to eat. Pray for each child by name, even if it is only one sentence. If the kitchen is chaos, do the next right thing, not five things.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -3496,7 +4575,14 @@ window.PLAN = {
             "1 bell pepper",
             "1 slice whole grain bread"
           ],
-          "method": "Slice the pepper thin and soften it, then add the eggs. Toast the bread while the eggs cook."
+          "method": "Slice the pepper thin and soften it, then add the eggs. Toast the bread while the eggs cook.",
+          "nutrients": [
+            "Vitamin C, about 150 mg",
+            "Choline, about 294 mg",
+            "Vitamin B12, about 1 mcg",
+            "Protein, about 17 g",
+            "Vitamin A, about 180 mcg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -3514,7 +4600,14 @@ window.PLAN = {
             "a handful of spinach",
             "olive oil"
           ],
-          "method": "Microwave the sweet potato 5 minutes. Eggs and spinach on top."
+          "method": "Microwave the sweet potato 5 minutes. Eggs and spinach on top.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Vitamin A, about 1100 mcg",
+            "Choline, about 294 mg",
+            "Vitamin B12, about 1 mcg",
+            "Vitamin C, about 20 mg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -3534,7 +4627,14 @@ window.PLAN = {
             "olive oil",
             "1 slice whole grain bread"
           ],
-          "method": "Split the sweet potato. Pile on the beans and spinach. Toast on the side."
+          "method": "Split the sweet potato. Pile on the beans and spinach. Toast on the side.",
+          "nutrients": [
+            "Vitamin K, about 145 mcg",
+            "Vitamin A, about 1100 mcg",
+            "Vitamin C, about 50 mg",
+            "Fibre, about 14 g",
+            "Folate, about 168 mcg"
+          ]
         }
       ]
     },
@@ -3550,6 +4650,7 @@ window.PLAN = {
       "kcal": 871,
       "line": "Off day 9 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Lentil spinach soup is the main cook.",
+      "motivation": "5 days left in this block. Off day 9 of 14. Day shifts start again when this break ends. Let the kids see you sit down to eat. Ask for patience for the hour you walk in the door. Notice the first three bites instead of eating on the way out.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -3567,7 +4668,14 @@ window.PLAN = {
             "1 corn tortilla",
             "1 apple, skin on"
           ],
-          "method": "Eggs first. Greens with lemon after, not cooked to death. Warm the tortilla in a dry pan. Apple on the side."
+          "method": "Eggs first. Greens with lemon after, not cooked to death. Warm the tortilla in a dry pan. Apple on the side.",
+          "nutrients": [
+            "Vitamin K, about 80 mcg",
+            "Choline, about 294 mg",
+            "Vitamin B12, about 1 mcg",
+            "Protein, about 15 g",
+            "Fat, about 11 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -3585,7 +4693,14 @@ window.PLAN = {
             "1 corn tortilla",
             "a little cheddar"
           ],
-          "method": "Soften the pepper. Scramble in the eggs. Cheese and tortilla."
+          "method": "Soften the pepper. Scramble in the eggs. Cheese and tortilla.",
+          "nutrients": [
+            "Vitamin C, about 150 mg",
+            "Choline, about 294 mg",
+            "Vitamin B12, about 1 mcg",
+            "Protein, about 20 g",
+            "Fat, about 18 g"
+          ]
         },
         {
           "slot": "Dinner",
@@ -3607,7 +4722,14 @@ window.PLAN = {
             "cucumber",
             "lemon"
           ],
-          "method": "Simmer lentils, tomato, and carrots 15 minutes. Spinach at the end. Put a salad beside it."
+          "method": "Simmer lentils, tomato, and carrots 15 minutes. Spinach at the end. Put a salad beside it.",
+          "nutrients": [
+            "Vitamin K, about 241 mcg",
+            "Vitamin A, about 1220 mcg",
+            "Vitamin C, about 79 mg",
+            "Lycopene, about 8 mg",
+            "Folate, about 267 mcg"
+          ]
         }
       ]
     },
@@ -3623,6 +4745,7 @@ window.PLAN = {
       "kcal": 833,
       "line": "Off day 10 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Lentil spinach soup is the main cook.",
+      "motivation": "4 days left in this block. Off day 10 of 14. Day shifts start again when this break ends. Let the kids see you sit down to eat. Thank God for the food and for the two kids, out loud if you can. Look at the two of them once before you talk about the schedule.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -3639,7 +4762,14 @@ window.PLAN = {
             "a handful of salad greens",
             "1 slice whole grain bread"
           ],
-          "method": "Eggs first. Greens with lemon after, not cooked to death. Toast the bread while the eggs cook."
+          "method": "Eggs first. Greens with lemon after, not cooked to death. Toast the bread while the eggs cook.",
+          "nutrients": [
+            "Vitamin K, about 80 mcg",
+            "Choline, about 294 mg",
+            "Vitamin B12, about 1 mcg",
+            "Protein, about 17 g",
+            "Fat, about 11 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -3657,7 +4787,14 @@ window.PLAN = {
             "1/2 cup cooked brown rice",
             "olive oil"
           ],
-          "method": "Steam broccoli. Warm the rice. Eggs on top."
+          "method": "Steam broccoli. Warm the rice. Eggs on top.",
+          "nutrients": [
+            "Vitamin C, about 81 mg",
+            "Vitamin K, about 90 mcg",
+            "Choline, about 294 mg",
+            "Vitamin B12, about 1 mcg",
+            "Protein, about 17 g"
+          ]
         },
         {
           "slot": "Dinner",
@@ -3677,7 +4814,14 @@ window.PLAN = {
             "lemon",
             "1/4 avocado"
           ],
-          "method": "Simmer lentils, tomato, and carrots 15 minutes. Spinach at the end. Avocado on top at the last minute."
+          "method": "Simmer lentils, tomato, and carrots 15 minutes. Spinach at the end. Avocado on top at the last minute.",
+          "nutrients": [
+            "Vitamin A, about 1140 mcg",
+            "Vitamin K, about 145 mcg",
+            "Lycopene, about 8 mg",
+            "Fibre, about 17 g",
+            "Folate, about 267 mcg"
+          ]
         }
       ]
     },
@@ -3693,6 +4837,7 @@ window.PLAN = {
       "kcal": 916,
       "line": "Off day 11 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Lentil spinach soup is the main cook.",
+      "motivation": "3 days left in this block. Off day 11 of 14. Day shifts start again when this break ends. Let the kids see you sit down to eat. A thirty-second prayer in the car counts. Be where your feet are for one plate.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -3709,7 +4854,14 @@ window.PLAN = {
             "1 cup broccoli",
             "1 corn tortilla"
           ],
-          "method": "Steam the broccoli 4 minutes. Eggs beside it. Warm the tortilla in a dry pan."
+          "method": "Steam the broccoli 4 minutes. Eggs beside it. Warm the tortilla in a dry pan.",
+          "nutrients": [
+            "Vitamin C, about 81 mg",
+            "Vitamin K, about 90 mcg",
+            "Choline, about 294 mg",
+            "Vitamin B12, about 1 mcg",
+            "Protein, about 17 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -3729,7 +4881,14 @@ window.PLAN = {
             "1 cup carrots",
             "cucumber"
           ],
-          "method": "Mash half the chickpeas with lemon and oil. Eat the rest whole. Bread and carrots."
+          "method": "Mash half the chickpeas with lemon and oil. Eat the rest whole. Bread and carrots.",
+          "nutrients": [
+            "Vitamin A, about 1000 mcg",
+            "Fibre, about 17 g",
+            "Folate, about 230 mcg",
+            "Vitamin C, about 37 mg",
+            "Carbs, about 64 g"
+          ]
         },
         {
           "slot": "Dinner",
@@ -3749,7 +4908,14 @@ window.PLAN = {
             "lemon",
             "1 slice whole grain bread"
           ],
-          "method": "Simmer lentils, tomato, and carrots 15 minutes. Spinach at the end. Toast on the side."
+          "method": "Simmer lentils, tomato, and carrots 15 minutes. Spinach at the end. Toast on the side.",
+          "nutrients": [
+            "Vitamin A, about 1140 mcg",
+            "Vitamin K, about 145 mcg",
+            "Lycopene, about 8 mg",
+            "Fibre, about 17 g",
+            "Vitamin C, about 49 mg"
+          ]
         }
       ]
     },
@@ -3765,6 +4931,7 @@ window.PLAN = {
       "kcal": 966,
       "line": "Cheat day. Off day 12 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Cheat day. One fun plate. The other meals still feed you.",
+      "motivation": "Cheat day, and that is allowed. 2 days left in this block. Off day 12 of 14. Day shifts start again when this break ends. Let the kids see you sit down to eat. Pray for their sleep, and for yours. One slow breath before you answer a child.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -3781,7 +4948,14 @@ window.PLAN = {
             "1 cup broccoli",
             "1 slice whole grain bread"
           ],
-          "method": "Steam the broccoli 4 minutes. Eggs beside it. Toast the bread while the eggs cook."
+          "method": "Steam the broccoli 4 minutes. Eggs beside it. Toast the bread while the eggs cook.",
+          "nutrients": [
+            "Vitamin C, about 81 mg",
+            "Vitamin K, about 90 mcg",
+            "Choline, about 294 mg",
+            "Vitamin B12, about 1 mcg",
+            "Fibre, about 8 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -3800,7 +4974,14 @@ window.PLAN = {
             "a small handful of chocolate chips",
             "1 tbsp ground flax"
           ],
-          "method": "Simmer the oats. Chocolate and berries at the end. Still oats, just a fun bowl."
+          "method": "Simmer the oats. Chocolate and berries at the end. Still oats, just a fun bowl.",
+          "nutrients": [
+            "Omega-3, about 1600 mg",
+            "Fibre, about 11 g",
+            "Carbs, about 57 g",
+            "Calcium, about 300 mg",
+            "Protein, about 16 g"
+          ]
         },
         {
           "slot": "Dinner",
@@ -3822,7 +5003,14 @@ window.PLAN = {
             "cucumber",
             "lemon"
           ],
-          "method": "Soften the zucchini. Add beans and tomato. Quinoa underneath. Put a salad beside it."
+          "method": "Soften the zucchini. Add beans and tomato. Quinoa underneath. Put a salad beside it.",
+          "nutrients": [
+            "Vitamin K, about 96 mcg",
+            "Vitamin C, about 62 mg",
+            "Fibre, about 16 g",
+            "Folate, about 197 mcg",
+            "Potassium, about 1155 mg"
+          ]
         }
       ]
     },
@@ -3838,6 +5026,7 @@ window.PLAN = {
       "kcal": 1141,
       "line": "Off day 13 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Bean and zucchini skillet is the main cook.",
+      "motivation": "1 day left in this block. Off day 13 of 14. Day shifts start again when this break ends. Let the kids see you sit down to eat. If you are too tired for a long prayer, one honest line is enough. Leave the work story until after you have eaten.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -3855,7 +5044,14 @@ window.PLAN = {
             "tomato",
             "lemon"
           ],
-          "method": "Toast. Mash the avocado with lemon. Tomato on top."
+          "method": "Toast. Mash the avocado with lemon. Tomato on top.",
+          "nutrients": [
+            "Vitamin C, about 45 mg",
+            "Fibre, about 12 g",
+            "Lycopene, about 3 mg",
+            "Folate, about 100 mcg",
+            "Potassium, about 635 mg"
+          ]
         },
         {
           "slot": "Lunch",
@@ -3874,7 +5070,14 @@ window.PLAN = {
             "cucumber",
             "lemon"
           ],
-          "method": "Flake a cooked fillet. Stir with a spoon of yogurt and lemon. Cucumber on the toast."
+          "method": "Flake a cooked fillet. Stir with a spoon of yogurt and lemon. Cucumber on the toast.",
+          "nutrients": [
+            "Omega-3, about 1800 mg",
+            "Vitamin B12, about 3.5 mcg",
+            "Protein, about 44 g",
+            "Vitamin D, about 10 mcg",
+            "Selenium, about 30 mcg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -3894,7 +5097,14 @@ window.PLAN = {
             "1/2 cup cooked quinoa",
             "1/4 avocado"
           ],
-          "method": "Soften the zucchini. Add beans and tomato. Quinoa underneath. Avocado on top at the last minute."
+          "method": "Soften the zucchini. Add beans and tomato. Quinoa underneath. Avocado on top at the last minute.",
+          "nutrients": [
+            "Fibre, about 17 g",
+            "Folate, about 197 mcg",
+            "Potassium, about 1185 mg",
+            "Vitamin C, about 32 mg",
+            "Magnesium, about 119 mg"
+          ]
         }
       ]
     },
@@ -3910,6 +5120,7 @@ window.PLAN = {
       "kcal": 890,
       "line": "Off day 14 of 14. Day shifts start again when this break ends. Stop caffeine about 6 hours before sleep.",
       "note": "Off block. Bean and zucchini skillet is the main cook.",
+      "motivation": "Last day of this block. Off day 14 of 14. Day shifts start again when this break ends. Let the kids see you sit down to eat. Bless the hands that will eat with you today. Put the phone face down for the first five minutes of the meal.",
       "meals": [
         {
           "slot": "Breakfast",
@@ -3926,7 +5137,14 @@ window.PLAN = {
             "1 tbsp peanut butter",
             "1/2 banana"
           ],
-          "method": "Toast. Peanut butter, then banana slices."
+          "method": "Toast. Peanut butter, then banana slices.",
+          "nutrients": [
+            "Fibre, about 9 g",
+            "Carbs, about 46 g",
+            "Protein, about 13 g",
+            "Magnesium, about 64 mg",
+            "Fat, about 10 g"
+          ]
         },
         {
           "slot": "Lunch",
@@ -3945,7 +5163,14 @@ window.PLAN = {
             "cumin",
             "1 slice whole grain bread"
           ],
-          "method": "Soften the zucchini. Add beans and tomato. Toast on the side."
+          "method": "Soften the zucchini. Add beans and tomato. Toast on the side.",
+          "nutrients": [
+            "Fibre, about 12 g",
+            "Vitamin C, about 32 mg",
+            "Potassium, about 880 mg",
+            "Lycopene, about 3 mg",
+            "Folate, about 110 mcg"
+          ]
         },
         {
           "slot": "Dinner",
@@ -3965,7 +5190,14 @@ window.PLAN = {
             "1/2 cup cooked quinoa",
             "1 slice whole grain bread"
           ],
-          "method": "Soften the zucchini. Add beans and tomato. Quinoa underneath. Toast on the side."
+          "method": "Soften the zucchini. Add beans and tomato. Quinoa underneath. Toast on the side.",
+          "nutrients": [
+            "Fibre, about 17 g",
+            "Folate, about 187 mcg",
+            "Magnesium, about 139 mg",
+            "Vitamin C, about 32 mg",
+            "Potassium, about 1015 mg"
+          ]
         }
       ]
     }
