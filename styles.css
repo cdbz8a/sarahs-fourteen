@@ -93,13 +93,20 @@ li { margin: 2px 0; }
 .fill.protein { background: #1d4e89; }
 .fill.carbs { background: #bc6c25; }
 .fill.fibre { background: #2d6a4f; }
-.macros-line { margin: 0 0 6px; font-size: 14px; font-weight: 700; }
+.stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin: 8px 0; }
+.stat { background: rgba(255, 255, 255, 0.62); border-radius: 12px; padding: 8px 4px; text-align: center; }
+.stat b { display: block; font-size: 22px; line-height: 1.1; }
+.stat span { display: block; margin-top: 2px; font-size: 11px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
 .log { width: 100%; margin-top: 8px; border: 0; background: var(--ink); color: var(--card); border-radius: 14px; padding: 14px; font-size: 17px; font-weight: 700; }
 .log.done { background: var(--gut); }
+.guide-card { background: var(--card); border-radius: 16px; padding: 12px 14px; margin: 0 0 10px; }
+.guide-card h2 { margin: 0 0 6px; font-size: 20px; }
+.guide-card p { margin: 0 0 8px; }
+.swatch { display: inline-block; width: 14px; height: 14px; border-radius: 4px; vertical-align: -2px; margin-right: 6px; }
 .tabs {
-  position: fixed; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px;
+  position: fixed; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 6px;
   padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
   background: rgba(244, 239, 228, 0.96); border-top: 1px solid var(--line);
 }
-.tabs button { border: 0; background: #efe6d6; border-radius: 14px; padding: 12px 4px; font-size: 16px; font-weight: 700; }
+.tabs button { border: 0; background: #efe6d6; border-radius: 14px; padding: 12px 2px; font-size: 14px; font-weight: 700; }
 .tabs button.on { background: var(--ink); color: var(--card); }

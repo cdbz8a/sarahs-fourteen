@@ -28,6 +28,13 @@
     const diff = Math.floor((now - start) / 86400000);
     return ((diff % LEN) + LEN) % LEN + 1;
   }
+  function jobName(tag) {
+    if (tag === "Brain") return "Brain fats";
+    if (tag === "Steady") return "Steady energy";
+    if (tag === "Calm") return "Calmer plate";
+    if (tag === "Gut") return "Feeds the gut";
+    return tag || "";
+  }
   function el(tag, cls, text) {
     const n = document.createElement(tag);
     if (cls) n.className = cls;
@@ -163,10 +170,18 @@
       lab.appendChild(el("div", "slot", m.slot));
       lab.appendChild(el("div", "muted", m.when));
       row.appendChild(lab);
-      row.appendChild(el("div", "tag " + m.tag, m.tag + "  " + m.g + " g"));
+      row.appendChild(el("div", "tag " + m.tag, jobName(m.tag)));
       card.appendChild(row);
       card.appendChild(el("h2", null, m.name));
-      card.appendChild(el("p", "macros-line", "Protein " + (m.protein || 0) + " g. Carbs " + (m.carbs || 0) + " g. Fibre " + m.g + " g. Fat " + (m.fat || 0) + " g."));
+      const stats = el("div", "stats");
+      [["Protein", m.protein || 0], ["Carbs", m.carbs || 0], ["Fibre", m.g || 0]].forEach(function (pair) {
+        const cell = el("div", "stat");
+        cell.appendChild(el("b", null, pair[1] + " g"));
+        cell.appendChild(el("span", null, pair[0]));
+        stats.appendChild(cell);
+      });
+      card.appendChild(stats);
+      card.appendChild(el("p", "muted", "Fat " + (m.fat || 0) + " g"));
       const ul = el("ul");
       m.items.forEach(function (item) { ul.appendChild(el("li", null, item)); });
       card.appendChild(ul);
@@ -203,7 +218,10 @@
     set.appendChild(input);
     set.appendChild(btn);
     app.appendChild(set);
-    app.appendChild(el("p", "muted", "No onions. Food supports mood. It does not treat it."));
+    const guideBtn = el("button", "primary", "How to read this");
+    guideBtn.addEventListener("click", function () { view = "guide"; render(); });
+    app.appendChild(guideBtn);
+    app.appendChild(el("p", "muted", "The three big numbers are protein, carbs, and fibre. The colored words say why the meal is there. No onions. Food supports mood. It does not treat it."));
     window.scrollTo(0, 0);
   }
 
@@ -295,6 +313,53 @@
     }
   }
 
+  function guideCard(title, paragraphs) {
+    const card = el("section", "guide-card");
+    card.appendChild(el("h2", null, title));
+    paragraphs.forEach(function (text) {
+      card.appendChild(el("p", null, text));
+    });
+    return card;
+  }
+  function renderGuide() {
+    app.innerHTML = "";
+    app.appendChild(el("p", "kicker", "Read this once"));
+    app.appendChild(el("h1", null, "How to use it"));
+    app.appendChild(guideCard("The three buttons", [
+      "Today is the day you cook from. One screen, three meals.",
+      "Days is the whole rotation if you want to look ahead. Tap a day to open it.",
+      "Shop is the grocery list. One list every 14 days. The color is the aisle. Check the box when it is in the cart."
+    ]));
+    app.appendChild(guideCard("Gold, green, blue", [
+      "Gold is meal 1. Green is meal 2. Blue is meal 3.",
+      "On day shifts that is breakfast, lunch, dinner.",
+      "On nights, meal 1 is the big plate before work. Meal 2 is the one you pack. Meal 3 is small, then you sleep."
+    ]));
+    app.appendChild(guideCard("What Brain, Steady, Calm, and Gut mean", [
+      "Those words are the job of the meal. They are not a dose.",
+      "Brain means the plate has fats used in brain cells. Salmon is the strong one. Walnuts, chia, and flax are the backup.",
+      "Steady means fibre plus protein, so your energy is less likely to crash and feel like a short temper.",
+      "Calm means magnesium foods. Pumpkin seeds, yogurt, beans, and greens.",
+      "Gut means beans, oats, or yogurt. They feed the gut bacteria tied to mood. That research is real and still young. It is a reason to eat the beans, not a promise that lunch fixes a hard month."
+    ]));
+    app.appendChild(guideCard("What the grams mean", [
+      "Each meal has three big numbers: Protein, Carbs, Fibre. The word under the number is the name of that number.",
+      "Brain fats, Steady energy, Calmer plate, and Feeds the gut are the job of the meal. They are not a dose. There is no such thing as 5 grams of brain.",
+      "The bars at the top add the whole day. Protein guide is 60 g. Carbs guide is 180 g. Fibre guide is 25 g, the daily target for women 19 to 50.",
+      "Going past a bar is fine. The bar is a guide, not a limit.",
+      "Fat and the calorie number are smaller on purpose. They are a kitchen estimate, not a lab test of the plate."
+    ]));
+    app.appendChild(guideCard("Streak and XP", [
+      "Tap Log this day after you eat it. You can undo it.",
+      "Streak is days in a row inside this 14-day block. Miss a day and the streak stops.",
+      "XP adds up in that same block. You get 25 for logging, 15 more if protein hits 60 g, 15 more if fibre hits 25 g, and 5 more if carbs are at least 100 g.",
+      "Both start over when the next block starts. That is day 15, day 29, day 43, and then day 1 again. Same rhythm as the work schedule."
+    ]));
+    app.appendChild(guideCard("If you are not on day 1", [
+      "Type your day number and tap Make this today. Tomorrow the app moves ahead on its own."
+    ]));
+  }
+
   function openDay(n) {
     state.day = n;
     save();
@@ -307,6 +372,7 @@
     else if (view === "day") renderCook(state.day || todayNum());
     else if (view === "days") renderDays();
     else if (view === "trip") renderTrip();
+    else if (view === "guide") renderGuide();
     else renderShopHome();
   }
   tabs.addEventListener("click", function (e) {
